@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="plugins/OwlCarousel2/assets/owl.theme.default.min.css" />
     <!-- <link rel="stylesheet" href="plugins/AOS/aos.css" /> -->
     <link rel="stylesheet" href="css/style.css?v=17" />
+    <link rel="stylesheet" href="css/api-details.css" />
+    <link rel="stylesheet" href="css/slick.css" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KSE0NL051F"></script>
@@ -41,13 +43,13 @@
     <title>MassBit.io</title>
 </head>
 
-<body>
+<body class="home-page testnet">
     <!-- class="testnet" -->
-    <div class="wr-loading" id="wr_loading">
+    <div class="wr-loading" id="wr_loading" style="display: none;">
         <img src="images/decor.svg" alt="loading..." height="80">
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light mb-navbar flex-wrap fixed-top">
-        <div class="mb-banner-testnet w-100" style="display: none;">
+    <nav class="navbar navbar-expand-lg navbar-light mb-navbar flex-wrap fixed-top mb-navbar-fixed">
+        <!-- <div class="mb-banner-testnet w-100" style="display: none;">
             <div class="container">
                 <div class="mb-banner-testnet-inner">
                     <div>Come join our <span>MassBit Route Testnet</span></div>
@@ -59,29 +61,25 @@
                             class="fas fa-times"></i></button>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img class="mb-logo" src="images/logo.svg" alt="MassBit" />
+                <img class="mb-logo" src="images/logo.svg" alt="MassBit">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
                 <ul class="navbar-nav ms-auto my-3 my-lg-0 align-items-center align-items-lg-start">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown0" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Developers
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end mb-header-dropdown-menu"
-                            aria-labelledby="navbarDropdown0">
+                        <ul class="dropdown-menu dropdown-menu-end mb-header-dropdown-menu" aria-labelledby="navbarDropdown0">
                             <li><a class="dropdown-item" href="https://docs.massbit.io/about/introduction">Docs</a></li>
                             <li><a class="dropdown-item" href="https://docs.massbit.io/about/contact-us">Supports</a>
                             </li>
-                            <li><a class="dropdown-item" href="partnership.html">Partnership</a></li>
+                            <!-- <li><a class="dropdown-item" href="partnership.html">Partnership</a></li> -->
                             <li><a class="dropdown-item" href="https://github.com/massbitprotocol/">Github</a></li>
                             <li><a class="dropdown-item" href="https://discord.gg/5ePzAEFNHZ">Discord</a></li>
                         </ul>
@@ -93,8 +91,7 @@
                         <a class="nav-link" href="https://blog.massbit.io/">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://dapi.massbitroute.net/login"
-                            class="nav-link btn-get-started ms-lg-3 d-inline-block">Log in</a>
+                        <a href="https://dapi.massbitroute.net/login" class="nav-link btn-get-started ms-lg-3 d-inline-block">Log in</a>
                     </li>
                 </ul>
             </div>
@@ -102,21 +99,21 @@
     </nav>
     <!-- End Navigation Bar -->
 
-    <header>
+    <header class="mb-header-small">
         <div class="container">
-            <div class="row align-items-center align-items-xl-center align-items-lg-end">
-                <div class="col-xl-5 col-lg-6 mt-lg-0 mb-4">
-                    <h1 class="mb-banner-heading">DECENTRALIZED API</h1>
-                    <h2 class="mb-banner-sub-heading">for DeFi and Web3 apps</h2>
-                    <div class="mb-banner-description">
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-12">
+                    <h1 class="mb-banner-heading mb-font-bold">Innovative infrastrucure</h1>
+                    <h2 class="mb-banner-sub-heading mb-font-medium">for DeFi and Web3 apps</h2>
+                    <div class="mb-banner-description col-lg-6 col-md-10">
                         MassBit’s mission is to become an innovative infrastructure to make DeFi and Web3 development easier, faster and cheaper
                     </div>
-                    <div class="mt-4">
-                        <a href="#WhyMassBit" class="btn btn-outline-primary px-5">Build with MassBit</a>
-                        <a href="#" class="btn btn-outline-primary px-5">About us</a>
+                    <div class="mt-5">
+                        <a href="#WhyMassBit" class="btn btn-outline-primary btn-primary">Build with MassBit</a>
+                        <a href="#" class="btn btn-outline-primary btn-bg-white">About us</a>
                     </div>
                 </div>
-                <div class="text-center">
+                <div class="text-center mb-font-medium mb-title-mini">
                     Our trusted partners
                 </div>
             </div>
@@ -127,396 +124,113 @@
     <main>
         <section class="mb-banner-sub">
             <ul>
-                <li><img src="images/bnr1.svg" alt="Polygon"/></li>
-                <li><img src="images/bnr2.svg" alt="Math"/></li>
-                <li><img src="images/bnr3.svg" alt="Supra oracles"/></li>
-                <li><img src="images/bnr4.svg" alt="Harmony"/></li>
-                <li><img src="images/bnr5.svg" alt="Solana"/></li>
-                <li><img src="images/bnr6.svg" alt="Warena"/></li>
+                <li><img src="images/bnr1.svg" alt="Polygon"></li>
+                <li><img src="images/bnr2.svg" alt="Math"></li>
+                <li><img src="images/bnr3.svg" alt="Supra oracles"></li>
+                <li><img src="images/bnr4.svg" alt="Harmony"></li>
+                <li><img src="images/bnr5.svg" alt="Solana"></li>
+                <li><img src="images/bnr6.svg" alt="Warena"></li>
             </ul>
         </section>
         <section class="product">
             <div class="slides">
                 <div class="slide">
                     <div class="container">
-                        <dl>
-                            <dt>4 products</dt>
+                        <dl class="col-lg-6 col-md-6 col-11 mb-5">
+                            <dt class="mb-font-medium text-uppercase">4 products</dt>
                             <dd>MassBit’s mission is to become an innovative infrastructure to make DeFi and Web3 development easier, faster and cheaper</dd>
                         </dl>
                         <div class="row">
-                            <div class="col-lg-4">
-                                <h3>MassBit Route</h3>
+                            <div class="col-lg-3 d-flex">
+                                <h3 class="mb-font-medium d-flex">MassBit Route</h3>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-5 col-12">
                                 <div class="photo">
-                                    <img src="images/index/build_icon1.svg" alt="MassBit Route"/>
+                                    <img src="images/index/slider_img1.svg" alt="MassBit Route">
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <p>We work with small API providers and validators to form decentralized gateways. </p>
+                            <div class="col-lg-4 col-md-7 col-11">
+                                <p class="slide-content">We work with small API providers and validators to form decentralized gateways. </p>
+                                <p class="arrow"><img src="images/arrow.svg" alt="arrow"></p>
+                                <a class="mb-font-medium" tabindex="0">Get free API</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="container">
-                        <dl>
-                            <dt>4 products</dt>
+                        <dl class="col-lg-6 col-md-6 col-11 mb-5">
+                            <dt class="mb-font-medium text-uppercase">Our products</dt>
                             <dd>MassBit’s mission is to become an innovative infrastructure to make DeFi and Web3 development easier, faster and cheaper</dd>
                         </dl>
                         <div class="row">
-                            <div class="col-lg-4">
-                                <h3>MassBit Route</h3>
+                            <div class="col-lg-3 d-flex">
+                                <h3 class="mb-font-medium d-flex">Massbit Prime</h3>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-5 col-12">
                                 <div class="photo">
-                                    <img src="images/index/build_icon1.svg" alt="MassBit Route"/>
+                                    <img src="images/index/slider_img2.svg" alt="Massbit Prime">
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <p>We work with small API providers and validators to form decentralized gateways. </p>
+                            <div class="col-lg-4 col-md-7 col-11">
+                                <p class="slide-content">Stay ahead of the pack with this mempool data and blockchain propagation tool.</p>
+                                <a class="mb-font-medium" tabindex="0">Coming Soon</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="container">
-                        <dl>
-                            <dt>4 products</dt>
+                        <dl class="col-lg-6 col-md-6 col-11 mb-5">
+                            <dt class="mb-font-medium text-uppercase">Our products</dt>
                             <dd>MassBit’s mission is to become an innovative infrastructure to make DeFi and Web3 development easier, faster and cheaper</dd>
                         </dl>
                         <div class="row">
-                            <div class="col-lg-4">
-                                <h3>MassBit Route</h3>
+                            <div class="col-lg-3 d-flex">
+                                <h3 class="mb-font-medium d-flex">Multi-chain Indexing</h3>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-5 col-12">
                                 <div class="photo">
-                                    <img src="images/index/build_icon1.svg" alt="MassBit Route"/>
+                                    <img src="images/index/slider_img3.svg" alt="Multi-chain Indexing">
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <p>We work with small API providers and validators to form decentralized gateways. </p>
+                            <div class="col-lg-4 col-md-7 col-11">
+                                <p class="slide-content">The infrastructrure to index data from all blockchains for analystics purposes.</p>
+                                <a class="mb-font-medium" tabindex="0">Coming Soon</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="container">
-                        <dl>
-                            <dt>4 products</dt>
+                        <dl class="col-lg-6 col-md-6 col-11 mb-5">
+                            <dt class="mb-font-medium text-uppercase">Our products</dt>
                             <dd>MassBit’s mission is to become an innovative infrastructure to make DeFi and Web3 development easier, faster and cheaper</dd>
                         </dl>
                         <div class="row">
-                            <div class="col-lg-4">
-                                <h3>MassBit Route</h3>
+                            <div class="col-lg-3 d-flex">
+                                <h3 class="mb-font-medium d-flex">Multi-chain Indexing</h3>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-5 col-12">
                                 <div class="photo">
-                                    <img src="images/index/build_icon1.svg" alt="MassBit Route"/>
+                                    <img src="images/index/slider_img3.svg" alt="Multi-chain Indexing">
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <p>We work with small API providers and validators to form decentralized gateways. </p>
+                            <div class="col-lg-4 col-md-7 col-11">
+                                <p class="slide-content">The infrastructrure to index data from all blockchains for analystics purposes.</p>
+                                <a class="mb-font-medium" tabindex="0">Coming Soon</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </section>
         <!-- End Why MassBit -->
-
-
-        <section class="mb-section mb-section-massbit-route" id="MassBitRoute">
-            <div class="container">
-                <div class="mb-section-title d-block d-md-none" data-aos="fade-left" data-aos-duration="500">
-                    <span>MassBit Route</span>
-                </div>
-                <div class="row gx-xl-5 align-items-center">
-                    <div class="col-xl-7 col-lg-6 mb-3 mb-lg-0">
-                        <img data-aos="fade-right" data-aos-duration="500" src="images/GIF/massbit-route.gif"
-                            class="img-fluid" />
-                    </div>
-                    <div class="col-xl-5 col-lg-6">
-                        <div class="mb-section-title d-none d-md-block" data-aos="fade-left" data-aos-duration="500">
-                            <span>MassBit Route</span>
-                        </div>
-                        <div class="mb-section-body">
-                            <div class="mb-40 mb-mb-20px" data-aos="fade-left" data-aos-duration="500">
-                                We work with small API providers and validators to form decentralized gateways. Some API
-                                providers only utilize 20% of their capacities while validators or miners only do their
-                                work to earn rewards but waste other resources (data and APIs). With MassBit, our
-                                validators earn more rewards and serve numerous DeFi and Web3 apps. We also punish nodes
-                                for misbehaving!
-                            </div>
-                            <div data-aos="fade-up" data-aos-duration="500">
-                                <a href="massbit-route.html" class="btn btn-fw btn-primary btn-right-icon">
-                                    <span>Learn More</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End MassBit Route -->
-
-        <section class="mb-section mb-section-multi-chain-indexing" id="CrossChainIndexing">
-            <div class="container">
-                <div class="mb-section-title d-block d-md-none" data-aos="fade-left" data-aos-duration="500">
-                    <span>Multi-chain Indexing</span>
-                </div>
-                <div class="row gx-xl-5 align-items-center">
-                    <div class="col-xl-5 col-lg-6 order-lg-1 order-2">
-                        <div class="mb-section-title d-none d-md-block" data-aos="fade-right" data-aos-duration="500">
-                            <span>Multi-chain Indexing</span>
-                        </div>
-                        <div class="mb-section-body">
-                            <div class="mb-40 mb-mb-20px" data-aos="fade-right" data-aos-duration="500">
-                                Blockchain indexing is essential to DeFi and Web3 development. MassBit provides the
-                                infrastructure to index the data from different blockchains, such as Substrate,
-                                Ethereum-compatible chains and especially fast blockchains like BSC, Matic and Solana.
-                                We support indexing logic in different languages as well (Rust, AssemblyScript,
-                                TypeScript).
-                            </div>
-                            <div data-aos="fade-up" data-aos-duration="500">
-                                <a href="multi-chain-indexing.html" class="btn btn-fw btn-primary btn-right-icon">
-                                    <span>Learn More</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-7 col-lg-6 order-lg-2 order-1 mb-3 mb-lg-0">
-                        <img data-aos="fade-left" data-aos-duration="500" src="images/GIF/multi-chain.gif"
-                            class="img-fluid" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Cross Chain Indexing -->
-
-        <section class="mb-section mb-section-massbit-insights" id="MassBitInsights">
-            <div class="container">
-                <div class="mb-section-title d-block d-md-none" data-aos="fade-left" data-aos-duration="500">
-                    <span>MassBit Insights</span>
-                </div>
-                <div class="row gx-xl-5 align-items-center">
-                    <div class="col-xl-7 col-lg-6 mb-3 mb-lg-0">
-                        <img src="images/GIF/insights.gif" class="img-fluid" data-aos="fade-right"
-                            data-aos-duration="500" />
-                    </div>
-                    <div class="col-xl-5 col-lg-6">
-                        <div class="mb-section-title d-none d-md-block" data-aos="fade-left" data-aos-duration="500">
-                            <span>MassBit Insights</span>
-                        </div>
-                        <div class="mb-section-body">
-                            <div class="mb-40 mb-mb-20px" data-aos="fade-left" data-aos-duration="500">
-                                MassBit Explorer allows you to check the information regarding all major blockchain
-                                networks. This project will allow users to verify price, transaction count, current
-                                epoch, market cap, block and slot height.
-                            </div>
-                            <div data-aos="fade-up" data-aos-duration="500">
-                                <a href="coming-soon.html" class="btn btn-fw btn-primary btn-right-icon">
-                                    <span>Learn More</span>
-                                </a>
-                            </div>
-                            <!-- <div data-aos="fade-up" data-aos-duration="500">
-                                <div class="dropdown">
-                                    <button class="btn btn-fw btn-primary btn-dropdown-icon dropdown-toggle" type="button" id="dropdownMenuButtonAPI" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <span>Solana Explorer</span>
-                                    </button>
-                                    <ul class="dropdown-menu btn-dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li>
-                                            <a class="dropdown-item" href="coming-soon.html">Solana Explorer</a>
-                                        </li>
-                                        <li>
-                                            <div class="dropdown-item">Ethereum Explorer</div>
-                                            <span>Coming soon</span>
-                                        </li>
-                                        <li>
-                                            <div class="dropdown-item">Substrate Explorer</div>
-                                            <span>Coming soon</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End MassBit Insights -->
-
-        <!-- <section class="mb-section mb-section-compare">
-            <div class="mb-decor">
-                <div class="decor-1"></div>
-                <div class="decor-3"></div>
-                <div class="decor-4"></div>
-                <div class="decor-5"></div>
-                <div class="decor-6"></div>
-            </div>
-            <div class="container">
-                <div class="mb-section-title text-center mb-50 mb-mb-10px" data-aos="fade-up" data-aos-duration="500">
-                    <span>Build Without Limits</span>
-                </div>
-                <div class="mb-section-body">
-                    <div class="mb-40 mb-mb-20px text-center" data-aos="fade-up" data-aos-duration="500">Comparing to
-                        relevant projects</div>
-                    <div class="mb-compare-block">
-                        <div class="mb-compare-list-border">
-                            <div class="row h-100">
-                                <div class="col-md-3 col-4">
-
-                                </div>
-                                <div class="col-md-3 col-2">
-                                    <div class="mb-border-compare"></div>
-                                </div>
-                                <div class="col-md-3 col-3">
-                                    <div class="mb-border-compare"></div>
-                                </div>
-                                <div class="col-md-3 col-3 px-mb-0">
-                                    <div class="mb-border-compare border-white"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-compare-list">
-                            <div class="row">
-                                <div class="col-md-3 col-4">
-
-                                </div>
-                                <div class="col-md-3 col-2">
-                                    <div class="mb-compare-header">
-                                        <img src="images/compare/infura.png" alt="Infura" />
-                                        <span>Infura</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-3">
-                                    <div class="mb-compare-header">
-                                        <img src="images/compare/the-graph.png" alt="The Graph" />
-                                        <span>The Graph</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-3 px-mb-0">
-                                    <div class="mb-compare-header">
-                                        <img src="images/compare/massbit.svg" alt="MassBit" />
-                                        <span>MassBit</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row odd">
-                                <div class="col-md-3 col-4">
-                                    <div class="mb-compare-item text-start">Decentralized APIs</div>
-                                </div>
-                                <div class="col-md-3 col-2">
-                                    <div class="mb-compare-item">
-                                        <span><i class="far fa-times-circle opacity-50"></i></span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-3">
-                                    <div class="mb-compare-item">
-                                        <span class="opacity-50">-</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-3 px-mb-0">
-                                    <div class="mb-compare-item">
-                                        <span><i class="far fa-check-circle text-white"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3 col-4">
-                                    <div class="mb-compare-item text-start">No privacy concern of API</div>
-                                </div>
-                                <div class="col-md-3 col-2">
-                                    <div class="mb-compare-item">
-                                        <span><i class="far fa-times-circle opacity-50"></i></span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-3">
-                                    <div class="mb-compare-item">
-                                        <span class="opacity-50">-</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-3 px-mb-0">
-                                    <div class="mb-compare-item">
-                                        <span><i class="far fa-check-circle text-white"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row odd">
-                                <div class="col-md-3 col-4">
-                                    <div class="mb-compare-item text-start">Cost effective</div>
-                                </div>
-                                <div class="col-md-3 col-2">
-                                    <div class="mb-compare-item">
-                                        <span><i class="far fa-check-circle text-white"></i></span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-3">
-                                    <div class="mb-compare-item">
-                                        <span class="opacity-50">-</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-3 px-mb-0">
-                                    <div class="mb-compare-item">
-                                        <span class="text-nowrap">
-                                            <i class="far fa-check-circle text-white me-md-2 me-1"></i>
-                                            <i class="far fa-check-circle text-white"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3 col-4">
-                                    <div class="mb-compare-item text-start">Easy to use</div>
-                                </div>
-                                <div class="col-md-3 col-2">
-                                    <div class="mb-compare-item">
-                                        <span><i class="far fa-check-circle text-white"></i></span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-3">
-                                    <div class="mb-compare-item">
-                                        <span class="opacity-50">-</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-3 px-mb-0">
-                                    <div class="mb-compare-item">
-                                        <span><i class="far fa-check-circle text-white"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row odd">
-                                <div class="col-md-3 col-4">
-                                    <div class="mb-compare-item text-start">Indexed chains</div>
-                                </div>
-                                <div class="col-md-3 col-2">
-                                    <div class="mb-compare-item">
-                                        <span class="opacity-50">-</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-3">
-                                    <div class="mb-compare-item">
-                                        <span class="mb-compare-item-text">ETH-based chains</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-3 px-mb-0">
-                                    <div class="mb-compare-item">
-                                        <span class="mb-compare-item-text">ETH-based chains, Substrate-based chains,
-                                            Solana</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- End Build Without Limits -->
-
         <section class="mb-section mb-section-community-loves-massbit" id="CommunityLovesMassBit">
             <div class="container">
-                <div class="mb-section-title text-center" data-aos="fade-up" data-aos-duration="500">
-                    <span> Community Loves MassBit</span>
+                <div class="text-center mb-font-medium mb-title-mini text-uppercase mb-3">Supported by community</div>
+                <div class="mb-title-large text-center mb-5" data-aos="fade-up" data-aos-duration="500">
+                    <span>Our community loves us</span>
                 </div>
                 <div class="mb-section-body" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
                     <div class="owl-carousel owl-theme" id="slideCommunity">
@@ -684,463 +398,387 @@
             </div>
         </section>
         <!-- End Community Loves MassBit -->
-
-        <section class="mb-section mb-section-our-team-experience " id="OurTeamExperience">
+        <section class="mb-section mb-section-build-massbit" id="BuildMassBit">
             <div class="container">
-                <div class="mb-section-title text-center mb-50 mb-lg-5" data-aos="fade-up" data-aos-duration="500">
-                    <span>Our Team Experience</span>
+                <div class="mb-font-medium mb-title-mini line text-uppercase mb-5"><span class="line">Start building with MassBit</span></div>
+                <div class="row mb-5">
+                    <h2 class="col-lg-5 mb-title-large mb-50 mb-lg-5" data-aos="fade-up" data-aos-duration="500"><span>Create an account &amp; choose a path</span></h2>
+                    <p class="col-lg-7 mb-font-book">Get the most benefits by creating your MassBit account today. Once you have created your account, simply choose your path and you’re ready to become part of the MassBit network.</p>
                 </div>
-                <div class="mb-section-body" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-                    <div class="owl-carousel mb-team-experience-slide">
-                        <div class="mb-team-experience-slide-item"><img src="images/team-experience/google.svg" /></div>
-                        <div class="mb-team-experience-slide-item"><img src="images/team-experience/facebook.svg" />
+                <div class="row justify-content-between">
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-4">
+                        <div class="box">
+                            <p class="icon"><img src="images/index/build_icon1.svg" alt="Build"></p>
+                            <h4 class="mb-font-bold">Build</h4>
+                            <p class="mb-box-body">Web3 builders can join MassBit and get access to free dAPI to provide the infrastructure for your next app. </p>
+                            <p><a href="#" class="btn btn-link-white btn-right-icon"><span>I’m a Web3 Builder</span></a></p>
                         </div>
-                        <div class="mb-team-experience-slide-item"><img src="images/team-experience/amazon.svg" /></div>
-                        <div class="mb-team-experience-slide-item"><img src="images/team-experience/harmony.svg" />
-                        </div>
-                        <div class="mb-team-experience-slide-item"><img src="images/team-experience/s.svg" /></div>
-                        <div class="mb-team-experience-slide-item"><img src="images/team-experience/mit.svg" /></div>
-                        <div class="mb-team-experience-slide-item"><img src="images/team-experience/jpm.svg" /></div>
                     </div>
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-4">
+                        <div class="box">
+                            <p class="icon"><img src="images/index/build_icon2.svg" alt="Monetize"></p>
+                            <h4 class="mb-font-bold">Monetize</h4>
+                            <p class="mb-box-body">Node providers can join the MassBit Route network to run nodes and staking with rewards. </p>
+                            <p><a href="#" class="btn btn-link-white btn-right-icon"><span>I’m a Node Provider</span></a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="box">
+                            <p class="icon"><img src="images/index/build_icon3.svg" alt="Partnership"></p>
+                            <h4 class="mb-font-bold">Partnership</h4>
+                            <p class="mb-box-body">Partner with MassBit! We’re always looking for mutually beneficial partnerships. </p>
+                            <p><a href="#" class="btn btn-link-white btn-right-icon"><span>Connect with us</span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="mb-section mb-section-our-team-experience" id="OurTeamExperience">
+            <div class="container">
+                <div class="mb-font-medium mb-title-mini text-uppercase mb-5">OUR BACKGROUND</div>
+                <div class="mb-section-body" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                    <div class="owl-carousel mb-team-experience-slide owl-loaded owl-drag">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-592px, 0px, 0px); transition: all 0.25s ease 0s; width: 2303px; padding-left: 40px; padding-right: 40px;"><div class="owl-item cloned" style="width: 138.2px; margin-right: 10px;"><div class="mb-team-experience-slide-item"><img src="images/team-experience/harmony.svg">
+                        </div></div><div class="owl-item cloned" style="width: 138.2px; margin-right: 10px;"><div class="mb-team-experience-slide-item"><img src="images/team-experience/s.svg"></div></div><div class="owl-item cloned" style="width: 138.2px; margin-right: 10px;"><div class="mb-team-experience-slide-item"><img src="images/team-experience/mit.svg"></div></div><div class="owl-item cloned" style="width: 138.2px; margin-right: 10px;"><div class="mb-team-experience-slide-item"><img src="images/team-experience/jpm.svg"></div></div><div class="owl-item active" style="width: 138.2px; margin-right: 10px;"><div class="mb-team-experience-slide-item"><img src="images/team-experience/google.svg"></div></div><div class="owl-item active" style="width: 138.2px; margin-right: 10px;"><div class="mb-team-experience-slide-item"><img src="images/team-experience/facebook.svg">
+                        </div></div><div class="owl-item" style="width: 138.2px; margin-right: 10px;"><div class="mb-team-experience-slide-item"><img src="images/team-experience/amazon.svg"></div></div><div class="owl-item" style="width: 138.2px; margin-right: 10px;"><div class="mb-team-experience-slide-item"><img src="images/team-experience/harmony.svg">
+                        </div></div><div class="owl-item" style="width: 138.2px; margin-right: 10px;"><div class="mb-team-experience-slide-item"><img src="images/team-experience/s.svg"></div></div><div class="owl-item" style="width: 138.2px; margin-right: 10px;"><div class="mb-team-experience-slide-item"><img src="images/team-experience/mit.svg"></div></div><div class="owl-item" style="width: 138.2px; margin-right: 10px;"><div class="mb-team-experience-slide-item"><img src="images/team-experience/jpm.svg"></div></div><div class="owl-item cloned" style="width: 138.2px; margin-right: 10px;"><div class="mb-team-experience-slide-item"><img src="images/team-experience/google.svg"></div></div><div class="owl-item cloned" style="width: 138.2px; margin-right: 10px;"><div class="mb-team-experience-slide-item"><img src="images/team-experience/facebook.svg">
+                        </div></div><div class="owl-item cloned" style="width: 138.2px; margin-right: 10px;"><div class="mb-team-experience-slide-item"><img src="images/team-experience/amazon.svg"></div></div><div class="owl-item cloned" style="width: 138.2px; margin-right: 10px;"><div class="mb-team-experience-slide-item"><img src="images/team-experience/harmony.svg">
+                        </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
                 </div>
             </div>
         </section>
         <!-- End Our Team Experience -->
 
-        <section class="mb-section mb-section-our-partners pb-5" id="OurPartners">
-            <div class="container mb-5 pb-lg-5">
-                <div class="mb-section-title text-center mb-lg-5" data-aos="fade-up" data-aos-duration="500">
-                    <span>Our Partners</span>
-                </div>
-                <div class="mb-section-body">
-                    <div class="owl-carousel mb-partners-slide" data-aos="fade-up" data-aos-duration="500"
-                        data-aos-delay="400">
-                        <div class="mb-partners-slide-item"><img src="images/partners/polygon.svg" /></div>
-                        <div class="mb-partners-slide-item"><img src="images/partners/harmony.svg" /></div>
-                        <div class="mb-partners-slide-item"><img src="images/partners/solana.svg" /></div>
-                        <div class="mb-partners-slide-item"><img src="images/partners/math.svg" /></div>
-                        <div class="mb-partners-slide-item"><img src="images/partners/coin98.svg" /></div>
-                        <div class="mb-partners-slide-item"><img src="images/partners/supra.svg" /></div>
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
-
-        <section class="mb-section pb-5" id="WeBackedBy">
-            <div class="container pt-lg-3">
-                <div class="mb-section-title text-center" data-aos="fade-up" data-aos-duration="500">
-                    <span>We're Backed By</span>
-                </div>
-                <div class="mb-section-body" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-                    <div class="mb-30 text-center">Coming soon</div>
-                </div>
-            </div>
-        </section>
-        <!-- End Our Partners -->
-
-        <section class="mb-section mb-section-start-with-massbit" id="BuildingWithMassBit">
-            <div class="mb-decor">
-                <div class="decor-1"></div>
-                <div class="decor-2"></div>
-                <div class="decor-3"></div>
-                <div class="decor-4"></div>
-            </div>
-            <div class="mb-section-start-with-massbit-container container">
-                <div class="row gx-xl-5">
-                    <div class="col-lg-4 pe-xl-5 pb-4 pb-lg-0">
-                        <div class="mb-section-title" data-aos="fade-up" data-aos-duration="500">
-                            <span>Create an account & choose a path</span>
+        <section class="mb-section-blog">
+            <div class="container">
+                <div class="mb-font-medium mb-title-mini line text-uppercase mb-3"><span>Blog</span></div>
+                <div class="mb-5 mb-title-large">Catch the latest news</div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-4">
+                        <div class="box">
+                            <p class="photo"><img src="images/index/blog_img1.jpg" alt="Event"></p>
+                            <div class="frame">
+                                <dl>
+                                    <dt class="mb-font-medium">Event</dt>
+                                    <dd class="mb-font-bold">A practical guide to NFT membership for creators</dd>
+                                </dl>
+                                <p class="mb-blog-content">Dolor nihil nihil sint aut neque tenetur molestias quaerat.</p>
+                                <p class="date">Aug 19, 2022 • 12 min read</p>
+                            </div>
                         </div>
-                        <div class="mb-section-body mb-30">
-                            Get the most benefits by creating your MassBit account today. Once you have created your
-                            account, simply choose your path and you’re ready to become part of the MassBit network.
-                        </div>
-                        <a href="https://dapi.massbitroute.net/login" class="btn btn-fw btn-primary btn-right-icon">
-                            <span>Create An Account</span>
-                        </a>
                     </div>
-                    <div class="col-lg-8">
-                        <div class="mb-section-body">
-                            <div class="row gx-xl-5 mb-36 mb-mb-10px owl-theme" id="slideMobile">
-                                <div class="col-md-4">
-                                    <div class="mb-build-item-card" data-aos="fade-up" data-aos-duration="500"
-                                        data-aos-delay="400">
-                                        <div class="mb-build-item-card-header">
-                                            <div class="mb-build-item-card-icon">
-                                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M21 6H9C7.34315 6 6 7.34315 6 9V31C6 32.6569 7.34315 34 9 34H39C40.6569 34 42 32.6569 42 31V21"
-                                                        stroke="#FBAF1D" stroke-width="2" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path d="M24 34V42" stroke="#FBAF1D" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M32 6L28 10L32 14" stroke="#FBAF1D" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M38 6L42 10L38 14" stroke="#FBAF1D" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M14 42H34" stroke="#FBAF1D" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                            </div>
-                                            <div class="mb-build-item-card-title">Build</div>
-                                            <div class="mb-build-item-card-body">
-                                                Web3 builders can join MassBit and get access to free dAPI to provide
-                                                the infrastructure for your next app. See why MassBit is the future of
-                                                Web3 infrastructure.
-                                            </div>
-                                        </div>
-                                        <div class="mb-build-item-card-action" data-aos="fade-up"
-                                            data-aos-duration="500">
-                                            <a href="https://dapi.massbitroute.net/login" class="btn">
-                                                <span>I’m a Web3 Builder</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="mb-build-item-card" data-aos="fade-up" data-aos-duration="500"
-                                        data-aos-delay="400">
-                                        <div class="mb-build-item-card-header">
-                                            <div class="mb-build-item-card-icon">
-                                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M8.7965 6.04175L4.75488 11.3083H7.11572V17.9258H8.41974V10.0043H7.39945L8.7965 8.18372L10.1937 10.0043H9.15608V17.9258H10.4601V11.3083H12.8381L8.7965 6.04175Z"
-                                                        fill="#00B159" />
-                                                    <path d="M8.42024 25.9131H7.11621V27.5696H8.42024V25.9131Z"
-                                                        fill="#00B159" />
-                                                    <path d="M8.42024 19.3396H7.11621V20.9963H8.42024V19.3396Z"
-                                                        fill="#00B159" />
-                                                    <path d="M8.42024 22.626H7.11621V24.2827H8.42024V22.626Z"
-                                                        fill="#00B159" />
-                                                    <path d="M10.4608 22.626H9.15674V24.2827H10.4608V22.626Z"
-                                                        fill="#00B159" />
-                                                    <path d="M10.4608 19.3396H9.15674V20.9963H10.4608V19.3396Z"
-                                                        fill="#00B159" />
-                                                    <path
-                                                        d="M45.4178 11.3083H47.7787L43.737 6.04175L39.6953 11.3083H42.0734V17.9258H43.3775V10.0043H42.3399L43.737 8.18372L45.1341 10.0043H44.1138V17.9258H45.4178V11.3083Z"
-                                                        fill="#00B159" />
-                                                    <path d="M45.4173 19.3394H44.1133V20.996H45.4173V19.3394Z"
-                                                        fill="#00B159" />
-                                                    <path d="M45.4173 22.626H44.1133V24.2827H45.4173V22.626Z"
-                                                        fill="#00B159" />
-                                                    <path d="M45.4173 25.9128H44.1133V27.5694H45.4173V25.9128Z"
-                                                        fill="#00B159" />
-                                                    <path d="M43.3763 22.626H42.0723V24.2827H43.3763V22.626Z"
-                                                        fill="#00B159" />
-                                                    <path d="M43.3763 19.3394H42.0723V20.996H43.3763V19.3394Z"
-                                                        fill="#00B159" />
-                                                    <path
-                                                        d="M33.7983 12.4129V11.5788C33.7983 10.55 33.5958 9.55222 33.1962 8.61267C33.141 8.48325 33.0786 8.34861 33.0119 8.21505C32.6465 7.47654 32.1645 6.8054 31.5791 6.22022C30.1474 4.7885 28.2442 4 26.2204 4C23.321 4 20.7188 5.61482 19.4302 8.21277C19.3626 8.34795 19.3002 8.48249 19.2446 8.61311C18.8451 9.55255 18.6426 10.5502 18.6426 11.5789V12.413H19.9466V11.5789C19.9466 10.7266 20.1142 9.90051 20.4444 9.12385C20.4896 9.0179 20.5408 8.9076 20.5975 8.79393C21.6653 6.64131 23.8199 5.30414 26.2204 5.30414C27.896 5.30414 29.4715 5.95691 30.657 7.14238C31.1417 7.62704 31.5407 8.18245 31.8441 8.79578C31.9004 8.90814 31.9515 9.01855 31.9961 9.12352C32.3266 9.9004 32.4942 10.7266 32.4942 11.579V12.4132H33.7983V12.4129Z"
-                                                        fill="#00B159" />
-                                                    <path
-                                                        d="M48.3953 30.8089H39.5269V28.196C39.5269 27.4064 39.4556 26.6123 39.3148 25.8359C38.9658 23.9068 37.4346 22.3896 35.503 22.0571L29.8289 20.8875V20.1223C30.9676 19.2628 31.7918 18.0076 32.0948 16.5628C33.1178 16.504 33.9327 15.656 33.9327 14.6189C33.9327 13.581 33.1162 12.7324 32.092 12.675C31.9398 12.2584 31.6604 11.8993 31.2827 11.6549H31.2826C30.653 11.2476 30.126 9.9127 29.9277 9.41022C29.7739 9.02064 29.4366 8.73647 29.0254 8.64997C28.6145 8.56358 28.1906 8.68789 27.8927 8.98282C25.747 11.1083 22.7339 11.6052 21.538 11.7203C20.9586 11.776 20.4902 12.1593 20.3047 12.6771C19.3012 12.7561 18.5082 13.5958 18.5082 14.6188C18.5082 15.6559 19.3231 16.5039 20.3461 16.5627C20.6552 18.0361 21.5063 19.3117 22.6802 20.1722V20.8899L16.9807 22.0568C15.0499 22.389 13.5187 23.9061 13.1683 25.836L13.1608 25.8774C13.0212 26.6511 12.9503 27.442 12.9503 28.2283V30.8088H3.60479V40.6068H1V47.1202H7.5134V40.6068H4.90882V32.1128H12.9504V40.3394H39.5269V32.1128H47.0913V40.6068H44.4866V47.1202H51V40.6068H48.3952V30.8089H48.3953ZM32.6285 14.619C32.6285 14.8901 32.4602 15.1222 32.2228 15.2177V14.0204C32.4602 14.116 32.6285 14.348 32.6285 14.619ZM6.20948 41.9109V45.8163H2.30403V41.9109H3.60469V43.8636H4.90871V41.9109H6.20948ZM26.2208 35.7239L25.357 34.6341V32.1006L27.1527 33.491V34.5693L26.2208 35.7239ZM22.0861 22.3426L22.6802 22.221V26.63L24.0529 25.642V32.9887L22.0861 30.5073V22.3426ZM25.357 28.1196L27.1527 29.51V31.8418L25.357 30.4515V28.1196ZM27.1527 27.8608L25.357 26.4705V24.7033L26.2546 24.0574L27.1528 24.704V27.8608H27.1527ZM27.4248 23.2931L28.5248 22.6031V24.0848L27.4248 23.2931ZM23.9842 24.0848V22.6134L25.0605 23.3102L23.9842 24.0848ZM28.4567 25.6425L29.8288 26.63V22.2189L30.4336 22.3436V30.5042L28.4567 32.9535V25.6425ZM19.8122 14.619C19.8122 14.348 19.9804 14.1159 20.218 14.0204V15.2177C19.9804 15.1222 19.8122 14.8901 19.8122 14.619ZM21.522 15.3292V13.1719C21.522 13.0921 21.5826 13.0262 21.6628 13.0185C23.3062 12.8603 26.3987 12.2538 28.7471 9.97138C29.1771 11.0494 29.7314 12.2047 30.574 12.7498H30.5739C30.7866 12.8874 30.9186 13.143 30.9186 13.4171V15.3292C30.9186 17.9199 28.8109 20.0275 26.2203 20.0275C23.6298 20.0275 21.522 17.9199 21.522 15.3292ZM26.2203 21.3315C27.0365 21.3315 27.8148 21.1671 28.5248 20.8709V21.0637L26.2217 22.5085L23.9842 21.06V20.8978C24.6758 21.1766 25.4302 21.3315 26.2203 21.3315ZM14.2545 28.2284C14.2545 27.5197 14.3182 26.8067 14.4442 26.1093L14.4515 26.0684C14.7048 24.6736 15.8133 23.5774 17.21 23.3407L20.7822 22.6095V30.9614L25.5643 36.9945V39.0353H14.2545V28.2284ZM38.2229 39.0354H26.8682V36.998L31.7378 30.9647V22.6124L35.2505 23.3365L35.2731 23.3407C36.6707 23.5776 37.7793 24.6736 38.0317 26.0683C38.1586 26.7683 38.2229 27.4843 38.2229 28.196V39.0354ZM49.6961 41.9109V45.8163H45.7907V41.9109H47.0914V43.8636H48.3954V41.9109H49.6961Z"
-                                                        fill="#00B159" />
-                                                </svg>
-                                            </div>
-                                            <div class="mb-build-item-card-title">Monetize</div>
-                                            <div class="mb-build-item-card-body">
-                                                Node providers can join the MassBit Route network to run nodes and
-                                                staking with rewards. Become a contributor in an industry leading
-                                                blockchain infrastructure project and get rewarded for doing so!
-                                            </div>
-                                        </div>
-                                        <div class="mb-build-item-card-action" data-aos="fade-up"
-                                            data-aos-duration="500">
-                                            <a href="https://dapi.massbitroute.net/login" class="btn">
-                                                <span>I’m a Node Provider</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="mb-build-item-card" data-aos="fade-up" data-aos-duration="500"
-                                        data-aos-delay="400">
-                                        <div class="mb-build-item-card-header">
-                                            <div class="mb-build-item-card-icon">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M7.94524 29.6874C7.82085 29.6875 7.69823 29.658 7.58743 29.6015L1.63274 26.5343C1.44915 26.4398 1.31043 26.2765 1.24689 26.08C1.18336 25.8836 1.20018 25.67 1.29368 25.4859L8.28899 11.6687C8.33543 11.5769 8.39952 11.4952 8.47759 11.4283C8.55567 11.3614 8.64618 11.3106 8.74395 11.2787C8.84172 11.2468 8.94482 11.2346 9.04733 11.2426C9.14984 11.2507 9.24975 11.2789 9.34133 11.3257L15.0062 14.2163C15.1881 14.3089 15.3265 14.4689 15.3919 14.6622C15.4573 14.8555 15.4445 15.0667 15.3562 15.2507L8.64993 29.2413C8.6046 29.3354 8.54098 29.4195 8.46277 29.4887C8.38457 29.558 8.29335 29.6109 8.19446 29.6445C8.11418 29.6718 8.03006 29.6863 7.94524 29.6874ZM3.03821 25.4999L7.58821 27.8437L13.6179 15.2655L9.32883 13.078L3.03821 25.4999Z"
-                                                        fill="#2C3ACF" />
-                                                    <path
-                                                        d="M16.0388 18.8156C15.9044 18.8155 15.7723 18.7808 15.6552 18.7148L13.3849 17.4359C13.2955 17.3856 13.2169 17.3181 13.1535 17.2374C13.0902 17.1567 13.0433 17.0643 13.0157 16.9655C12.9881 16.8667 12.9802 16.7634 12.9924 16.6615C13.0047 16.5597 13.0369 16.4612 13.0872 16.3718C13.1376 16.2824 13.205 16.2038 13.2857 16.1404C13.3664 16.0771 13.4588 16.0303 13.5576 16.0026C13.6564 15.975 13.7597 15.9671 13.8616 15.9793C13.9635 15.9916 14.0619 16.0238 14.1513 16.0742L16.0263 17.1296C16.7583 16.6859 18.3427 15.7304 19.3568 15.1578C21.0122 14.2203 22.1779 14.3492 23.5162 15.6171C23.6627 15.7605 23.747 15.9557 23.7509 16.1606C23.7548 16.3656 23.678 16.5639 23.537 16.7127C23.3961 16.8615 23.2023 16.949 22.9974 16.9563C22.7926 16.9635 22.5931 16.89 22.4419 16.7515C21.6107 15.964 21.1779 15.9234 20.1255 16.5171C18.8224 17.2538 16.4716 18.6867 16.4474 18.7046C16.324 18.7785 16.1826 18.8169 16.0388 18.8156Z"
-                                                        fill="#2C3ACF" />
-                                                    <path
-                                                        d="M36.5913 32.4087C36.022 32.4233 35.4604 32.275 34.9725 31.9813C34.2538 31.5016 31.0913 28.4001 30.4647 27.7837C30.3266 27.6366 30.2507 27.4419 30.2529 27.2401C30.2551 27.0384 30.3353 26.8454 30.4766 26.7014C30.618 26.5575 30.8095 26.4737 31.0111 26.4678C31.2128 26.4619 31.4089 26.5342 31.5585 26.6696C32.9647 28.0579 35.3772 30.3743 35.8374 30.6813C36.134 30.8183 36.462 30.873 36.787 30.8394C37.112 30.8059 37.4219 30.6854 37.6842 30.4907C37.8071 30.3842 37.9051 30.2519 37.9712 30.1034C38.0374 29.9549 38.0701 29.7936 38.0671 29.631C38.0642 29.4685 38.0255 29.3085 37.954 29.1625C37.8824 29.0165 37.7797 28.888 37.653 28.786C36.8546 27.8876 33.5374 24.6962 32.8092 23.9962C30.2686 23.0649 27.8048 21.9359 25.4405 20.6196L24.6186 21.1571C24.4341 22.0137 23.9418 22.7728 23.235 23.2907C22.9869 23.4861 22.699 23.6246 22.3914 23.6965C22.0839 23.7683 21.7643 23.7716 21.4553 23.7063C21.0804 23.6596 20.7194 23.5351 20.3953 23.3409C20.0712 23.1466 19.7912 22.8868 19.5733 22.5782C19.1579 21.6905 19.1112 20.6744 19.4436 19.7524C20.11 17.0852 21.1913 16.3985 22.6874 15.4485L23.0163 15.2383C24.6647 14.1797 26.0796 13.6157 27.6327 14.3149C28.5983 14.7501 32.0257 16.0774 32.9991 16.454L36.2616 15.3844C36.457 15.325 36.668 15.3445 36.8492 15.4387C37.0305 15.5329 37.1676 15.6944 37.2313 15.8885C37.2949 16.0826 37.28 16.2939 37.1897 16.4771C37.0994 16.6604 36.941 16.801 36.7483 16.8688L33.221 18.0251C33.0502 18.0808 32.8655 18.0764 32.6975 18.0126C32.5124 17.9407 28.1546 16.2641 26.9944 15.7407C26.2983 15.4282 25.5632 15.4602 23.8632 16.5524L23.5272 16.7672C22.1624 17.6337 21.4772 18.0696 20.9616 20.1313C20.6975 21.1876 20.8194 21.6157 20.9155 21.7719C21.0389 21.9782 21.3249 22.0618 21.7803 22.1758C21.8781 22.1923 21.9783 22.1868 22.0737 22.1598C22.1691 22.1328 22.2573 22.0849 22.3319 22.0196C22.5523 21.8536 22.7363 21.6442 22.8727 21.4044C23.0091 21.1645 23.0949 20.8993 23.1249 20.6251C23.1351 20.5073 23.1719 20.3933 23.2325 20.2919C23.2931 20.1904 23.376 20.1039 23.4749 20.0391L24.9788 19.0555C25.0973 18.9784 25.2345 18.935 25.3758 18.9297C25.5171 18.9245 25.6572 18.9577 25.7811 19.0258C25.8342 19.0547 31.1014 21.9352 33.4085 22.5415C33.5367 22.5757 33.6544 22.6415 33.7507 22.7329C33.9194 22.8946 37.8913 26.6977 38.8241 27.7501C39.0826 28.0003 39.2875 28.3003 39.4265 28.6321C39.5656 28.9639 39.6357 29.3205 39.6328 29.6802C39.6299 30.0399 39.5539 30.3953 39.4095 30.7248C39.2652 31.0543 39.0553 31.351 38.7928 31.5969C38.1917 32.1423 37.4025 32.4333 36.5913 32.4087Z"
-                                                        fill="#2C3ACF" />
-                                                    <path
-                                                        d="M38.2397 29.0483C38.0607 29.0482 37.8871 28.9866 37.7481 28.8738C37.6091 28.7611 37.513 28.604 37.4759 28.4288C37.4388 28.2537 37.4631 28.0711 37.5445 27.9117C37.6259 27.7523 37.7596 27.6257 37.9233 27.553L40.6639 26.339C40.7581 26.2945 40.8602 26.2693 40.9643 26.2649C41.0684 26.2604 41.1723 26.2769 41.27 26.3132C41.3676 26.3496 41.457 26.405 41.5329 26.4764C41.6087 26.5478 41.6696 26.6337 41.7118 26.7289C41.754 26.8242 41.7767 26.9269 41.7786 27.031C41.7805 27.1352 41.7616 27.2387 41.7229 27.3354C41.6842 27.4322 41.6266 27.5202 41.5534 27.5943C41.4802 27.6684 41.3929 27.7272 41.2967 27.7671L38.5553 28.9843C38.4557 29.0273 38.3482 29.0491 38.2397 29.0483Z"
-                                                        fill="#2C3ACF" />
-                                                    <path
-                                                        d="M41.8232 29.6874C41.6675 29.6874 41.5154 29.6408 41.3863 29.5536C41.2573 29.4665 41.1572 29.3428 41.099 29.1984L35.2021 14.5687C35.1627 14.4711 35.1434 14.3666 35.1454 14.2614C35.1474 14.1562 35.1706 14.0525 35.2136 13.9565C35.2567 13.8604 35.3187 13.7741 35.3959 13.7026C35.4731 13.6312 35.564 13.576 35.6631 13.5406L41.9646 11.2859C42.1553 11.2177 42.3649 11.2262 42.5494 11.3095C42.7339 11.3929 42.8789 11.5446 42.9537 11.7328L48.7349 26.2437C48.7728 26.3396 48.7912 26.4421 48.7892 26.5452C48.7873 26.6483 48.7649 26.75 48.7234 26.8444C48.682 26.9388 48.6222 27.0241 48.5476 27.0953C48.473 27.1665 48.3851 27.2223 48.2888 27.2593L42.1029 29.6328C42.0138 29.668 41.919 29.6865 41.8232 29.6874ZM36.9529 14.7374L42.2584 27.8992L46.9881 26.0867L41.781 13.0109L36.9529 14.7374ZM33.0717 34.7781C32.4276 34.7974 31.7987 34.581 31.3029 34.1695C30.2568 33.2398 27.5677 30.5523 27.4537 30.4382C27.3114 30.2909 27.2326 30.0935 27.2344 29.8887C27.2362 29.6838 27.3183 29.4879 27.4632 29.3431C27.6081 29.1982 27.804 29.116 28.0088 29.1143C28.2137 29.1125 28.411 29.1912 28.5584 29.3335C28.5857 29.3609 31.3295 32.1031 32.3404 33.0054C32.5499 33.1331 32.7872 33.2083 33.032 33.2246C33.2769 33.2409 33.522 33.1979 33.7467 33.0992C34.1135 32.974 34.4389 32.7505 34.6875 32.4531C34.936 32.1557 35.0981 31.7957 35.156 31.4124C35.1735 31.3113 35.2107 31.2147 35.2655 31.1279C35.3203 31.0412 35.3916 30.9661 35.4754 30.9069C35.5593 30.8478 35.6539 30.8057 35.754 30.7831C35.8541 30.7605 35.9577 30.7579 36.0588 30.7753C36.1599 30.7928 36.2566 30.83 36.3433 30.8848C36.43 30.9396 36.5051 31.0109 36.5643 31.0947C36.6234 31.1786 36.6655 31.2732 36.6881 31.3733C36.7107 31.4734 36.7133 31.577 36.6959 31.6781C36.5897 32.3344 36.3077 32.9497 35.8799 33.4586C35.4521 33.9676 34.8945 34.3512 34.2662 34.5687C33.8825 34.7049 33.4787 34.7756 33.0717 34.7781Z"
-                                                        fill="#2C3ACF" />
-                                                    <path
-                                                        d="M29.4359 36.6717C28.7933 36.6991 28.1652 36.4749 27.6852 36.0467L24.9102 33.2717L26.0156 32.1663L28.7906 34.9413C28.9623 35.0377 29.1524 35.097 29.3485 35.1153C29.5446 35.1336 29.7423 35.1105 29.9289 35.0475C30.2873 34.9595 30.6154 34.7769 30.879 34.5186C31.1426 34.2604 31.332 33.936 31.4273 33.5795C31.4562 33.4801 31.5046 33.3874 31.5697 33.3068C31.6347 33.2262 31.7151 33.1594 31.8062 33.1101C31.8973 33.0609 31.9973 33.0303 32.1004 33.0201C32.2034 33.0098 32.3075 33.0202 32.4065 33.0505C32.5055 33.0809 32.5975 33.1306 32.6771 33.1968C32.7568 33.2631 32.8224 33.3444 32.8703 33.4363C32.9182 33.5281 32.9473 33.6285 32.9561 33.7317C32.9648 33.8349 32.9529 33.9388 32.9211 34.0374C32.7038 34.7945 32.2466 35.4606 31.6182 35.9356C30.9899 36.4107 30.2244 36.669 29.4367 36.6717H29.4359Z"
-                                                        fill="#2C3ACF" />
-                                                    <path
-                                                        d="M26.4576 38.7585C25.8189 38.7721 25.1943 38.5697 24.6849 38.1843C23.5341 37.2632 22.5654 36.5069 22.5638 36.5061C22.4813 36.4436 22.412 36.3653 22.36 36.2757C22.308 36.1861 22.2743 36.0871 22.261 35.9844C22.2476 35.8817 22.2547 35.7774 22.282 35.6775C22.3093 35.5776 22.3562 35.4841 22.42 35.4025C22.4837 35.3209 22.563 35.2528 22.6534 35.2021C22.7437 35.1514 22.8432 35.1192 22.946 35.1073C23.0489 35.0955 23.1531 35.1042 23.2526 35.1329C23.3521 35.1617 23.4449 35.2099 23.5255 35.2749C23.5255 35.2749 24.5013 36.0366 25.6615 36.9647C25.9087 37.1118 26.1898 37.1923 26.4774 37.1982C26.7649 37.2041 27.0491 37.1352 27.3021 36.9983C27.5283 36.9011 27.7197 36.7375 27.8511 36.5293C27.9825 36.3211 28.0476 36.0779 28.038 35.8319C28.0317 35.6248 28.1079 35.4237 28.2499 35.2728C28.3919 35.1219 28.588 35.0336 28.7951 35.0272C29.0016 35.0236 29.2013 35.1008 29.3516 35.2424C29.502 35.384 29.591 35.5787 29.5998 35.785C29.6182 36.3292 29.4764 36.8668 29.1919 37.3311C28.9075 37.7954 28.4929 38.166 27.9998 38.3968C27.5203 38.6341 26.9926 38.7579 26.4576 38.7585Z"
-                                                        fill="#2C3ACF" />
-                                                    <path
-                                                        d="M20.6028 38.3969C20.3489 38.396 20.0976 38.3455 19.863 38.2484C19.226 37.9359 18.7008 37.4344 18.3591 36.8125C17.8047 36.9201 17.2301 36.8337 16.7317 36.568C16.3137 36.294 15.9544 35.9396 15.6746 35.5254C15.3948 35.1112 15.2002 34.6456 15.1021 34.1555C15.0609 33.9559 15.0993 33.7482 15.2091 33.5766C15.8442 32.5859 16.8021 31.0461 16.945 30.725C17.0737 30.4688 17.2562 30.2435 17.48 30.0644C17.7038 29.8854 17.9637 29.7568 18.2419 29.6875C18.6203 29.5883 19.016 29.5751 19.4002 29.6486C19.7844 29.7221 20.1472 29.8806 20.4622 30.1125C20.8113 30.3436 21.0916 30.6645 21.2737 31.0415C21.4557 31.4185 21.5327 31.8376 21.4966 32.2547C21.8682 32.2707 22.232 32.3662 22.5636 32.5348C22.8951 32.7034 23.1866 32.9412 23.4185 33.232C23.6436 33.5839 23.7874 33.9817 23.8391 34.3962C23.8909 34.8108 23.8494 35.2317 23.7177 35.6281C23.3079 36.7718 22.4666 37.7096 21.3739 38.2406C21.1299 38.3438 20.8677 38.3969 20.6028 38.3969ZM19.6747 35.9586C19.92 36.3734 20.3583 36.9688 20.7685 36.7977C21.4494 36.443 21.9737 35.8472 22.2388 35.1266C22.2909 34.9671 22.3109 34.7989 22.2975 34.6316C22.2841 34.4644 22.2376 34.3015 22.1607 34.1524C22.0418 34.0359 21.9007 33.9447 21.7458 33.884C21.5909 33.8233 21.4254 33.7945 21.2591 33.7992L19.6747 35.9586ZM16.713 34.1227C16.8373 34.5568 17.1067 34.9351 17.4763 35.1945C17.5917 35.2537 17.7179 35.2887 17.8474 35.2971C17.9768 35.3056 18.1065 35.2874 18.2286 35.2438L19.8966 32.3844C19.9629 32.2077 19.9671 32.0137 19.9087 31.8342C19.8502 31.6548 19.7324 31.5006 19.5747 31.3969C19.4547 31.3023 19.3163 31.2339 19.1683 31.1961C19.0203 31.1583 18.866 31.1519 18.7153 31.1774C18.5824 31.1993 18.461 31.2663 18.3716 31.3672C18.1653 31.8242 17.1732 33.3992 16.713 34.1227Z"
-                                                        fill="#2C3ACF" />
-                                                    <path
-                                                        d="M14.6318 35.3429C14.4467 35.3435 14.2625 35.3172 14.0849 35.2648C12.7466 34.8625 12.2224 33.1297 12.167 32.9336C12.1389 32.8341 12.1309 32.73 12.1434 32.6275C12.1559 32.5249 12.1886 32.4258 12.2396 32.3359C12.9037 31.1824 13.6381 30.0709 14.4388 29.0078C14.8408 28.4849 15.4232 28.1305 16.0724 28.0139C16.7216 27.8973 17.391 28.0269 17.9498 28.3773C18.6873 28.889 19.2279 30.0023 18.3232 31.457C18.2691 31.5442 18.1983 31.6199 18.115 31.6798C18.0316 31.7396 17.9372 31.7825 17.8373 31.8059C17.7374 31.8293 17.6338 31.8327 17.5325 31.8161C17.4313 31.7995 17.3342 31.7631 17.247 31.709C17.1598 31.6548 17.0841 31.5841 17.0243 31.5007C16.9644 31.4173 16.9216 31.323 16.8982 31.2231C16.8748 31.1231 16.8713 31.0196 16.8879 30.9183C16.9046 30.817 16.941 30.72 16.9951 30.6328C17.1959 30.3086 17.3701 29.8781 17.0584 29.6617C16.8305 29.5372 16.5656 29.4989 16.3118 29.5537C16.0581 29.6085 15.8325 29.7528 15.6763 29.9601C14.99 30.8721 14.3549 31.8215 13.774 32.8039C13.9451 33.2125 14.2365 33.6804 14.5341 33.7687C14.7974 33.8468 15.1591 33.5765 15.3552 33.4094C15.5121 33.2738 15.7163 33.2062 15.9231 33.2213C16.1298 33.2364 16.3221 33.333 16.4576 33.4898C16.5931 33.6467 16.6607 33.8509 16.6457 34.0577C16.6306 34.2644 16.534 34.4567 16.3771 34.5922C15.9074 35.0484 15.2861 35.3157 14.6318 35.3429Z"
-                                                        fill="#2C3ACF" />
-                                                    <path
-                                                        d="M12.9169 33.4998C12.831 33.4997 12.7458 33.4855 12.6646 33.4577C12.5325 33.4131 9.41846 32.3248 9.41846 29.8858C9.41837 29.8039 9.43103 29.7224 9.45596 29.6444C9.73863 28.8664 10.1258 28.1305 10.6067 27.4569C10.9647 27.0292 11.459 26.7379 12.0066 26.632C12.5541 26.5261 13.1214 26.6122 13.613 26.8756C14.0757 27.0807 14.4447 27.4518 14.6472 27.9156C14.8497 28.3795 14.871 28.9024 14.7067 29.3811C14.1958 31.0264 13.6716 32.9069 13.6661 32.9264C13.6202 33.0907 13.5219 33.2354 13.386 33.3385C13.2502 33.4416 13.0843 33.4975 12.9138 33.4975L12.9169 33.4998ZM10.9872 30.0069C11.0653 30.7381 11.8138 31.2944 12.4138 31.628C12.6177 30.9155 12.92 29.8788 13.2169 28.9202C13.2441 28.8593 13.2581 28.7933 13.2578 28.7265C13.2575 28.6598 13.2429 28.5939 13.2151 28.5333C13.1873 28.4727 13.1469 28.4187 13.0965 28.3749C13.0462 28.3311 12.9871 28.2986 12.9231 28.2795C12.7617 28.1885 12.577 28.1473 12.3922 28.1612C12.2074 28.1751 12.0308 28.2435 11.8849 28.3577C11.5227 28.8707 11.2214 29.4242 10.9872 30.0069Z"
-                                                        fill="#2C3ACF" />
-                                                    <path
-                                                        d="M10.8412 29.3195C10.6839 29.3193 10.5303 29.2717 10.4006 29.1828L8.35134 27.7765C8.1803 27.6595 8.06276 27.4792 8.0246 27.2755C7.98643 27.0718 8.03076 26.8613 8.14783 26.6902C8.26489 26.5192 8.44511 26.4016 8.64884 26.3635C8.85257 26.3253 9.06311 26.3696 9.23415 26.4867L11.2834 27.8929C11.4214 27.9871 11.5256 28.1231 11.5806 28.2809C11.6357 28.4387 11.6387 28.6099 11.5892 28.7696C11.5398 28.9292 11.4404 29.0687 11.3058 29.1677C11.1711 29.2667 11.0083 29.3199 10.8412 29.3195Z"
-                                                        fill="#2C3ACF" />
-                                                </svg>
-
-                                            </div>
-                                            <div class="mb-build-item-card-title">Partnership</div>
-                                            <div class="mb-build-item-card-body">
-                                                Partner with MassBit! We’re always looking for mutually beneficial
-                                                partnerships. Get access to MassBit’s amazing community, providing key
-                                                networking opportunities for your next big project.
-                                            </div>
-                                        </div>
-                                        <div class="mb-build-item-card-action" data-aos="fade-up"
-                                            data-aos-duration="500">
-                                            <a href="https://discord.com/invite/5ePzAEFNHZ" class="btn">
-                                                <span>Connect with us</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-4">
+                        <div class="box">
+                            <p class="photo"><img src="images/index/blog_img2.jpg" alt="Press Release"></p>
+                            <div class="frame">
+                                <dl>
+                                    <dt class="mb-font-medium">Press Release</dt>
+                                    <dd class="mb-font-bold">A practical guide to NFT membership for creators</dd>
+                                </dl>
+                                <p class="mb-blog-content">Dolor nihil nihil sint aut neque tenetur molestias quaerat.</p>
+                                <p class="date">Aug 19, 2022 • 12 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="box">
+                            <p class="photo"><img src="images/index/blog_img3.jpg" alt="MassBit Route"></p>
+                            <div class="frame">
+                                <dl>
+                                    <dt class="mb-font-medium">MassBit Route</dt>
+                                    <dd class="mb-font-bold">A practical guide to NFT membership for creators</dd>
+                                </dl>
+                                <p class="mb-blog-content">Dolor nihil nihil sint aut neque tenetur molestias quaerat.</p>
+                                <p class="date">Aug 19, 2022 • 12 min read</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End Start Building with MassBit -->
+        <section class="mb-section mb-section-api-product" id="ProductDevelopment">
+            <div class="container">
+                <div class="mb-font-medium mb-title-mini line text-uppercase mb-3"><span>Product Development</span></div>
+                <div class="mb-5 mb-title-large">What we have achived so far</div>
+                <div class="mb-section-body">
+                    <div class="mb-api-roadmap">
+                        <div class="mb-api-roadmap-item">
+                            <div class="mb-api-roadmap-subtitle">PHASE I</div>
+                            <div class="mb-api-roadmap-title">Foundation</div>
+                            <div class="mb-api-roadmap-content">
+                                <ul>
+                                    <li>
+                                        <div class="mb-api-roadmap-image">
+                                            <img src="images/binance-coin-bnb-logo-CD94CC6D31-seeklogo 1.png" alt="">
+                                            <img style="margin-left: 30px;" src="images/Vector.png" alt="">
+                                        </div>
+                                        <div class="mb-api-roadmap-text">Won BSC, Solana Hackathon. MassBit Route in
+                                            Devnet</div>
+                                    </li>
+                                    <li>
+                                        <div class="mb-api-roadmap-image">
+                                            <img src="images/chain.png" alt="">
+                                        </div>
+                                        <div class="mb-api-roadmap-text">Apply Polygon Grant</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mb-api-roadmap-item">
+                            <div class="mb-api-roadmap-subtitle">PHASE II</div>
+                            <div class="mb-api-roadmap-title">Development</div>
+                            <div class="mb-api-roadmap-content">
+                                <ul>
+                                    <li>
+                                        <div class="mb-api-roadmap-image">
+                                            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.875 23C2.875 28.3375 4.99531 33.4564 8.76948 37.2305C12.5436 41.0047 17.6625 43.125 23 43.125C28.3375 43.125 33.4564 41.0047 37.2305 37.2305C41.0047 33.4564 43.125 28.3375 43.125 23C43.125 17.6625 41.0047 12.5436 37.2305 8.76948C33.4564 4.99531 28.3375 2.875 23 2.875C17.6625 2.875 12.5436 4.99531 8.76948 8.76948C4.99531 12.5436 2.875 17.6625 2.875 23ZM46 23C46 29.1 43.5768 34.9501 39.2635 39.2635C34.9501 43.5768 29.1 46 23 46C16.9 46 11.0499 43.5768 6.73654 39.2635C2.42321 34.9501 0 29.1 0 23C0 16.9 2.42321 11.0499 6.73654 6.73654C11.0499 2.42321 16.9 0 23 0C29.1 0 34.9501 2.42321 39.2635 6.73654C43.5768 11.0499 46 16.9 46 23ZM24.4375 33.0625C24.4375 33.4437 24.2861 33.8094 24.0165 34.079C23.7469 34.3485 23.3812 34.5 23 34.5C22.6188 34.5 22.2531 34.3485 21.9835 34.079C21.714 33.8094 21.5625 33.4437 21.5625 33.0625V16.4076L15.3927 22.5802C15.1228 22.8502 14.7567 23.0018 14.375 23.0018C13.9933 23.0018 13.6272 22.8502 13.3573 22.5802C13.0873 22.3103 12.9357 21.9442 12.9357 21.5625C12.9357 21.1808 13.0873 20.8147 13.3573 20.5448L21.9823 11.9198C22.1158 11.7859 22.2744 11.6797 22.4491 11.6072C22.6237 11.5347 22.8109 11.4974 23 11.4974C23.1891 11.4974 23.3763 11.5347 23.5509 11.6072C23.7256 11.6797 23.8842 11.7859 24.0177 11.9198L32.6427 20.5448C32.9127 20.8147 33.0643 21.1808 33.0643 21.5625C33.0643 21.9442 32.9127 22.3103 32.6427 22.5802C32.3728 22.8502 32.0067 23.0018 31.625 23.0018C31.2433 23.0018 30.8772 22.8502 30.6073 22.5802L24.4375 16.4076V33.0625Z" fill="black"></path>
+                                            </svg>
+                                            <span>2,000 <small>Users</small></span>
+                                        </div>
+                                        <div class="mb-api-roadmap-text">Launch MassBit Route Testnet</div>
+                                    </li>
+                                    <li>
+                                        <div class="mb-api-roadmap-image">
+                                            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.875 23C2.875 28.3375 4.99531 33.4564 8.76948 37.2305C12.5436 41.0047 17.6625 43.125 23 43.125C28.3375 43.125 33.4564 41.0047 37.2305 37.2305C41.0047 33.4564 43.125 28.3375 43.125 23C43.125 17.6625 41.0047 12.5436 37.2305 8.76948C33.4564 4.99531 28.3375 2.875 23 2.875C17.6625 2.875 12.5436 4.99531 8.76948 8.76948C4.99531 12.5436 2.875 17.6625 2.875 23ZM46 23C46 29.1 43.5768 34.9501 39.2635 39.2635C34.9501 43.5768 29.1 46 23 46C16.9 46 11.0499 43.5768 6.73654 39.2635C2.42321 34.9501 0 29.1 0 23C0 16.9 2.42321 11.0499 6.73654 6.73654C11.0499 2.42321 16.9 0 23 0C29.1 0 34.9501 2.42321 39.2635 6.73654C43.5768 11.0499 46 16.9 46 23ZM24.4375 33.0625C24.4375 33.4437 24.2861 33.8094 24.0165 34.079C23.7469 34.3486 23.3812 34.5 23 34.5C22.6188 34.5 22.2531 34.3486 21.9835 34.079C21.714 33.8094 21.5625 33.4437 21.5625 33.0625V16.4076L15.3927 22.5802C15.1228 22.8502 14.7567 23.0018 14.375 23.0018C13.9933 23.0018 13.6272 22.8502 13.3573 22.5802C13.0873 22.3103 12.9357 21.9442 12.9357 21.5625C12.9357 21.1808 13.0873 20.8147 13.3573 20.5448L21.9823 11.9198C22.1158 11.7859 22.2744 11.6797 22.4491 11.6072C22.6237 11.5347 22.8109 11.4974 23 11.4974C23.1891 11.4974 23.3763 11.5347 23.5509 11.6072C23.7256 11.6797 23.8842 11.7859 24.0177 11.9198L32.6427 20.5448C32.9127 20.8147 33.0643 21.1808 33.0643 21.5625C33.0643 21.9442 32.9127 22.3103 32.6427 22.5802C32.3728 22.8502 32.0067 23.0018 31.625 23.0018C31.2433 23.0018 30.8772 22.8502 30.6073 22.5802L24.4375 16.4076V33.0625Z" fill="black"></path>
+                                            </svg>
+                                            <span>10,000</span>
+                                        </div>
+                                        <div class="mb-api-roadmap-text">Community members</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mb-api-roadmap-item">
+                            <div class="mb-api-roadmap-subtitle">PHASE III</div>
+                            <div class="mb-api-roadmap-title">Moving Onward</div>
+                            <div class="mb-api-roadmap-content">
+                                <ul>
+                                    <li>
+                                        <div class="mb-api-roadmap-image">
+                                            <svg width="228" height="100" viewBox="0 0 228 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <rect width="228" height="100" fill="url(#pattern0)"></rect>
+                                                <defs>
+                                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                        <use xlink:href="#image0_2588_15677" transform="translate(0 -0.0092) scale(0.00333333 0.0076)"></use>
+                                                    </pattern>
+                                                    <image id="image0_2588_15677" width="300" height="134" xlink:href="data:image/png;base64,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"></image>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div class="mb-api-roadmap-text">Completing Milestone I Of Web3 Foundation Grant
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="mb-api-roadmap-image">
+                                            <a href="https://crystalline-garlic-70c.notion.site/62d9ec729ad4459abf783bf47ae63dd7?v=0c65f88c5c2640a9a5bd9d9f50c092db" target="_blank">
+                                                <span>More to come</span>
+                                                <svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M24 6C24 4.34344 25.3406 3 27 3H38.9156C39.4031 3 39.7969 3.08063 40.1438 3.22781C40.4156 3.37313 40.8281 3.58781 41.1188 3.87187C41.1188 3.87656 41.1188 3.88125 41.1281 3.885C41.7094 4.46812 41.9156 5.22938 42 5.99063V18C42 19.6594 40.6594 21 39 21C37.3406 21 36 19.6594 36 18V13.2469L20.1188 29.1188C18.9469 30.2906 17.0531 30.2906 15.8812 29.1188C14.7094 27.9469 14.7094 26.0531 15.8812 24.8812L31.7531 9H27C25.3406 9 24 7.65656 24 6ZM0 12C0 8.68594 2.68594 6 6 6H15C16.6594 6 18 7.34344 18 9C18 10.6594 16.6594 12 15 12H6V39H33V30C33 28.3406 34.3406 27 36 27C37.6594 27 39 28.3406 39 30V39C39 42.3094 36.3094 45 33 45H6C2.68594 45 0 42.3094 0 39V12Z" fill="currentColor"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End ProductDevelopment -->
+        <section class="mb-contact">
+            <div class="container">
+                
+                <div class="row justify-content-between">
+                    <div class="col-lg-7">
+                        <div class="mb-font-medium mb-title-mini text-uppercase mb-3">contact us</div>
+                        <div class="mb-5 mb-title-large">Join our waitlist for limited free dAPI</div>
+                    </div>
+                    <div class="col-lg-5 d-flex">
+                        <div class="mb-contact-mail">
+                            <!-- Begin Sendinblue Form -->
+                            <!-- START - We recommend to place the below code in head tag of your website html  -->
+
+                            <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+                            <style>
+                                .entry__label {
+                                    font-family: 'Airbnb Cereal App Book';
+                                }
+
+                                .sib-form .entry__field {
+                                    margin: 0 !important;
+                                }
+
+                                .sib-form,
+                                .sib-form-container,
+                                #sib-container,
+                                .sib-form-block {
+                                    padding: 0 !important;
+                                    margin: 0 !important;
+                                    display: inline-flex;
+                                }
+                            </style>
+                            <!--  END - We recommend to place the above code in head tag of your website html -->
+                            <!-- START - We recommend to place the below code where you want the form in your website html  -->
+                            <div class="sib-form" style="background-color: transparent;">
+                                <div id="sib-form-container" class="sib-form-container">
+                                    <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:transparent; max-width:540px; border-width:0px; border-color:#C0CCD9; border-style:solid;">
+                                        <form id="sib-form" method="POST" action="https://a5f651f1.sibforms.com/serve/MUIEAK8orXdmPYsPcPyMh1o6AZapz2jJWTVp2uZtUp38kr5gNy-B8EREL2fOU9tC7lx1fzy3lneVWPOY0bMqw3pUsBT92YBSJtSqxSXIpEW7yTc0wRZAhjnDCj5K6sMPM4DUPu4_0lm21DDKifncX8X-jXJvYa1ZhpbU7usbhjmx5cDjTjzTKBjroMJ2uY6YY25Lf78qGgFYHoHi" data-type="subscription" novalidate="true">
+                                            <div class="sib-input sib-form-block">
+                                                <div class="form__entry entry_block">
+                                                    <div class="form__label-row ">
+                                                        <div class="entry__field text-dark">
+                                                            <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Enter your email" data-required="true" required="">
+                                                        </div>
+                                                    </div>
+                                                    <label class="entry__error entry__error--primary" style="font-size:14px; text-align:left; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
+                                                </div>
+                                            </div>
+                                            <div class="sib-form-block" style="text-align: left;display: inline-flex;">
+                                                <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:700; color:#FFFFFF; background-color:#2c3acf; border-radius:3px; border-width:0px;" form="sib-form" type="submit">
+                                                    <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                                                        <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"></path>
+                                                    </svg>
+                                                    Subscribe
+                                                </button>
+                                            </div>
+                                            <input type="text" name="email_address_check" value="" class="input--hidden">
+                                            <input type="hidden" name="locale" value="en">
+                                        </form>
+                                    </div>
+                                    <div id="error-message" class="sib-form-message-panel mt-2" style="font-size:14px; text-align:left; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
+                                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                                <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z"></path>
+                                            </svg>
+                                            <span class="sib-form-message-panel__inner-text">Your subscription could
+                                                not be saved. Please try again.</span>
+                                        </div>
+                                    </div>
+                                    <div id="success-message" class="sib-form-message-panel mt-2" style="font-size:16px; text-align:left; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
+                                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                                <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"></path>
+                                            </svg>
+                                            <span class="sib-form-message-panel__inner-text">Your subscription has
+                                                been successful.</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- END - We recommend to place the below code where you want the form in your website html  -->
+
+                            <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
+                            <script>
+                                window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+                                window.LOCALE = 'en';
+                                window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+                                window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
+                                window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+                                window.translation = {
+                                    common: {
+                                        selectedList: '{quantity} list selected',
+                                        selectedLists: '{quantity} lists selected'
+                                    }
+                                };
+                                var AUTOHIDE = Boolean(0);
+                            </script>
+                            <script src="https://sibforms.com/forms/end-form/build/main.js"></script>
+                            <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
+                            <!-- End Sendinblue Form -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- End Main -->
 
     <footer>
 
         <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
+            <div class="row mb-5 justify-content-between">
+                <div class="col-lg-9 mb-lg-0 mb-md-4">
                     <div class="row">
                         <div class="col-md-4 d-none d-md-block" data-aos="fade-right" data-aos-duration="500">
                             <div class="mb-20 mt-1">
-                                <img src="images/logo-white.svg" height="42" alt="MassBit" />
-                            </div>
-                            <div class="mb-copyright">
-                                © Copyright 2021 MassBit.<br /> All rights reserved.
+                                <img src="images/logo-white.svg" alt="MassBit">
                             </div>
                         </div>
-                        <div class="col-md-4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
+                        <div class="col-md-5" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
                             <h3>PRODUCTS</h3>
-                            <ul>
+                            <ul class="mb-font-medium">
                                 <li>
                                     <a href="massbit-route.html">MassBit Route</a>
                                 </li>
                                 <li>
-                                    <span style="color:rgba(233, 235, 250, 0.8)">MassBit Prime <small>(Coming
+                                    <span>MassBit Turbo <small style="color:rgba(233, 235, 250, 0.8)">(Coming
                                             Soon)</small></span>
                                 </li>
                                 <li>
                                     <a href="multi-chain-indexing.html">Multi-chain Indexing</a>
                                 </li>
                                 <li>
-                                    <span style="color:rgba(233, 235, 250, 0.8)">MassBit Insights <small>(Coming
+                                    <span>MassBit Insights <small style="color:rgba(233, 235, 250, 0.8)">(Coming
                                             soon)</small></span>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="400">
+                        <div class="col-md-3" data-aos="fade-right" data-aos-duration="500" data-aos-delay="400">
                             <h3>ABOUT</h3>
-                            <ul>
+                            <ul class="mb-font-medium">
                                 <li>
                                     <a href="branding.html">Branding</a>
                                 </li>
                                 <li>
-                                    <a href="https://docs.massbit.io/about/introduction">Docs</a>
+                                    <a href="">MBR Testnet 🔥</a>
                                 </li>
-                                <!-- <li>
-                                    <a href="partnership.html">
-                                        <span>Partnership</span>
-                                        <svg style="height: 18px;width: 18px;" xmlns="http://www.w3.org/2000/svg"
-                                            version="1.0" width="240.000000pt" height="270.000000pt"
-                                            viewBox="0 0 240.000000 270.000000" preserveAspectRatio="xMidYMid meet">
-                                            <g transform="translate(0.000000,270.000000) scale(0.100000,-0.100000)"
-                                                fill="#fff" stroke="none">
-                                                <path
-                                                    d="M1935 2587 c-16 -56 -40 -123 -53 -148 -28 -57 -62 -76 -208 -116 -57 -15 -104 -30 -104 -33 0 -3 21 -11 48 -18 234 -62 255 -78 302 -235 18 -56 35 -113 39 -127 8 -23 9 -22 21 20 35 128 73 232 92 250 25 23 87 47 206 81 45 13 82 26 82 29 0 3 -47 18 -104 34 -116 32 -170 58 -198 97 -11 14 -35 79 -54 144 -18 65 -35 119 -37 121 -1 1 -16 -43 -32 -99z" />
-                                                <path
-                                                    d="M1317 2500 c-4 -8 -36 -116 -72 -240 -118 -401 -126 -410 -495 -517 -318 -92 -298 -85 -270 -95 13 -5 118 -36 234 -69 317 -91 380 -126 435 -243 26 -55 78 -217 142 -441 12 -44 25 -83 28 -87 4 -4 38 99 76 229 125 428 119 423 581 555 117 34 212 63 211 64 -2 2 -112 35 -246 74 -133 38 -266 81 -295 95 -112 53 -156 124 -231 380 -81 277 -92 311 -98 295z" />
-                                                <path
-                                                    d="M1760 1128 c-51 -177 -91 -295 -110 -326 -30 -49 -97 -86 -222 -122 -62 -17 -144 -41 -182 -53 l-70 -20 160 -47 c223 -65 249 -76 293 -126 36 -42 64 -116 137 -369 l17 -60 19 65 c87 299 114 361 175 402 26 17 201 76 341 114 40 11 59 20 50 25 -7 4 -84 28 -171 53 -173 51 -208 65 -250 105 -39 35 -57 79 -112 266 -26 88 -49 162 -51 163 -1 2 -12 -29 -24 -70z" />
-                                            </g>
-                                        </svg>
-                                    </a>
-                                </li> 
-                                <li>
-                                    <a href="https://docs.massbit.io/about/contact-us">Customer
-                                        Support</a>
-                                </li>-->
                                 <li>
                                     <a href="https://docs.massbit.io/about/contact-us">Contact Us</a>
                                 </li>
                                 <li>
-                                    <a href="https://docs.massbit.io/about/happening-events">Happening events</a>
+                                    <a href="">Roadmap</a>
                                 </li>
-
+                                <li>
+                                    <a href="">Partnership</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
+                <div class="col-lg-3" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
                     <div class="row">
                         <div class="col-lg-12 col-md-6">
-                            <h3>SUBCRIBE TO GET THE EXCLUSIVE NEWS</h3>
-                            <div class="mb-30">
-                                <!-- Begin Sendinblue Form -->
-                                <!-- START - We recommend to place the below code in head tag of your website html  -->
-
-                                <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-                                <style>
-                                    .entry__label {
-                                        font-family: 'Airbnb Cereal App Book';
-                                    }
-
-                                    .sib-form .entry__field {
-                                        margin: 0 !important;
-                                    }
-
-                                    .sib-form,
-                                    .sib-form-container,
-                                    #sib-container,
-                                    .sib-form-block {
-                                        padding: 0 !important;
-                                        margin: 0 !important;
-                                    }
-                                </style>
-                                <!--  END - We recommend to place the above code in head tag of your website html -->
-                                <!-- START - We recommend to place the below code where you want the form in your website html  -->
-                                <div class="sib-form" style="background-color: transparent;">
-                                    <div id="sib-form-container" class="sib-form-container">
-                                        <div id="sib-container" class="sib-container--large sib-container--vertical"
-                                            style="text-align:center; background-color:transparent; max-width:540px; border-width:0px; border-color:#C0CCD9; border-style:solid;">
-                                            <form id="sib-form" method="POST"
-                                                action="https://a5f651f1.sibforms.com/serve/MUIEAK8orXdmPYsPcPyMh1o6AZapz2jJWTVp2uZtUp38kr5gNy-B8EREL2fOU9tC7lx1fzy3lneVWPOY0bMqw3pUsBT92YBSJtSqxSXIpEW7yTc0wRZAhjnDCj5K6sMPM4DUPu4_0lm21DDKifncX8X-jXJvYa1ZhpbU7usbhjmx5cDjTjzTKBjroMJ2uY6YY25Lf78qGgFYHoHi"
-                                                data-type="subscription">
-                                                <div class="sib-input sib-form-block">
-                                                    <div class="form__entry entry_block">
-                                                        <div class="form__label-row ">
-                                                            <div class="entry__field text-dark">
-                                                                <input class="input" type="text" id="EMAIL" name="EMAIL"
-                                                                    autocomplete="off" placeholder="Your email address"
-                                                                    data-required="true" required />
-                                                            </div>
-                                                        </div>
-                                                        <label class="entry__error entry__error--primary"
-                                                            style="font-size:14px; text-align:left; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
-                                                    </div>
-                                                </div>
-                                                <div class="sib-form-block"
-                                                    style="text-align: left;margin-top: 8px !important;">
-                                                    <button
-                                                        class="sib-form-block__button sib-form-block__button-with-loader"
-                                                        style="font-size:16px; text-align:left; font-weight:700; color:#FFFFFF; background-color:#2c3acf; border-radius:3px; border-width:0px;"
-                                                        form="sib-form" type="submit">
-                                                        <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
-                                                            viewBox="0 0 512 512">
-                                                            <path
-                                                                d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
-                                                        </svg>
-                                                        SUBSCRIBE
-                                                    </button>
-                                                </div>
-                                                <input type="text" name="email_address_check" value=""
-                                                    class="input--hidden">
-                                                <input type="hidden" name="locale" value="en">
-                                            </form>
-                                        </div>
-                                        <div id="error-message" class="sib-form-message-panel mt-2"
-                                            style="font-size:14px; text-align:left; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
-                                            <div
-                                                class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                                                <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-                                                    <path
-                                                        d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
-                                                </svg>
-                                                <span class="sib-form-message-panel__inner-text">Your subscription could
-                                                    not be saved. Please try again.</span>
-                                            </div>
-                                        </div>
-                                        <div id="success-message" class="sib-form-message-panel mt-2"
-                                            style="font-size:16px; text-align:left; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
-                                            <div
-                                                class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                                                <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-                                                    <path
-                                                        d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
-                                                </svg>
-                                                <span class="sib-form-message-panel__inner-text">Your subscription has
-                                                    been successful.</span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- END - We recommend to place the below code where you want the form in your website html  -->
-
-                                <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
-                                <script>
-                                    window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-                                    window.LOCALE = 'en';
-                                    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-                                    window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
-                                    window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-                                    window.translation = {
-                                        common: {
-                                            selectedList: '{quantity} list selected',
-                                            selectedLists: '{quantity} lists selected'
-                                        }
-                                    };
-                                    var AUTOHIDE = Boolean(0);
-                                </script>
-                                <script src="https://sibforms.com/forms/end-form/build/main.js"></script>
-                                <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
-                                <!-- End Sendinblue Form -->
-                            </div>
+                            <h3>CONNECT WITH US</h3>
+                            
                         </div>
-                        <div class="col-lg-12 col-md-6">
-                            <div
-                                class="mb-socials justify-content-lg-start justify-content-md-end justify-content-start">
+                        <div class="col-lg-12 col-md-6 justify-content-between">
+                            <div class="mb-socials justify-content-between">
                                 <a href="https://twitter.com/massbitprotocol" target="_blank">
-                                    <img src="images/socials/twitter.svg" alt="Twitter" />
-                                </a>
-                                <a href="https://massbit.medium.com/" target="_blank">
-                                    <img src="images/socials/medium.svg" alt="Medium" />
+                                    <img src="images/socials/twitter.svg" alt="Twitter">
                                 </a>
                                 <a href="https://t.me/massbit" target="_blank">
-                                    <img src="images/socials/telegram.svg" alt="Telegram" />
-                                </a>
-                                <a href="https://www.youtube.com/channel/UCMdDh0sCnsW_dyEpG-MlnfA" target="_blank">
-                                    <img src="images/socials/youtube.svg" alt="Youtube" />
-                                </a>
-                                <a href="https://www.facebook.com/massbit.io" target="_blank">
-                                    <img src="images/socials/facebook.svg" alt="Facebook" />
-                                </a>
-                                <a href="https://www.instagram.com/massbit.io/" target="_blank">
-                                    <img src="images/socials/instagram.svg" alt="Instagram" />
-                                </a>
-                                <a href="https://github.com/massbitprotocol/" target="_blank">
-                                    <img src="images/socials/github.svg" alt="Github" />
+                                    <img src="images/socials/telegram.svg" alt="Telegram">
                                 </a>
                                 <a href="https://discord.gg/5ePzAEFNHZ" target="_blank">
-                                    <img src="images/socials/discord.svg" alt="Discord" />
+                                    <img src="images/socials/discord.svg" alt="Discord">
+                                </a>
+                                <a href="https://github.com/massbitprotocol/" target="_blank">
+                                    <img src="images/socials/github.svg" alt="Github">
+                                </a>
+                                <a href="https://massbit.medium.com/" target="_blank">
+                                    <img src="images/socials/medium.svg" alt="Medium">
                                 </a>
                             </div>
                         </div>
@@ -1148,9 +786,12 @@
 
                 </div>
             </div>
+            <div class="mb-copyright text-center d-none d-md-block">
+                © Copyright 2021 MassBit. All rights reserved.
+            </div>
             <div class="d-block d-md-none mt-4 pt-3" style="border-top: 1px rgba(255,255,255,.4) solid;">
                 <div class="mb-20">
-                    <img src="images/logo-white.svg" height="40" alt="MassBit" />
+                    <img src="images/logo-white.svg" height="40" alt="MassBit">
                 </div>
                 <div class="mb-copyright">
                     © Copyright 2021 MassBit. All rights reserved.
@@ -1162,23 +803,6 @@
     <a href="#" id="to_top">
         <span><i class="fas fa-arrow-up"></i></span>
     </a>
-
-    <!-- <div class="mb-right-box-wrap">
-        <div class="mb-right-box">
-            <div class="mb-right-box-logo">
-                <img src="images/decor.svg" height="24" width="22" alt="MassBit logo">
-            </div>
-            <div class="mb-right-box-heading">
-                <div>MassBit is hiring. Come join an industry-leading team.</div>
-            </div>
-            <a rel="noopener" href="https://codelight.breezy.hr/"
-                class="btn btn-outline-primary btn-sm w-100">See current openings</a>
-
-            <a href="#" class="mb-right-box-close">
-                <img src="images/close-icon.svg" width="10" height="10" alt="">
-            </a>
-        </div>
-    </div> -->
 
     <!-- Modal -->
     <div class="modal fade" id="noticeModal" tabindex="-1" aria-labelledby="noticeModalLabel" aria-hidden="true">
@@ -1192,9 +816,7 @@
                     <a href="https://docs.massbit.io/massbit-route/testnet-phase-ii-opening">
                         <span>Learn more</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M17.707 9.29301L12.707 4.29301C12.316 3.90201 11.684 3.90201 11.293 4.29301C10.902 4.68401 10.902 5.31601 11.293 5.70701L14.586 9.00001H3C2.447 9.00001 2 9.44801 2 10C2 10.552 2.447 11 3 11H14.586L11.293 14.293C10.902 14.684 10.902 15.316 11.293 15.707C11.488 15.902 11.744 16 12 16C12.256 16 12.512 15.902 12.707 15.707L17.707 10.707C18.098 10.316 18.098 9.68401 17.707 9.29301Z"
-                                fill="#F1F6FF" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.707 9.29301L12.707 4.29301C12.316 3.90201 11.684 3.90201 11.293 4.29301C10.902 4.68401 10.902 5.31601 11.293 5.70701L14.586 9.00001H3C2.447 9.00001 2 9.44801 2 10C2 10.552 2.447 11 3 11H14.586L11.293 14.293C10.902 14.684 10.902 15.316 11.293 15.707C11.488 15.902 11.744 16 12 16C12.256 16 12.512 15.902 12.707 15.707L17.707 10.707C18.098 10.316 18.098 9.68401 17.707 9.29301Z" fill="#F1F6FF"></path>
                         </svg>
                     </a>
                 </div>
@@ -1206,8 +828,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="plugins/OwlCarousel2/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <!-- <script src="plugins/AOS/aos.js"></script> -->
     <script src="js/script.js?v=17"></script>
+    <script>
+        const $slider = $(".slides");
+        $slider
+            .on('init', () => {
+                mouseWheel($slider)
+            })
+            .slick({
+                dots: true,
+                vertical: true,
+                infinite: false,
+                arrows: false
+            })
+        function mouseWheel($slider) {
+            $(window).on('wheel', { $slider: $slider }, mouseWheelHandler)
+        }
+        function mouseWheelHandler(event) {
+            event.preventDefault()
+            const $slider = event.data.$slider
+            const delta = event.originalEvent.deltaY
+            if(delta > 0) {
+                $slider.slick('slickNext')
+            }
+            else {
+                $slider.slick('slickPrev')
+            }
+        }
+
+    </script>
+
+
 </body>
 
 </html>
