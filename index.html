@@ -213,7 +213,7 @@
                             </div>
                             <div class="col-lg-4 col-md-5 col-12">
                                 <div class="photo">
-                                    <img src="images/index/slider_img3.svg" alt="Multi-chain Indexing">
+                                    <img src="images/index/slider_img4.svg" alt="Multi-chain Indexing">
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-7 col-11">
@@ -462,42 +462,42 @@
                 <div class="mb-font-medium mb-title-mini line text-uppercase mb-3"><span>Blog</span></div>
                 <div class="mb-5 mb-title-large">Catch the latest news</div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-4">
-                        <div class="box" onclick="location.href='https://blog.massbit.io/the-need-for-blockchain-data-propagation'" style="cursor: pointer">
-                            <p class="photo"><img src="images/index/blog_img1.png" alt="MassBit Blog"></p>
-                            <div class="frame">
-                                <dl>
-                                    <dt class="mb-font-medium">Product</dt>
-                                    <dd class="mb-font-bold">The need for blockchain data propagation</dd>
-                                </dl>
-                                <p class="mb-blog-content">Blockchain data propagation refers to the process in which a transaction is spread through a distributed network until it is included in a block</p>
-                                <p class="date">September 25, 2022 • 12 min read</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-4">
-                        <div class="box" onclick="location.href='https://blog.massbit.io/verification-protocol-that-powered-massbit-decentralized-api-infrastructure'" style="cursor: pointer">
-                            <p class="photo"><img src="images/index/blog_img2.png" alt="MassBit Blog"></p>
-                            <div class="frame">
-                                <dl>
-                                    <dt class="mb-font-medium">Product</dt>
-                                    <dd class="mb-font-bold">Verification protocol that powered MassBit decentralized API infrastructure</dd>
-                                </dl>
-                                <p class="mb-blog-content">MassBit is creating the decentralized API infrastructure for web3, powered by MassBit’s Verification Protocol. </p>
-                                <p class="date">September 25, 2022 • 12 min read</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="box" onclick="location.href='https://blog.massbit.io/web3-foundation-grant-explaining-milestone-1'" style="cursor: pointer">
-                            <p class="photo"><img src="images/index/blog_img3.png" alt="MassBit Blog"></p>
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-4 box">
+                        <div class="">
+                            <p class="photo"><a href="https://t.co/MXzOSkCuXd" target="_blank"><img src="images/index/blog_img1.png" alt="MassBit Blog"></a></p>
                             <div class="frame">
                                 <dl>
                                     <dt class="mb-font-medium">News & Announcements</dt>
-                                    <dd class="mb-font-bold">Web3 Foundation Grant – Explaining Milestone #1</dd>
+                                    <dd class="mb-font-bold"><a href="https://t.co/MXzOSkCuXd" target="_blank">MassBit Receives Grant from Web3 Foundation</a></dd>
                                 </dl>
-                                <p class="mb-blog-content">With the successful completion of Milestone #1 of the Web3 Foundation Grant program, the MassBit team is looking forward towards the next milestone</p>
-                                <p class="date">September 19, 2022 • 12 min read</p>
+                                <p class="mb-blog-content">MassBit has been awarded a grant from the Web3 Foundation to develop MassBit Route, a decentralized API service built on a Substrate framework. </p>
+                                <p class="date">September 9, 2022 • 12 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-4 box">
+                        <div class="">
+                            <p class="photo"><a href="https://blog.massbit.io/massbit-angels-do-you-embody-the-massbit-vision/" target="_blank"><img src="images/index/blog_img2.png" alt="MassBit Blog"></a></p>
+                            <div class="frame">
+                                <dl>
+                                    <dt class="mb-font-medium">Community</dt>
+                                    <dd class="mb-font-bold"><a href="https://blog.massbit.io/massbit-angels-do-you-embody-the-massbit-vision/" target="_blank">MassBit Angels: Do you embody the MassBit Vision?</a></dd>
+                                </dl>
+                                <p class="mb-blog-content">Angel, a person of exemplary conduct or virtue. MassBit Angels are special community members who go above and beyond to help moderate, build</p>
+                                <p class="date">September 6, 2022 • 12 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 box">
+                        <div class="">
+                            <p class="photo"><a href="https://cryptonews.com/news/massbit-routes-launch-helps-web3-projects-achieve-true-decentralization.htm" target="_blank"><img src="images/index/blog_img3.png" alt="MassBit Blog"></a></p>
+                            <div class="frame">
+                                <dl>
+                                    <dt class="mb-font-medium">News & Announcements</dt>
+                                    <dd class="mb-font-bold"><a href="https://cryptonews.com/news/massbit-routes-launch-helps-web3-projects-achieve-true-decentralization.htm" target="_blank">MassBit Route’s Launch Helps Web3 Projects Achieve True Decentralization</a></dd>
+                                </dl>
+                                <p class="mb-blog-content">HO CHI MINH CITY, August 1, 2022: MassBit, the infrastructure company working on building decentralized APIs and multi-chain indexing</p>
+                                <p class="date">August 3, 2022 • 12 min read</p>
                             </div>
                         </div>
                     </div>
@@ -832,7 +832,14 @@
     <!-- <script src="plugins/AOS/aos.js"></script> -->
     <script src="js/script.js?v=17"></script>
     <script>
-        const $slider = $(".slides");
+        $('.slides').slick({
+            dots: true,
+            speed: 300,
+            slidesToShow: 1,
+            infinite: false,
+            arrows: false
+        });
+        /* const $slider = $(".slides");
         $slider
             .on('init', () => {
                 mouseWheel($slider)
@@ -856,7 +863,7 @@
             else {
                 $slider.slick('slickPrev')
             }
-        }
+        } */
 
     </script>
 

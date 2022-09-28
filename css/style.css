@@ -2937,10 +2937,10 @@ body.testnet.home-page{
   }
 }
 /*slide*/
-.home-page .slick-track,
+/* .home-page .slick-track,
 .home-page .slick-list {
   height: 100vh;
-}
+} */
 
 .home-page .slick-dotted.slick-slider {
   margin: 0;
@@ -3175,7 +3175,24 @@ body.testnet.home-page{
   position: relative;
   transition: all ease-in-out 0.3s;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: calc(var(--bs-gutter-x) * .5);
+  margin-left: calc(var(--bs-gutter-x) * .5);
+  width: calc(100% - calc(var(--bs-gutter-x) * 1));
 }
+@media (min-width: 768px){
+  .mb-section-blog .box {
+    width: calc(50% - calc(var(--bs-gutter-x) * 1));
+  }
+}
+@media (min-width: 992px){
+  .mb-section-blog .box {
+    width: calc(33.33333333% - calc(var(--bs-gutter-x) * 1));
+  }
+}
+
 .mb-section-blog .box:hover{
   box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.2);
 }
@@ -3189,6 +3206,10 @@ body.testnet.home-page{
 }
 .mb-section-blog .box .frame dl dt{
   color: #2C3ACF;
+}
+.mb-section-blog .box .frame dl dd a{
+  color: #3D3D48;
+  text-decoration: none;
 }
 .mb-section-blog .mb-blog-content{
   font-family: "Airbnb Cereal App Book";
@@ -3715,7 +3736,6 @@ body.testnet .mb-right-box-socials a:not(:last-child) {
         margin-top: 15px;
     } */
 }
-
 .mb-cci-section h3 {
   font-family: "Airbnb Cereal App Medium";
   font-weight: 500;
