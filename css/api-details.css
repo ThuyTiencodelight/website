@@ -274,8 +274,11 @@
   background-size: cover;
 }
 .mb-api-roadmap .mb-api-roadmap-item {
-  width: calc(100% / 3);
   position: relative;
+  width: 30%;
+}
+.mb-api-roadmap .mb-api-roadmap-item:nth-child(2) {
+  width: 40%;
 }
 .mb-api-roadmap .mb-api-roadmap-item::before {
   content: "";
@@ -299,12 +302,12 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #050c72;
+  color: #1F1F23;
   margin-bottom: 56px;
 }
 .mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-content {
   position: relative;
-  padding-right: 80px;
+  padding-right: 50px;
   padding-top: 80px;
 }
 .mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-content::before {
@@ -364,7 +367,6 @@
   li
   .mb-api-roadmap-image {
   padding: 30px;
-  height: 160px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -438,8 +440,8 @@
   a
   span {
   font-family: "Airbnb Cereal App Medium";
-  font-weight: 700;
-  font-size: 32px;
+  font-weight: normal;
+  font-size: 20px;
   line-height: 40px;
   display: inline-flex;
   align-items: center;
@@ -463,21 +465,21 @@
   ul
   li
   .mb-api-roadmap-text {
-  font-family: "Airbnb Cereal App Medium";
+  font-family: "Airbnb Cereal App Book";
   margin-top: 20px;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: normal;
+  font-size: 16px;
   line-height: 28px;
-  color: #1d1d1d;
+  color: #3A3E42;
 }
 @media (max-width: 1399px) {
   .mb-api-roadmap::after {
     width: 40px;
     height: 40px;
-    top: 59px;
+    top: 82px;
   }
   .mb-api-roadmap .mb-api-roadmap-item::before {
-    top: calc(80px - 8px);
+    top: calc(80px + 16px);
     left: -8px;
     background: #2C3ACF;
     width: 16px;
@@ -626,13 +628,15 @@
     margin-bottom: 50px;
     width: auto;
   }
+  .mb-api-roadmap .mb-api-roadmap-item:nth-child(2) {
+    width: auto;
+  }
   .mb-api-roadmap
     .mb-api-roadmap-item
     .mb-api-roadmap-content
     ul
     li
     .mb-api-roadmap-image {
-    width: 100%;
     justify-content: flex-start;
   }
   .mb-api-roadmap
@@ -787,6 +791,18 @@
     .mb-api-testimonial
     svg {
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  .mb-api-roadmap::before{
+    top: 0;
+    height: 100%;
+  }
+  .mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-content ul li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-content ul li {
+    height: auto;
   }
 }
 /* Our Partners */
