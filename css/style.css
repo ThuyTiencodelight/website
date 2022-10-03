@@ -17,7 +17,9 @@ body {
   outline: 1px solid slategrey;
 }
 /* Common */
-
+.btn{
+  border-radius: 0;
+}
 .wr-loading {
   background-color: #fff;
   position: fixed;
@@ -61,7 +63,7 @@ body {
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1420px !important;
+    max-width: 1420px;
   }
 }
 
@@ -129,27 +131,27 @@ body {
   line-height: 22px;
   padding: 14px 20px;
   border-radius: 0px;
-  color: #2c3acf;
-  border: 1px solid #2c3acf;
+  color: #0D3EF4;
+  border: 1px solid #0D3EF4;
 }
 
 .btn-outline-primary:hover {
-  background-color: #2c3acf;
-  border-color: #2c3acf;
+  background-color: #0D3EF4;
+  border-color: #0D3EF4;
   color: #fff;
 }
 .btn-outline-primary.btn-bg-white{
   background-color: #fff;
 }
 .btn-outline-primary.btn-bg-white:hover{
-  background-color: #2c3acf;
+  background-color: #0D3EF4;
   color:#fff;
 }
 .btn-primary {
   padding: 13px 20px;
-  background: #2c3acf;
+  background: #0D3EF4;
   color: #fff;
-  border: 1px solid #2c3acf;
+  border: 1px solid #0D3EF4;
 }
 .btn-primary:hover{
 
@@ -365,25 +367,24 @@ body {
 
 .mb-navbar.navbar-light .nav-link {
   font-size: 16px;
-  color: #27319b;
+  color: #0D3EF4;
   padding-left: 20px;
   padding-right: 20px;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .mb-navbar.navbar-light .btn-get-started {
-  border: 1px #2c3acf solid;
-  color: #2c3acf;
+  border: 1px #0D3EF4 solid;
+  color: #0D3EF4;
   font-size: 14px;
   padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: 0;
   transition: all ease-in-out 0.3s;
 }
 
 .mb-navbar.navbar-light .btn-get-started:hover {
-  background-color: #2c3acf;
-  border-color: #2c3acf;
+  background-color: #0D3EF4;
+  border-color: #0D3EF4;
   color: #fff;
   box-shadow: 0 10px 20px -10px rgb(17 38 146 / 40%) !important;
 }
@@ -403,7 +404,7 @@ body {
   background: #ffffff;
   box-shadow: 0px 0px 1px rgba(30, 38, 49, 0.15),
     0px 2px 10px rgba(70, 75, 82, 0.1);
-  border-radius: 8px;
+  border-radius: 0;
   padding: 8px;
   transform: translateY(1rem);
   margin-top: 0 !important;
@@ -411,7 +412,7 @@ body {
 
 .mb-header-dropdown-menu li .dropdown-item {
   padding: 10px 15px;
-  color: #27319b;
+  color: #0D3EF4;
   transition: all ease-in-out 0.3s;
   background-color: transparent;
   line-height: 20px;
@@ -428,8 +429,8 @@ body {
 }
 .mb-header-dropdown-menu li a.dropdown-item.active,
 .mb-header-dropdown-menu li a.dropdown-item:hover {
-  background-color: #f1f6ff;
-  border-radius: 4px;
+  background-color: #EBF1FF;
+  border-radius: 0;
 }
 
 .mb-header-dropdown-menu li span {
@@ -493,7 +494,7 @@ header::before {
   font-size: 46px;
   line-height: 1;
   color: #ffffff;
-  background: #2c3acf;
+  background: #0D3EF4;
   padding: 14px;
   height: 68px;
   display: inline-flex;
@@ -513,7 +514,6 @@ header::before {
   font-family: "Airbnb Cereal App Book";
   font-size: 20px;
   line-height: 36px;
-  color: #434c88;
 }
 .mb-banner-actions {
   padding-top: 64px;
@@ -558,13 +558,13 @@ header::before {
   color: #27319b;
   margin-bottom: 20px;
 }
-
 .mb-section-body {
   font-family: "Airbnb Cereal App Book";
   font-size: 18px;
   line-height: 30px;
   color: #434c88;
   font-weight: 400;
+  
 }
 
 /* Why MassBit */
@@ -859,6 +859,17 @@ header::before {
 @media (max-width: 767px) {
   .mb-section-community-loves-massbit .mb-section-title {
     margin-bottom: 0px;
+  }
+  .mb-community-card {
+    border-radius: 4px;
+  }
+  .mb-community-card-social{
+    vertical-align: top;
+  }
+  .mb-community-card-social svg{
+    width: 32px;
+    height: 32px;
+    margin: -20px 0 0 0;
   }
 }
 /* Our Team Experience */
@@ -1232,13 +1243,13 @@ header::before {
   font-weight: bold;
   font-size: 36px;
   line-height: 40px;
-  color: #2c3acf;
+  color: #0D3EF4;
 }
 
 .mb-realtime-card-value span {
   font-size: 16px;
   line-height: 26px;
-  color: #2c3acf;
+  color: #0D3EF4;
 }
 
 .mb-realtime-card-body {
@@ -1427,7 +1438,7 @@ header::before {
 .mb-discover-item-image {
   margin-bottom: 24px;
   height: 64px;
-  color: #2c3acf;
+  color: #0D3EF4;
 }
 
 .mb-discover-item-image svg {
@@ -1454,7 +1465,7 @@ header::before {
 }
 
 .mb-discover-item-action a {
-  color: #2c3acf;
+  color: #0D3EF4;
   font-family: "Airbnb Cereal App Medium";
   font-size: 14px;
   line-height: 20px;
@@ -1462,7 +1473,7 @@ header::before {
 }
 
 .mb-discover-item-action a:hover {
-  color: #2c3acf;
+  color: #0D3EF4;
 }
 
 .mb-discover-item-action a::before {
@@ -1599,7 +1610,7 @@ header::before {
 .mb-start-with-mi-action a {
   font-size: 14px;
   line-height: 20px;
-  color: #2c3acf !important;
+  color: #0D3EF4 !important;
   font-family: "Airbnb Cereal App Medium";
 }
 
@@ -1751,7 +1762,7 @@ header::before {
 }
 
 .mb-overview-chart-small table thead {
-  background: #2c3acf;
+  background: #0D3EF4;
 }
 
 .mb-overview-chart-small table thead th {
@@ -2055,6 +2066,12 @@ header::before {
   color: #fff;
   padding: 140px 0;
 }
+.mb-contact .mb-contact-text{
+  width: 50%;
+}
+.mb-contact .mb-contact-form{
+  width: 50%;
+}
 .mb-contact .mb-title-mini {
   color: #fff;
 }
@@ -2073,21 +2090,87 @@ header::before {
 }
 .mb-contact .sib-form .input:first-child, .mb-contact .sib-form .input__affix:first-child {
   padding-left: 1.5rem;
+  width: 310px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .mb-contact .mb-contact-mail{
   align-items: center;
   margin:auto 0 auto auto;
 }
-@media (max-width: 1200px) {
+.mb-contact #sib-form{
+  font-size: 0;
+  letter-spacing: 0;
+}
+.mb-contact .sib-form .input {
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+}
+@media (max-width: 1400px) {
   .mb-contact .mb-title-large{
     font-size: 30px;
   }
+  
+}
+@media (max-width: 1200px) {
   .mb-contact .mb-contact-mail{
-    align-items: center;
+    /* margin:0; */
+  }
+  .mb-contact .mb-contact-text{
+    width: 60%;
+  }
+  .mb-contact .mb-contact-form{
+    width: 40%;
+  }
+  .mb-contact .sib-form .input:first-child, .mb-contact .sib-form .input__affix:first-child{
+    width: 180px;
+  }
+}
+@media (max-width: 992px) {
+  .mb-contact .mb-contact-mail{
     margin:0;
+  }
+  .mb-contact .mb-contact-text{
+    width: 100%;
+  }
+  .mb-contact .mb-contact-form{
+    width: 100%;
+  }
+  .mb-contact .sib-form .input:first-child, .mb-contact .sib-form .input__affix:first-child{
+    width: 100%;
   }
 }
 @media (max-width: 767px){
+  .mb-contact #sib-form{
+    width: 100%;
+    display: flex;
+  }
+  .mb-contact .mb-contact-mail{
+    width: 100%;
+  }
+  .sib-form{
+    width: 100%;
+  }
+  #sib-container{
+    max-width: 100%!important;
+  }
+  #sib-form-container{
+    width: 100%;
+  }
+  .sib-form-block{
+    width: 34%;
+    display: inline-block!important;
+  }
+  .sib-form-block button{
+    width: 100%;
+    text-align: center;
+  }
+  .sib-input.sib-form-block{
+    width: 66%;
+  }
+  .mb-contact .sib-form .input:first-child, .mb-contact .sib-form .input__affix:first-child{
+    width: 100%;
+  }
   .mb-contact{
     padding: 80px 0;
   }
@@ -2115,7 +2198,9 @@ footer {
   z-index: 2;
   position: relative;
 }
-
+footer .mb-logo img{
+  max-height: 56px;
+}
 .mb-copyright {
   color: rgba(233, 235, 250, 0.8);
 }
@@ -2181,7 +2266,7 @@ footer ul li a:hover {
 
 .mb-subscribe-form .btn-subscribe {
   margin: 2px !important;
-  background: #2c3acf;
+  background: #0D3EF4;
   border-radius: 6px !important;
   color: #ffffff;
   font-size: 14px;
@@ -2217,7 +2302,6 @@ footer ul li a:hover {
 }
 
 #to_top {
-  display: none;
   position: fixed;
   z-index: 999;
   bottom: 20px;
@@ -2235,7 +2319,6 @@ footer ul li a:hover {
   line-height: 1;
   justify-content: center;
   align-items: center;
-  background-color: #2c3acf;
 }
 
 .mb-right-box-wrap {
@@ -2308,7 +2391,12 @@ footer ul li a:hover {
   font-size: 14px;
   padding: 8px 24px;
 }
-
+@media (max-width: 767px){
+  footer{
+    line-height: 28px;
+    padding: 60px 0;
+  }
+}
 /* Animations */
 
 .u-spin {
@@ -2598,9 +2686,6 @@ footer ul li a:hover {
   .mb-socials {
     
   }
-  .mb-socials a {
-    margin-right: 10px;
-  }
   .mb-discover-item-title {
     font-size: 18px;
     line-height: 24px;
@@ -2659,7 +2744,13 @@ footer ul li a:hover {
     margin-bottom: 10px;
   }
   footer .mb-socials {
-    justify-content: center;
+    justify-content: flex-start!important;
+  }
+  .mb-socials a {
+    margin-right: 15px;
+  }
+  .mb-socials a img{
+    max-height: 30px;
   }
   footer .mb-20 {
     margin-bottom: 10px;
@@ -2713,6 +2804,10 @@ footer ul li a:hover {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .home-page .mb-header-small{
+    padding-top: calc(70px + 3rem);
+    padding-bottom: 150px;
+  }
   .mb-banner-description {
     font-size: 16px !important;
     line-height: 1.5;
@@ -2729,7 +2824,7 @@ footer ul li a:hover {
   }
   .btn-outline-primary,
   .btn-primary {
-    padding: 8px 15px;
+    padding: 14px 15px;
   }
   /* .btn-fw {
         min-width: 260px;
@@ -2834,6 +2929,11 @@ footer ul li a:hover {
 body.home-page{
   padding-top: 0;
 }
+@media (min-width: 1400px){
+  .home-page .container, .home-page .container-lg, .home-page .container-md, .home-page .container-sm, .home-page .container-xl, .home-page .container-xxl {
+      max-width: 1176px;
+  }
+}
 body.testnet.home-page{
   padding-top: 0;
 }
@@ -2859,24 +2959,28 @@ body.testnet.home-page{
   border-radius: 0;
 }
 .home-page .mb-navbar.navbar-light .btn-get-started:hover {
-  background-color: #2c3acf;
-  border: 1px #2c3acf solid;
+  background-color: #fff;
+  border: 1px #0D3EF4 solid;
+  color: #0D3EF4;
 }
 
 /**/
+.home-page .mb-banner-description {
+  color: #ffffff;
+}
 .home-page .mb-navbar.navbar-light.mb-navbar-fixed .nav-link{
-  color: #2c3acf;
+  color: #0D3EF4;
 }
 .home-page .navbar-light.mb-navbar-fixed .navbar-nav .nav-link:focus, .home-page .navbar-light.mb-navbar-fixed .navbar-nav .nav-link:hover{
   color: rgba(0,0,0,.7);
 }
 .home-page .mb-navbar.navbar-light.mb-navbar-fixed .btn-get-started{
-  border: 1px #2c3acf solid;
+  border: 1px #0D3EF4 solid;
   border-radius: 0;
 }
 .home-page .mb-navbar.navbar-light.mb-navbar-fixed .btn-get-started:hover {
-  background-color: #2c3acf;
-  border: 1px #2c3acf solid;
+  background-color: #0D3EF4;
+  border: 1px #0D3EF4 solid;
   color: #fff;
 }
 .home-page .mb-banner-heading {
@@ -2891,7 +2995,9 @@ body.testnet.home-page{
   font-size: 48px;
   margin-bottom: 1.5rem;
 }
-
+.home-page .mb-header-small .btn-outline-primary.btn-bg-white{
+  margin-left: 1rem;
+}
 
 .home-page .mb-navbar-fixed{
   background-color: #fff;
@@ -2908,11 +3014,77 @@ body.testnet.home-page{
   }
 }
 @media (max-width: 767px) {
+  .home-page .mb-navbar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .mb-navbar{
+    min-height: auto;
+  }
+  .mb-navbar.open {
+    background-color: #f1f6ff;
+  }
+  .mb-navbar.navbar-light .nav-link{
+    padding: 10px;
+  }
+  .mb-header-dropdown-menu {
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    border: none;
+  }
+  .mb-header-dropdown-menu li a.dropdown-item.active, .mb-header-dropdown-menu li a.dropdown-item:hover {
+    background-color: transparent;
+    color: rgba(0,0,0,.7);
+  }
+  .mb-navbar.navbar-light .btn-get-started {
+    width: 100%;
+    text-align: center;
+  }
+  .mb-navbar.navbar-light .nav-item.nav-btn{
+    order:-1;
+    margin-bottom: 20px;
+  }
+  .navbar-toggler{
+    padding: .25rem .3rem;
+    border-radius: 0;
+  }
+  .navbar-toggler.collapsed  {
+    border-color: #0D3EF4;
+  }
+  .home-page .navbar-toggler.collapsed {
+    border-color: #fff;
+  }
+  .navbar-toggler:not(.collapsed) {
+    border: none;
+  }
+  .navbar-light .navbar-toggler:not(.collapsed) .navbar-toggler-icon{
+    background-image: url('../images/close.svg');
+  }
+  .navbar-light .navbar-toggler.collapsed .navbar-toggler-icon {
+    background-image: url('../images/open-blue.svg');
+  }
+  .home-page .navbar-light .navbar-toggler.collapsed .navbar-toggler-icon {
+    background-image: url('../images/open.svg');
+  }
+  .mb-navbar.mb-navbar-fixed .navbar-toggler.collapsed .navbar-toggler-icon {
+    background-image: url('../images/open-blue.svg');
+  }
+  .mb-navbar.mb-navbar-fixed .navbar-toggler.collapsed, .home-page .mb-navbar.mb-navbar-fixed .navbar-toggler.collapsed {
+    border-color: #0D3EF4;
+  }
+  
+  
+  .home-page .mb-header-small{
+    padding-top: calc(80px + 3rem);
+    padding-bottom: 120px;
+  }
   .home-page .mb-banner-heading {
-    font-size: 30px;
+    font-size: 48px;
   }
   .home-page .mb-banner-sub-heading{
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.5;
   }
   .mb-banner-sub ul{
@@ -2925,16 +3097,25 @@ body.testnet.home-page{
     width: 100%;
     height: auto;
   }
+  .home-page .mb-header-small .mb-title-mini {
+    bottom: 10px;
+  }
   .home-page .mb-navbar{
     /* background-color: #f1f6ff; */
   }
+  .home-page .navbar-light .navbar-nav .nav-link:focus, .home-page .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0,0,0,.7);
+  }
   .home-page .mb-navbar.navbar-light .nav-link{
-    color: #27319b;
+    color: #0D3EF4;
   }
   .home-page .mb-navbar.navbar-light .btn-get-started {
-    border: 1px solid #27319b;
-    color: #27319b;
+    border: 1px solid #0D3EF4;
+    color: #0D3EF4;
   }
+}
+.home-page .mb-product{
+  padding: 85px 0 0 0;
 }
 /*slide*/
 /* .home-page .slick-track,
@@ -2952,13 +3133,12 @@ body.testnet.home-page{
   
 }
 .home-page .slides .slide {
-  background: #F9F9F9;
   width: 100%;
   /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 85px 0 220px 0;
+  padding: 60px 0 220px 0;
 }
 
 /* .home-page .slides .slick-dots {
@@ -2979,7 +3159,7 @@ body.testnet.home-page{
   display: flex;
   justify-content: center; */
   position: absolute;
-  top: 240px;
+  top: 0px;
   right: 65px;
   list-style: none;
   width: 12px;
@@ -3018,21 +3198,21 @@ body.testnet.home-page{
   z-index: 1;
 }
 .home-page .slick-dots li:hover button {
-  background-color: #2C3ACF;
+  background-color: #0D3EF4;
 }
 .home-page .slick-dots li.slick-active button {
-  background-color: #2C3ACF;
+  background-color: #0D3EF4;
 }
 
-.home-page .slides dl dt{
+.home-page .mb-product dl dt{
   color: #0D3EF4;
 }
-.home-page .slides dl dd{
+.home-page .mb-product dl dd{
   font-size: 20px;
   line-height: 36px;
   font-family: "Airbnb Cereal App Book";
 }
-.home-page .slides h3{
+.home-page .mb-product h3{
   font-size: 60px;
   margin: auto 0;
   align-items: center;
@@ -3048,7 +3228,8 @@ body.testnet.home-page{
   height: auto;
 }
 .home-page .slides .arrow{
-  margin: 0 0 30px 0;
+  display: inline-block;
+  margin: 0 0 0 1rem;
 }
 .home-page .slides a{
   font-size: 20px;
@@ -3060,6 +3241,9 @@ body.testnet.home-page{
 @media (max-width: 1200px) {
   .home-page .slick-dots{
     top: 100px;
+  }
+  .home-page .slick-dots li{
+    padding: 0 0 120px 0;
   }
   .home-page .slides dl dd{
     font-size: 16px;
@@ -3075,11 +3259,15 @@ body.testnet.home-page{
   }
 }
 @media (max-width: 767px) {
+  .home-page .mb-product{
+    padding:40px 0 0 0;
+  }
   .home-page .slides .slide{
-    padding: 85px 0;
+    padding: 40px 24px 80px 24px;
   }
   .home-page .slides h3{
     font-size: 30px;
+    margin-bottom: 20px;
   }
   .home-page .slides .slide-content{
     font-size: 16px;
@@ -3089,15 +3277,36 @@ body.testnet.home-page{
     margin: 0 4rem;
   }
   .home-page .slick-dots{
+    top: 50px;
     right: 30px;
   }
+  .home-page .slick-dots li{
+    padding: 0 0 110px 0;
+  }
+  .home-page .slides .arrow{
+    vertical-align: middle;
+  }
+  .home-page .slides .arrow img{
+    max-height: 18px;
+  }
+}
+.mb-section-community-loves-massbit{
+  background: #F9F9F9;
+}
+.mb-section-community-loves-massbit .mb-title-mini{
+  margin-bottom: 1rem;
 }
 .mb-section-community-loves-massbit .mb-title-large{
   font-size: 36px;
+  margin-bottom: 2rem;
 }
 @media (max-width: 767px){
   .mb-section-community-loves-massbit .mb-title-large{
     font-size: 26px;
+    margin-bottom: 1rem;
+  }
+  .mb-section-community-loves-massbit .mb-title-mini{
+    margin-bottom: 0;
   }
 }
 .mb-banner-sub{
@@ -3127,7 +3336,7 @@ body.testnet.home-page{
 }
 .mb-section-build-massbit .box{
   background: #F6F7FD;
-  padding: 24px;
+  padding: 24px 24px 24px 40px;
   border-top:1px solid transparent;
 }
 .mb-section-build-massbit .box:hover{
@@ -3150,16 +3359,16 @@ body.testnet.home-page{
   padding: 13px 50px 13px 20px;
 }
 .mb-section-build-massbit .box .btn::before{
-  background-image: url(../images/arrow-right3.png);
+  background-image: url(../images/arrow-right3.svg);
   background-size: cover;
   transition: all ease-in-out 0.3s;
 }
 .mb-section-build-massbit .box .btn:hover{
-  background: #2c3acf;
+  background: #0D3EF4;
   color: #fff;
 }
 .mb-section-build-massbit .box .btn:hover::before{
-  background-image: url(../images/arrow-right.png);
+  background-image: url(../images/arrow-right.svg);
   background-size: cover;
   right: 10px;
 }
@@ -3204,7 +3413,7 @@ body.testnet.home-page{
   background: #fff;
 }
 .mb-section-blog .box .frame dl dt{
-  color: #2C3ACF;
+  color: #0D3EF4;
 }
 .mb-section-blog .box .frame dl dd a{
   color: #3D3D48;
@@ -3222,13 +3431,24 @@ body.testnet.home-page{
 }
 @media (max-width: 767px){
   .mb-banner-sub{
-    padding: 15px 0 60px 0;
+    padding: 15px 0 40px 0;
   }
   .mb-section-build-massbit{
     padding: 40px 0 80px 0;
   }
   .mb-section-build-massbit .box h4{
     font-size: 20px;
+  }
+  .mb-section-build-massbit .box .btn {
+    padding: 8px 50px 8px 0;
+  }
+  .mb-section-build-massbit .box .btn:hover {
+    background: transparent;
+    color: #0D3EF4;
+  }
+  .mb-section-build-massbit .box .btn:hover:before {
+    background-image: url(../images/arrow-right2.svg);
+    background-size: cover;
   }
   .mb-section-our-team-experience{
     padding: 65px 0 60px 0;
@@ -3310,7 +3530,7 @@ body.testnet.home-page{
 
 .multi-chain-page .mb-banner-action a:hover {
     background-color: #fff;
-    color: #2C3ACF;
+    color: #0D3EF4;
 } */
 
 .multi-chain-page .mb-banner-action {
@@ -3334,8 +3554,8 @@ body.testnet.home-page{
 }
 
 .multi-chain-page .mb-banner-action a.btn-outline-light:hover {
-  background: #2c3acf;
-  border: 1px solid #2c3acf;
+  background: #0D3EF4;
+  border: 1px solid #0D3EF4;
 }
 
 .multi-chain-page
@@ -3886,12 +4106,12 @@ body.testnet .mb-right-box-socials a:not(:last-child) {
   font-size: 14px;
   line-height: 20px;
   text-decoration-line: underline;
-  color: #2c3acf;
+  color: #0D3EF4;
 }
 
 @media (max-width: 991px) {
   .multi-chain-page .navbar:not(.mb-navbar-fixed) .navbar-collapse {
-    background-color: #2c3acf;
+    background-color: #0D3EF4;
     padding: 30px 0;
     margin-top: 15px;
   }

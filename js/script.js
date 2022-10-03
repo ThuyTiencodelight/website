@@ -162,3 +162,12 @@ $("#slideGlowing").owlCarousel({
     items: 1,
     nav: true
 });
+$(".navbar-toggler").click(function() {
+    if($(".mb-navbar").hasClass("open"))
+    {
+        $(".mb-navbar").removeClass("open");
+    }
+    else{
+        $(".mb-navbar").addClass("open");
+    }
+});
