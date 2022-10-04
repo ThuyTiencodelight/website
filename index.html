@@ -105,7 +105,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-10 col-lg-10 col-md-12">
-                    <h1 class="mb-banner-heading mb-font-bold">Innovative infrastrucure</h1>
+                    <h1 class="mb-banner-heading mb-font-bold">Innovative infrastructure</h1>
                     <h2 class="mb-banner-sub-heading mb-font-medium">for DeFi and Web3 apps</h2>
                     <div class="mb-banner-description col-lg-8 col-md-10">
                         MassBit’s mission is to become an innovative infrastructure to make DeFi and Web3 development easier, faster and cheaper
@@ -167,11 +167,11 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-3 d-flex">
-                                <h3 class="mb-font-medium d-flex">Massbit Prime</h3>
+                                <h3 class="mb-font-medium d-flex">MassBit Prime</h3>
                             </div>
                             <div class="col-lg-4 col-md-5 col-12">
                                 <div class="photo">
-                                    <img src="images/index/slider_img2.svg" alt="Massbit Prime">
+                                    <img src="images/index/slider_img2.svg" alt="MassBit Prime">
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-11">
@@ -348,10 +348,10 @@
                                 </div>
                             </div>
                             <div class="mb-community-card-body">
-                                <p>Awesome, Massbit just keeps on trailblazing forward.<br />
-                                    Can't wait to #Massbit hits the market and delivers the real value and use cases
+                                <p>Awesome, MassBit just keeps on trailblazing forward.<br />
+                                    Can't wait to #MassBit hits the market and delivers the real value and use cases
                                     it possesses.</p>
-                                <div>#ckmassbit #ckclub #MassbitProtocol #Nodes #Indexing #Blockchain #DOT #Kusama
+                                <div>#ckmassbit #ckclub #MassBitProtocol #Nodes #Indexing #Blockchain #DOT #Kusama
                                 </div>
                             </div>
                             <div class="mb-community-card-footer">8:30 PM · May 6, 2022</div>
@@ -711,7 +711,7 @@
                             <h3>PRODUCTS</h3>
                             <ul class="mb-font-medium">
                                 <li>
-                                    <a href="massbit-route.html">MassBit Route</a>
+                                    <a href="api-service.html">MassBit Route</a>
                                 </li>
                                 <li>
                                     <span>MassBit Turbo <small style="color:rgba(233, 235, 250, 0.8)">(Coming
@@ -849,6 +849,9 @@
 				}
 			]
         });
+        $('.slides').on('touchstart', function() {
+			$('.slides').slick('slickPlay');
+		});
         $('.mb-banner-sub ul').slick({
 				autoplay: true,
 				autoplaySpeed: 3000,
@@ -869,6 +872,9 @@
 					}
 				]
 			});
+            $('.mb-banner-sub ul').on('touchstart', function() {
+                $('.mb-banner-sub ul').slick('slickPlay');
+            });
             $('.mb-section-blog .blog-slider').slick({
 				autoplay: true,
 				autoplaySpeed: 3000,
@@ -889,6 +895,9 @@
 					}
 				]
 			});
+            $('.mb-section-blog .blog-slider').on('touchstart', function() {
+                $('.mb-section-blog .blog-slider').slick('slickPlay');
+            });
     </script>
 
 
