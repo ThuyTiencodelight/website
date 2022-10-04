@@ -408,6 +408,7 @@ body {
   padding: 8px;
   transform: translateY(1rem);
   margin-top: 0 !important;
+  border: none;
 }
 
 .mb-header-dropdown-menu li .dropdown-item {
@@ -2739,6 +2740,13 @@ footer ul li a:hover {
   footer {
     padding-bottom: 20px;
     /* text-align: center; */
+  }
+  footer .mb-group-logo div{
+    width: 44%;
+  }
+  footer .mb-group-logo div img{
+    width: 100%;
+    height: auto;
   }
   footer .col-md-4 {
     margin-bottom: 10px;
