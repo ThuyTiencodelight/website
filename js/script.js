@@ -2,7 +2,7 @@ $(document).ready(function () {
     // AOS.init();
     $(window).scroll(function () {
         var wScroll = $(this).scrollTop();
-        if (wScroll >= 80) {
+        if (wScroll >= 120) {
             $('.navbar').addClass('mb-navbar-fixed');
         } else {
             $('.navbar').removeClass('mb-navbar-fixed');
@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     });
 
-    if ($(window).scrollTop() >= 80) {
+    if ($(window).scrollTop() >= 120) {
         $('.navbar').addClass('mb-navbar-fixed');
     } else {
         $('.navbar').removeClass('mb-navbar-fixed');
@@ -47,8 +47,28 @@ $(document).ready(function () {
         if (targetEl != '#' && targetEl.startsWith('#')) {
             e.preventDefault();
             $('html, body').animate({
-                scrollTop: ($(targetEl).offset().top - 70)
+                scrollTop: ($(targetEl).offset().top - 120)
             }, 500);
+        }
+    });
+    $("a").click(function (e) {
+        if ($(window).width() > 767) {
+            const targetEl = $(this).attr('href');
+            if (targetEl != '#' && targetEl.startsWith('#')) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: ($(targetEl).offset().top - 120)
+                }, 500);
+            }
+        }
+        else{
+            const targetEl = $(this).attr('href');
+            if (targetEl != '#' && targetEl.startsWith('#')) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: ($(targetEl).offset().top - 70)
+                }, 500);
+            }
         }
     });
 

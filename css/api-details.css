@@ -663,6 +663,11 @@
     padding-right: 20px;
   }
 }
+@media (max-width: 768px){
+  .mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-content ul li .mb-api-roadmap-text {
+      font-size: 14px;
+  }
+}
 /* Glowing Testimonials Making Us Proud! */
 .mb-section-api-glowing {
   padding-top: 107px;

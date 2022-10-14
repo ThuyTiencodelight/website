@@ -264,7 +264,12 @@ body {
   color: #fff;
   margin-right: 10px;
 }
-
+@media (max-width: 767px){
+  .btn-outline-primary{
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
 .mb-decor {
   position: absolute;
   z-index: 1;
@@ -1567,7 +1572,7 @@ header::before {
     font-size: 16px;
   }
   .mb-title-large{
-    font-size: 25px;
+    font-size: 24px;
   }
 }
 .mb-start-with-mi {
@@ -2780,7 +2785,10 @@ footer ul li a:hover {
     margin-bottom: 10px;
   }
   footer h3 {
-    margin-bottom: 3px;
+    margin-bottom: 8px;
+  }
+  footer ul li{
+    margin-bottom: 0;
   }
   .mb-subscribe-form {
     margin-top: 10px;
@@ -3166,6 +3174,38 @@ body.testnet.home-page{
 .home-page .mb-product{
   padding: 85px 0 0 0;
 }
+.home-page .slides .slick-prev, .home-page .slides .slick-next {
+  height: 52px;
+  width: 52px;
+  top: 70%;
+  z-index: 1;
+}
+.home-page .slides .slick-prev:before, .home-page .slides .slick-next:before{
+  font-size: 52px;
+  width: 52px;
+  height: 52px;
+  color: #000;
+}
+.home-page .slides .slick-prev{
+  left: calc(57% + 10px);
+  background: url("../images/Prev.svg")no-repeat center center;
+  background-size: contain;
+}
+.home-page .slides .slick-next{
+  right: auto;
+  left: calc(57% + 127px);
+  background: url("../images/Next.svg")no-repeat center center;
+  background-size: contain;
+}
+.slick-prev:before{
+  content: "";
+}
+.slick-next:before{
+  content: "";
+}
+.slick-prev.slick-disabled, .slick-next.slick-disabled {
+  opacity: 0.25;
+}
 /*slide*/
 /* .home-page .slick-track,
 .home-page .slick-list {
@@ -3212,6 +3252,7 @@ body.testnet.home-page{
   right: 65px;
   list-style: none;
   width: 12px;
+  line-height: 0;
 }
 .home-page .slides .slick-dots li:after{
   position:absolute;
@@ -3227,6 +3268,7 @@ body.testnet.home-page{
 }
 .home-page .slides .slick-dots li {
   width: 12px;
+  height: 12px;
   line-height: 0;
   margin: 0 auto;
   position: relative;
@@ -3293,6 +3335,14 @@ body.testnet.home-page{
 }
 /*slide*/
 @media (max-width: 1200px) {
+  .home-page .slides .slick-prev{
+    left: calc(58% + 10px);
+  }
+  .home-page .slides .slick-next{
+    left: calc(58% + 127px);
+  }
+}
+@media (max-width: 1200px) {
   .home-page .slides .slick-dots{
     top: 100px;
   }
@@ -3312,15 +3362,38 @@ body.testnet.home-page{
     font-size: 16px;
   }
 }
+@media (max-width: 992px) {
+  .home-page .slides .slick-prev{
+    left: 45%;
+  }
+  .home-page .slides .slick-next{
+    left: calc(45% + 117px);
+  }
+}
 @media (max-width: 767px) {
   .home-page .mb-product{
     padding:40px 0 0 0;
+  }
+  .home-page .slides .slick-prev, .home-page .slides .slick-next {
+    top: 92%;
+    width: 40px;
+    height: 40px;
+  }
+  .home-page .slides .slick-prev:before, .home-page .slides .slick-next:before {
+    font-size: 40px;
+  }
+  .home-page .slides .slick-prev{
+    left: calc(50% - 70px);
+  }
+  .home-page .slides .slick-next{
+    right: calc(50% - 70px);
+    left: auto;
   }
   .home-page .slides .slide{
     padding: 40px 24px 80px 24px;
   }
   .home-page .slides h3{
-    font-size: 30px;
+    font-size: 36px;
     margin-bottom: 20px;
   }
   .home-page .slides .slide-content{
@@ -3356,11 +3429,12 @@ body.testnet.home-page{
 }
 @media (max-width: 767px){
   .mb-section-community-loves-massbit .mb-title-large{
-    font-size: 26px;
+    font-size: 24px;
+    line-height: 31px;
     margin-bottom: 1rem;
   }
   .mb-section-community-loves-massbit .mb-title-mini{
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
 }
 .mb-banner-sub{
@@ -3548,7 +3622,9 @@ body.testnet.home-page{
   .mb-section-blog {
     padding: 80px 0;
   }
-  
+  .mb-section-blog .box .frame dl dd {
+    font-size: 20px;
+  }
 }
 .multi-chain-page {
   position: relative;
