@@ -2971,7 +2971,7 @@ body.testnet.home-page{
   /* background-image: url(../images/index/banner.png); */
   /* margin-top: -138px; */
   padding-top: calc(138px + 3rem);
-  padding-bottom: 200px;
+  padding-bottom: 192px;
   overflow: hidden;
   z-index: 0;
   position: relative;
@@ -3134,7 +3134,7 @@ body.testnet.home-page{
   
   .home-page .mb-header-small{
     padding-top: calc(80px + 3rem);
-    padding-bottom: 120px;
+    padding-bottom: 60px;
   }
   .home-page .mb-banner-heading {
     font-size: 48px;
@@ -3437,7 +3437,10 @@ body.testnet.home-page{
   }
 }
 .mb-banner-sub{
-  padding: 15px 0 100px 0;
+  padding: 100px 0 100px 0;
+}
+.mb-banner-sub .mb-title-mini{
+  margin-bottom: 32px;
 }
 .mb-banner-sub ul{
   list-style: none;
@@ -3596,7 +3599,10 @@ body.testnet.home-page{
 }
 @media (max-width: 767px){
   .mb-banner-sub{
-    padding: 15px 0 40px 0;
+    padding: 40px 0 40px 0;
+  }
+  .mb-banner-sub .mb-title-mini{
+    margin-bottom: 25px;
   }
   .mb-section-build-massbit{
     padding: 40px 0 80px 0;
