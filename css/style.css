@@ -3146,13 +3146,13 @@ body.testnet.home-page{
   .mb-banner-sub ul{
     padding-left: 0;
   }
-  .mb-banner-sub ul li{
+  /* .mb-banner-sub ul li{
     width: 50%;
   }
   .mb-banner-sub ul li img{
     width: 100%;
     height: auto;
-  }
+  } */
   .home-page .mb-header-small .mb-title-mini {
     bottom: 10px;
   }
@@ -3444,9 +3444,9 @@ body.testnet.home-page{
 }
 .mb-banner-sub ul{
   list-style: none;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 .mb-banner-sub li img{
   -moz-filter: grayscale(100%);
@@ -3454,6 +3454,8 @@ body.testnet.home-page{
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: all ease-in-out 0.3s;
+  width: 100%;
+  height: auto;
 }
 .mb-banner-sub li img:hover{
   -moz-filter: grayscale(0%);
