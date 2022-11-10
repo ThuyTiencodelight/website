@@ -1,333 +1,400 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <meta name="description"
-        content="Connect your dAPP to MassBit Route Decentralized APIs for global, reliable, and scalable blockchain access." />
-    <meta name="og:title" property="og:title" content="MassBit.io" />
-    <meta name="og:description" property="og:description"
-        content="Connect your dAPP to MassBit Route Decentralized APIs for global, reliable, and scalable blockchain access." />
-    <meta name="twitter:card" content="MassBit.io" />
-    <meta property="og:title" property="og:title" content="MassBit.io" />
-    <meta property="og:description"
-        content="Connect your dAPP to MassBit Route Decentralized APIs for global, reliable, and scalable blockchain access." />
-    <meta property="og:image" content="https://massbit.io/massbit-io.png" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:width" content="1200" />
-    <link rel="apple-touch-icon" href="logo.png" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="css/fonts/airbnb-cereal-app/style.css" />
-    <link rel="stylesheet" href="plugins/OwlCarousel2/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="plugins/OwlCarousel2/assets/owl.theme.default.min.css" />
-    <!-- <link rel="stylesheet" href="plugins/AOS/aos.css" /> -->
-    <link rel="stylesheet" href="css/style.css?v=17" />
-    <link rel="stylesheet" href="css/api-details.css?v=18" />
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <meta name="description"
+            content="Connect your dAPP to MassBit Route Decentralized APIs for global, reliable, and scalable blockchain access." />
+        <meta name="og:title" property="og:title" content="MassBit.io" />
+        <meta name="og:description" property="og:description"
+            content="Connect your dAPP to MassBit Route Decentralized APIs for global, reliable, and scalable blockchain access." />
+        <meta name="twitter:card" content="MassBit.io" />
+        <meta property="og:title" property="og:title" content="MassBit.io" />
+        <meta property="og:description"
+            content="Connect your dAPP to MassBit Route Decentralized APIs for global, reliable, and scalable blockchain access." />
+        <meta property="og:image" content="https://massbit.io/massbit-io.png" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:width" content="1200" />
+        <link rel="apple-touch-icon" href="logo.png" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+        <link rel="stylesheet" href="css/fonts/airbnb-cereal-app/style.css" />
+        <link rel="stylesheet" href="plugins/OwlCarousel2/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="plugins/OwlCarousel2/assets/owl.theme.default.min.css" />
+        <!-- <link rel="stylesheet" href="plugins/AOS/aos.css" /> -->
+        <link rel="stylesheet" href="css/slick.css" />
+        <link rel="stylesheet" href="css/style.css?v=17" />
+        <link rel="stylesheet" href="css/api-details.css?v=18" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KSE0NL051F"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KSE0NL051F"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-        gtag('config', 'G-KSE0NL051F');
-    </script>
+            gtag('config', 'G-KSE0NL051F');
+        </script>
 
-    <title>API Details - MassBit.io</title>
-    <style>
-        header::before {
-            display: none;
-        }
-    </style>
-</head>
+        <title>API Details - MassBit.io</title>
+        <style>
+            header::before {
+                display: none;
+            }
+        </style>
+    </head>
 
-<body>
-    <div class="wr-loading" id="wr_loading">
-        <img src="images/decor.svg" alt="loading..." height="80">
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light mb-navbar flex-wrap fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img class="mb-logo" src="images/logo.svg" alt="MassBit" />
-            </a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
-                <ul class="navbar-nav ms-auto my-3 my-lg-0 align-items-lg-start">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Developers
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end mb-header-dropdown-menu" aria-labelledby="navbarDropdown0">
-                            <li><a class="dropdown-item" href="https://docs.massbit.io/about/introduction">Docs</a></li>
-                            <li><a class="dropdown-item" href="https://docs.massbit.io/about/contact-us">Supports</a>
-                            </li>
-                            <li><a class="dropdown-item" href="https://github.com/massbitprotocol/">Github</a></li>
-                            <li><a class="dropdown-item" href="https://discord.gg/5ePzAEFNHZ">Discord</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="api-service.html">API Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="partnership.html">Partnership</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://blog.massbit.io/">Blog</a>
-                    </li>
-                    <li class="nav-item nav-btn">
-                        <a href="https://dapi.massbitroute.net/login" class="nav-link btn-get-started ms-lg-3 d-inline-block">Log in</a>
-                    </li>
-                </ul>
-            </div>
+    <body class="api-service">
+        <div class="wr-loading" id="wr_loading">
+            <img src="images/decor.svg" alt="loading..." height="80">
         </div>
-    </nav>
-    <!-- End Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light mb-navbar flex-wrap fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="mb-logo" src="images/logo.svg" alt="MassBit" />
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+                    <ul class="navbar-nav ms-auto my-3 my-lg-0 align-items-lg-start">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown0"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Developers
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end mb-header-dropdown-menu"
+                                aria-labelledby="navbarDropdown0">
+                                <li><a class="dropdown-item" href="https://docs.massbit.io/about/introduction">Docs</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://docs.massbit.io/about/contact-us">Supports</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://github.com/massbitprotocol/">Github</a></li>
+                                <li><a class="dropdown-item" href="https://discord.gg/5ePzAEFNHZ">Discord</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="api-service.html">API Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="partnership.html">Partnership</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://blog.massbit.io/">Blog</a>
+                        </li>
+                        <li class="nav-item nav-btn">
+                            <a href="https://dapi.massbitroute.net/login"
+                                class="nav-link btn-get-started ms-lg-3 d-inline-block">Log in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navigation Bar -->
 
-    <header class="mb-header-small" style="background-position: bottom center;">
-        <div class="container">
-            <div class="row align-items-center align-items-xl-center align-items-lg-end">
-                <div class="col-xl-5 col-lg-6 mt-lg-0 mb-4 pe-lg-0 order-lg-1 order-2">
-                    <h2 class="mb-banner-sub-heading">The Best Performing API</h2>
+        <header class="mb-header-small text-center" style="background-position: bottom center;">
+            <div class="container">
+                <div class="row align-items-center align-items-xl-center align-items-lg-end">
+                    <h2 class="mb-banner-sub-heading mb-font-medium">The Best Performing API</h2>
                     <div class="mb-banner-description fs-18">
-                        Connect your applications to MassBit’s Decentralized API for global, reliable, and scalable
-                        blockchain access.
+                        Connect your applications to MassBit’s Decentralized API <br class="d-none d-md-block">for
+                        global, reliable, and scalable blockchain access
                     </div>
-                    <div class="mb-banner-actions">
+                    <!-- <div class="mb-banner-actions">
                         <a href="https://dapi.massbitroute.net/login" class="btn btn-fw btn-primary">Get a free endpoint</a>
                         <a href="massbit-route.html" class="btn btn-fw btn-outline-primary">What is MassBit Route</a>
-                    </div>
-                </div>
-                <div class="col-xl-7 col-lg-6 pl-lg-0 order-lg-2 order-1">
-                    <img src="images/GIF/api-details.gif" class="img-fluid" alt="MassBit" />
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- End Header -->
-
-    <main>
-        <section class="mb-section mb-section-api-statistics" id="Statistics">
-            <div class="container text-center">
-                <div class="mb-section-body">
-                    <div class="mb-api-statistics">
-                        <div class="mb-api-statistics-item">
-                            <div class="mb-api-statistics-value">613,121</div>
-                            <div class="mb-api-statistics-label">Total Respond / min</div>
-                        </div>
-                        <div class="mb-api-statistics-item">
-                            <div class="mb-api-statistics-value">1,667</div>
-                            <div class="mb-api-statistics-label">Node</div>
-                        </div>
-                        <div class="mb-api-statistics-item">
-                            <div class="mb-api-statistics-value">1,945</div>
-                            <div class="mb-api-statistics-label">Gateway</div>
-                        </div>
-                        <div class="mb-api-statistics-item">
-                            <div class="mb-api-statistics-value">1,626</div>
-                            <div class="mb-api-statistics-label">Node Provider</div>
-                        </div>
-                        <div class="mb-api-statistics-item">
-                            <div class="mb-api-statistics-value">14</div>
-                            <div class="mb-api-statistics-label">dAPI Endpoint</div>
-                        </div>
+                    </div> -->
+                    <div class="photo">
+                        <img src="images/api-service/banner-img.png"
+                            srcset="images/api-service/banner-img.png 1x, images/api-service/banner-img@2x.png 2x, images/api-service/banner-img@3x.png 3x"
+                            alt="MassBit">
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- End Statistics -->
+        </header>
+        <!-- End Header -->
 
-        <section class="mb-section mb-section-api-advantages" id="Advantages">
-            <div class="container text-center">
-                <div data-aos="fade-up" class="mb-section-title d-flex align-content-center justify-content-md-center">
-                    <span class="pt-2">Advantages</span>
-                </div>
-                <div class="mb-section-body">
-                    <div data-aos="fade-up" class="row justify-content-center mb-66 mb-mb-10px">
-                        <div class="col-xl-9">
-                            MassBit Route is highly competitive, with many advantages compared to altnerative options
-                        </div>
-                    </div>
-                    <div class="mb-section-api-advantages-tabs">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="productTab1-tab" data-bs-toggle="tab"
-                                            data-bs-target="#productTab1" type="button" role="tab"
-                                            aria-controls="productTab1" aria-selected="true">
-                                            <span>Fully Decentralized APIs</span>
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="productTab2-tab" data-bs-toggle="tab"
-                                            data-bs-target="#productTab2" type="button" role="tab"
-                                            aria-controls="productTab2" aria-selected="false">
-                                            <span>MassBit Verification Protocol</span>
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="productTab3-tab" data-bs-toggle="tab"
-                                            data-bs-target="#productTab3" type="button" role="tab"
-                                            aria-controls="productTab3" aria-selected="false">
-                                            <span>Cost-Effective</span>
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="productTab4-tab" data-bs-toggle="tab"
-                                            data-bs-target="#productTab4" type="button" role="tab"
-                                            aria-controls="productTab4" aria-selected="false">
-                                            <span>No Privacy Concerns</span>
-                                        </button>
-                                    </li>
-                                </ul>
+        <main>
+            <section class="mb-section mb-section-api-statistics" id="Statistics">
+                <div class="container text-center">
+                    <div class="mb-section-body">
+                        <div class="mb-api-statistics">
+                            <div class="mb-api-statistics-item">
+                                <div class="mb-api-statistics-value">613,121</div>
+                                <div class="mb-api-statistics-label">Total Respond / min</div>
                             </div>
-                            <div class="col-lg-8">
-                                <!-- Tab panes -->
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="productTab1" role="tabpanel"
-                                        aria-labelledby="productTab1-tab">
-                                        <h4>Eliminate Single-Point-Of-Failure</h4>
-                                        <p>MassBit Network is decentralized, managed and operated by its independent
-                                            communities and individuals.</p>
-                                        <svg width="318" height="318" viewBox="0 0 318 318" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
+                            <div class="mb-api-statistics-item">
+                                <div class="mb-api-statistics-value">1,667</div>
+                                <div class="mb-api-statistics-label">Node</div>
+                            </div>
+                            <div class="mb-api-statistics-item">
+                                <div class="mb-api-statistics-value">1,945</div>
+                                <div class="mb-api-statistics-label">Gateway</div>
+                            </div>
+                            <div class="mb-api-statistics-item">
+                                <div class="mb-api-statistics-value">1,626</div>
+                                <div class="mb-api-statistics-label">Node Provider</div>
+                            </div>
+                            <div class="mb-api-statistics-item">
+                                <div class="mb-api-statistics-value">14</div>
+                                <div class="mb-api-statistics-label">dAPI Endpoint</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Statistics -->
+
+            <div class="bg-blue">
+                <section class="mb-section-api-advantages" id="Advantages">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div data-aos="fade-up" class="mb-title-large col-md-5">
+                                Welcome to <br class="d-none d-md-block">MassBit Route
+                            </div>
+                            <div class="col-md-6 text">We work with small API providers and validators to form
+                                decentralized gateways. Some API providers only utilize 20% of their capacities while
+                                validators or miners only do their work to earn rewards, wasting other resources (data
+                                and APIs). With MassBit, our validators earn more rewards and serve numerous DeFi and
+                                Web3 apps. We also punish nodes for misbehaving! </div>
+                        </div>
+                        <div class="group">
+                            <div class="item">
+                                <div class="icon">
+                                    <svg width="75" height="75" viewBox="0 0 75 75" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_3868_19234)">
                                             <path
-                                                d="M285.33 188.544V129.455C294.902 127.395 302.1 118.87 302.1 108.691C302.1 91.8759 283.432 81.826 269.441 90.7809L227.219 48.5586C236.175 34.5661 226.122 15.8999 209.308 15.8999C196.126 15.8999 186.015 27.8767 188.42 40.9815L139.277 61.4029L126.537 48.662C135.548 34.7684 125.645 15.8999 108.691 15.8999C91.8977 15.8999 81.812 34.5454 90.7809 48.5591L48.5586 90.7814C34.5644 81.8237 15.8999 91.881 15.8999 108.691C15.8999 121.9 27.8991 131.979 40.9815 129.58L53.2071 159L40.9815 188.42C27.8515 186.011 15.8999 196.151 15.8999 209.308C15.8999 226.124 34.5677 236.174 48.5586 227.219L90.7809 269.441C81.8237 283.435 91.881 302.1 108.691 302.1C118.87 302.1 127.395 294.902 129.455 285.33H188.544C190.604 294.902 199.13 302.1 209.308 302.1C221.02 302.1 230.549 292.571 230.549 280.858C230.549 269.146 221.02 259.617 209.308 259.617C199.129 259.617 190.604 266.815 188.544 276.387H131.1L263.404 221.408C275.136 238.389 302.1 230.131 302.1 209.308C302.1 199.13 294.902 190.605 285.33 188.544ZM58.0389 205.518L70.4149 200.409L96.0236 262.035L54.922 220.933C57.9311 216.354 59.0026 210.846 58.0389 205.518ZM174.634 109.408L155.575 155.576L75.2501 188.737L62.8926 159L91.1073 91.104L137.182 71.9554L174.634 109.408ZM217.543 139.669L242.75 129.263L268.071 190.197L217.543 139.669ZM251.017 125.85L263.372 120.749C266.438 125.213 271.087 128.323 276.387 129.454V186.899L251.017 125.85ZM259.961 112.482L247.585 117.591L221.976 55.9657L263.078 97.0672C260.069 101.645 258.997 107.154 259.961 112.482ZM205.52 58.0389C207.988 58.4856 210.522 58.5118 213.149 58.03L239.318 121.004L210.695 132.82L185.18 107.306L205.52 58.0389ZM201.742 136.516L167.239 150.76L181.483 116.258L201.742 136.516ZM150.759 167.24L112.482 259.961C109.933 259.501 107.402 259.502 104.851 259.97L78.6817 196.996L150.759 167.24ZM126.139 268.763C124.679 266.665 122.847 264.838 120.745 263.382L162.424 162.425L208.591 143.366L263.013 197.788C260.014 202.413 259.008 207.908 259.971 213.15L126.139 268.763ZM191.86 49.2366C193.32 51.3345 195.153 53.1629 197.256 54.6185L178.33 100.455L146.117 68.2421L191.86 49.2366ZM95.9711 79.3988L104.851 58.0294C110.104 58.9937 115.597 57.9797 120.212 54.9863L130.341 65.1157L95.9711 79.3988ZM55.9657 96.0236L96.0236 55.9657L84.2642 84.2642L55.9657 96.0236ZM49.2405 126.147C56.0769 121.424 59.5488 113.132 58.0306 104.851L79.4 95.9699L58.0501 147.347L49.2405 126.147ZM66.9827 192.15L54.6174 197.255C53.1618 195.153 51.3339 193.32 49.2372 191.86L58.0501 170.654L66.9827 192.15Z"
-                                                fill="url(#paint0_linear_2619_15088)" />
-                                            <defs>
-                                                <linearGradient id="paint0_linear_2619_15088" x1="241.807" y1="268.738"
-                                                    x2="138.073" y2="11.9674" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#A4ABF3" />
-                                                    <stop offset="1" stop-color="#212EAE" />
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                    <div class="tab-pane" id="productTab2" role="tabpanel"
-                                        aria-labelledby="productTab2-tab">
-                                        <h4>Based on Proof-of-Stake Algorithm</h4>
-                                        <p>MassBit Protocol is based on a proof-of-stake algorithm which incentivizes
-                                            those working within the system to verify each other’s work. This ensures
-                                            the network’s health.</p>
-                                        <svg width="378" height="378" viewBox="0 0 378 378" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
+                                                d="M59.5455 3.59694e-06C66.6066 -0.0286479 73.1871 4.84401 74.6782 12.5417C75.6908 17.7639 74.3064 22.5258 70.5118 26.3746C64.0514 32.9263 57.5719 39.4607 51.0124 45.913C44.8094 52.0158 35.7443 52.1648 29.3926 46.4097C27.9186 45.0745 27.6917 43.3229 28.8301 42.0374C30.0276 40.6851 31.8067 40.6412 33.2978 41.9572C36.2286 44.5454 39.5523 45.4183 43.2458 44.0029C44.512 43.5178 45.7628 42.7232 46.7296 41.7719C53.2834 35.3139 59.8106 28.8272 66.2424 22.2469C71.0838 17.294 69.4821 9.49701 63.1666 6.65478C59.6046 5.05221 55.3733 6.00917 52.2919 9.10926C48.9816 12.4386 45.6694 15.766 42.3553 19.0895C41.194 20.2528 39.8936 20.5469 38.6503 19.9376C37.5234 19.3856 36.8407 18.1899 37.0962 16.849C37.2183 16.2053 37.573 15.5062 38.0325 15.0401C41.6822 11.3345 45.3281 7.61938 49.0865 4.02458C51.9754 1.25876 55.5411 -0.0076368 59.5455 3.59694e-06Z"
+                                                fill="#254CFF" />
                                             <path
-                                                d="M248.062 324.844H218.531C216.965 324.844 215.463 325.466 214.355 326.574C213.247 327.681 212.625 329.184 212.625 330.75V360.281H224.438V344.984L243.869 364.475L252.256 356.088L232.765 336.656H248.062V324.844Z"
-                                                fill="url(#paint0_linear_2588_15498)" />
+                                                d="M15.5363 74.9982C8.92907 75.0688 2.59454 70.7768 0.641929 63.7248C-0.950286 57.9773 0.422642 52.757 4.62533 48.4688C10.3535 42.6258 16.1999 36.8974 21.9585 31.0831C25.0572 27.9563 28.7698 26.22 33.1479 26.1837C37.3735 26.1493 41.0899 27.6449 44.137 30.6304C45.3631 31.8299 45.4127 33.6999 44.3296 34.8345C43.1836 36.036 41.3893 36.0895 40.0583 34.9014C38.407 33.4268 36.5745 32.4469 34.3168 32.2234C31.1953 31.9159 28.5734 32.8767 26.3843 35.0637C20.5723 40.8685 14.7774 46.6905 8.97293 52.5029C4.0037 57.4806 5.35183 65.3235 11.734 68.267C15.2064 69.8676 19.3271 69.1743 22.2007 66.3683C25.1506 63.4879 28.0395 60.5444 30.9588 57.6315C31.7845 56.8083 32.7189 56.2849 33.9392 56.6173C36.2084 57.2342 37.0054 59.9065 35.3522 61.5893C32.2174 64.7791 29.0749 67.9652 25.8332 71.0442C22.973 73.7604 19.4606 74.9752 15.5344 75.0001L15.5363 74.9982Z"
+                                                fill="#254CFF" />
                                             <path
-                                                d="M369.081 148.424L315.925 118.893C315.027 118.374 314.009 118.102 312.972 118.102C311.935 118.102 310.917 118.374 310.019 118.893L276.59 137.438L237.844 115.408L244.932 111.451C245.866 110.954 246.65 110.214 247.201 109.31C247.751 108.406 248.049 107.371 248.062 106.313V47.25C248.061 46.2035 247.781 45.1762 247.251 44.2733C246.722 43.3704 245.962 42.6244 245.05 42.1116L191.894 12.5804C190.996 12.062 189.977 11.7891 188.941 11.7891C187.904 11.7891 186.885 12.062 185.988 12.5804L132.831 42.1116C131.941 42.6394 131.205 43.3919 130.697 44.2938C130.189 45.1956 129.927 46.2151 129.937 47.25V106.313C129.939 107.359 130.219 108.386 130.748 109.289C131.277 110.192 132.037 110.938 132.949 111.451L140.037 115.408L101.292 137.438L67.8626 118.893C66.9647 118.374 65.9462 118.102 64.9095 118.102C63.8727 118.102 62.8542 118.374 61.9564 118.893L8.80011 148.424C7.90977 148.952 7.17378 149.704 6.66585 150.606C6.15792 151.508 5.8959 152.528 5.90605 153.563V212.625C5.90785 213.672 6.18771 214.699 6.71698 215.602C7.24625 216.505 8.00592 217.251 8.91823 217.763L62.0745 247.295C62.9723 247.813 63.9908 248.086 65.0276 248.086C66.0644 248.086 67.0829 247.813 67.9807 247.295L80.3839 240.443L129.937 268.616V354.375C129.937 355.941 130.56 357.444 131.667 358.551C132.775 359.659 134.277 360.281 135.844 360.281H200.812V348.469H141.75V253.969H236.25V313.031H248.062V268.616L297.734 240.443L310.137 247.295C311.035 247.813 312.053 248.086 313.09 248.086C314.127 248.086 315.145 247.813 316.043 247.295L369.199 217.763C370.09 217.236 370.826 216.483 371.334 215.581C371.842 214.679 372.104 213.66 372.094 212.625V153.563C372.092 152.516 371.812 151.489 371.283 150.586C370.753 149.683 369.994 148.937 369.081 148.424ZM189 24.4519L229.989 47.25L189 70.0482L148.01 47.25L189 24.4519ZM236.25 57.2907V102.828L194.906 125.803V80.266L236.25 57.2907ZM141.75 57.2907L183.094 80.266V125.803L141.75 102.828V57.2907ZM59.0623 232.116L17.7185 209.14V163.603L59.0623 186.578V232.116ZM64.9685 176.361L23.9792 153.563L64.9685 130.764L105.958 153.563L64.9685 176.361ZM70.8748 232.116V186.578L112.219 163.603V209.14L70.8748 232.116ZM248.062 255.032V248.063C248.062 246.496 247.44 244.994 246.332 243.886C245.225 242.779 243.722 242.156 242.156 242.156H135.844C134.277 242.156 132.775 242.779 131.667 243.886C130.56 244.994 129.937 246.496 129.937 248.063V255.032L92.3145 233.71L121.019 217.763C121.931 217.251 122.691 216.505 123.22 215.602C123.749 214.699 124.029 213.672 124.031 212.625V153.563C124.029 152.516 123.749 151.489 123.22 150.586C122.691 149.683 121.931 148.937 121.019 148.424L113.341 144.172L152.145 122.141L186.106 140.982C187.004 141.501 188.022 141.774 189.059 141.774C190.096 141.774 191.114 141.501 192.012 140.982L225.973 122.141L264.777 144.172L257.099 148.424C256.165 148.922 255.381 149.661 254.83 150.565C254.28 151.469 253.982 152.504 253.969 153.563V212.625C253.97 213.672 254.25 214.699 254.779 215.602C255.309 216.505 256.068 217.251 256.981 217.763L285.685 233.71L248.062 255.032ZM307.125 232.116L265.781 209.14V163.603L307.125 186.578V232.116ZM313.031 176.361L272.042 153.563L313.031 130.764L354.02 153.563L313.031 176.361ZM360.281 209.14L318.937 232.116V186.578L360.281 163.603V209.14Z"
-                                                fill="url(#paint1_linear_2588_15498)" />
-                                            <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M221 303.5C221 320.897 206.897 335 189.5 335C172.103 335 158 320.897 158 303.5C158 286.103 172.103 272 189.5 272C206.897 272 221 286.103 221 303.5ZM173.386 310.068C174.127 310.517 174.619 311.316 174.619 312.226C174.619 313.63 173.445 314.769 171.996 314.769C170.548 314.769 169.373 313.63 169.373 312.226C169.373 310.821 170.548 309.682 171.996 309.682C172.015 309.682 172.034 309.683 172.052 309.683L180.149 291.99C180.213 291.838 180.333 291.708 180.495 291.634C180.588 291.591 180.685 291.571 180.781 291.571C180.859 291.571 180.937 291.584 181.014 291.612C181.145 291.66 181.262 291.747 181.345 291.866C181.371 291.904 181.393 291.944 181.411 291.986L189.509 309.682L189.535 309.683L197.629 291.994C197.694 291.84 197.814 291.708 197.978 291.634C198.07 291.591 198.168 291.571 198.264 291.571C198.357 291.571 198.452 291.59 198.543 291.631L198.549 291.634C198.614 291.663 198.672 291.702 198.722 291.747C198.799 291.816 198.857 291.899 198.896 291.992L206.992 309.682C206.997 309.682 207.001 309.682 207.006 309.682C208.454 309.682 209.629 310.821 209.629 312.226C209.629 313.63 208.454 314.769 207.006 314.769C205.557 314.769 204.383 313.63 204.383 312.226C204.383 311.302 204.89 310.494 205.65 310.048L198.263 293.907L190.873 310.057C191.623 310.505 192.124 311.309 192.124 312.226C192.124 313.63 190.95 314.769 189.501 314.769C188.052 314.769 186.878 313.63 186.878 312.226C186.878 311.295 187.393 310.481 188.163 310.038L180.781 293.907L173.386 310.068Z"
-                                                fill="#2C3ACF" />
-                                            <defs>
-                                                <linearGradient id="paint0_linear_2588_15498" x1="243.907" y1="359.855"
-                                                    x2="229.543" y2="324.299" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#A4ABF3" />
-                                                    <stop offset="1" stop-color="#212EAE" />
-                                                </linearGradient>
-                                                <linearGradient id="paint1_linear_2588_15498" x1="294.95" y1="319.658"
-                                                    x2="173.13" y2="2.8077" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#A4ABF3" />
-                                                    <stop offset="1" stop-color="#212EAE" />
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                    <div class="tab-pane" id="productTab3" role="tabpanel"
-                                        aria-labelledby="productTab3-tab">
-                                        <h4>Build Cheaper With MassBit</h4>
-                                        <p>MassBit Route reduces costs by 3.6 times less using bare-metal servers</p>
-                                        <svg width="302" height="326" viewBox="0 0 302 326" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
+                                                d="M22.0246 7.69191C22.0246 6.20012 22.017 4.71025 22.0265 3.21846C22.038 1.37904 23.123 0.095451 24.7095 0.0228673C26.5095 -0.061177 27.85 1.02185 27.9092 2.89948C28.0083 6.03777 28.0064 9.18179 27.9092 12.3201C27.85 14.234 26.5248 15.3743 24.7896 15.3037C23.1459 15.2349 22.0418 13.9494 22.0246 12.0718C22.0189 11.4376 22.0227 10.8035 22.0227 10.1674C22.0227 9.34224 22.0227 8.51707 22.0227 7.69191H22.0246Z"
+                                                fill="#254CFF" />
                                             <path
-                                                d="M113.78 211.485L113.802 211.578C115.1 216.958 112.178 221.352 108 222.71C105.991 223.363 103.684 223.305 101.6 222.269C99.463 221.206 97.8818 219.277 97.0859 216.79L97.0707 216.742L97.0567 216.695C96.2566 213.961 95.1718 212.285 94.0144 211.274C92.9244 210.322 91.4838 209.709 89.4128 209.604C85.35 209.698 82.0873 212.964 82.0873 217.481C82.0873 218.17 82.1571 218.532 82.2 218.689C82.2451 218.716 82.307 218.752 82.3923 218.797L82.3954 218.798C82.8125 219.018 83.7364 219.333 85.3071 219.651C86.8004 219.953 88.6008 220.207 90.5835 220.43L113.78 211.485ZM113.78 211.485L113.753 211.393M113.78 211.485L113.753 211.393M113.753 211.393C111.408 203.385 106.508 196.433 98.346 193.118V190.998C98.346 185.255 93.9981 181.942 89.6736 181.914C87.5703 181.901 85.3692 182.652 83.6676 184.259C81.9077 185.921 80.9132 188.279 80.9132 190.998V191.007V191.017V191.027V191.036V191.046V191.056V191.065V191.075V191.085V191.095V191.105V191.115V191.125V191.135V191.145V191.155V191.165V191.175V191.185V191.195V191.206V191.216V191.226V191.237V191.247V191.257V191.268V191.278V191.289V191.299V191.31V191.32V191.331V191.342V191.352V191.363V191.374V191.385V191.395V191.406V191.417V191.428V191.439V191.45V191.461V191.472V191.483V191.494V191.505V191.516V191.527V191.538V191.549V191.561V191.572V191.583V191.594V191.606V191.617V191.628V191.64V191.651V191.662V191.674V191.685V191.697V191.708V191.72V191.731V191.743V191.755V191.766V191.778V191.79V191.801V191.813V191.825V191.836V191.848V191.86V191.872V191.884V191.895V191.907V191.919V191.931V191.943V191.955V191.967V191.979V191.991V192.003V192.015V192.027V192.039V192.051V192.063V192.075V192.087V192.1V192.112V192.124V192.136V192.148V192.161V192.173V192.185V192.197V192.21V192.222V192.234V192.246V192.259V192.271V192.284V192.296V192.308V192.321V192.333V192.345V192.358V192.37V192.383V192.395V192.408V192.42V192.433V192.445V192.458V192.47V192.483V192.495V192.508V192.52V192.533V192.545V192.558V192.57V192.583V192.596V192.608V192.621V192.633V192.646V192.659V192.671V192.684V192.697V192.709V192.722V192.735V192.747V192.76V192.773V192.785V192.798V192.811V192.823V192.836V192.849V192.861V192.874V192.887V192.899V192.912V192.925V192.937V192.948C71.3907 196.656 64.6546 206.216 64.6546 217.481C64.6546 226.521 69.0278 232.152 74.5174 235.047C79.0886 237.457 83.9265 237.974 87.6325 238.37C88.0042 238.41 88.3645 238.449 88.712 238.488C90.7058 238.712 92.5093 238.96 94.0059 239.256C95.4881 239.55 96.3845 239.84 96.8242 240.052C96.9537 240.13 97.0445 240.187 97.1064 240.227C97.149 240.4 97.209 240.758 97.209 241.397C97.209 245.889 93.8509 249.319 89.8444 249.395C86.6077 249.301 83.6692 247.28 82.2513 242.235L82.2308 242.162L82.2076 242.09C81.3979 239.579 79.7998 237.63 77.6245 236.575C75.5048 235.548 73.1795 235.537 71.1799 236.223C67.0657 237.634 64.1143 242.052 65.5226 247.417L65.5398 247.482L65.5591 247.547C68.5441 257.533 74.503 263.133 80.9132 265.791V267.423C80.9132 270.111 81.8625 272.48 83.6297 274.162C85.3469 275.796 87.569 276.525 89.6842 276.496C94.0263 276.437 98.3462 273.127 98.3462 267.423V265.922C107.893 262.205 114.642 252.564 114.642 241.397C114.642 232.46 110.271 226.768 104.779 223.872L104.779 223.871M113.753 211.393L104.779 223.871M104.779 223.871C100.208 221.461 95.3698 220.944 91.6639 220.548M104.779 223.871L91.6639 220.548M91.6639 220.548C91.2921 220.508 90.9318 220.469 90.5842 220.43L91.6639 220.548ZM97.0645 240.095C97.0648 240.095 97.067 240.099 97.0708 240.109C97.0661 240.1 97.0642 240.095 97.0645 240.095ZM113.029 29.4946C121.754 25.861 128.621 16.5195 131.394 4.76389C131.459 4.4902 131.605 4.26687 131.754 4.13584C131.881 4.02361 131.978 4.00001 132.069 4C132.223 3.99999 132.312 4.04117 132.398 4.11598C132.505 4.20834 132.661 4.41004 132.744 4.76223C135.514 16.5255 142.4 25.8755 151.109 29.5301C151.357 29.6342 151.662 29.9298 151.66 30.5877C151.657 31.2459 151.348 31.5501 151.089 31.6575C142.349 35.2811 135.5 44.6397 132.744 56.396C132.639 56.8464 132.467 57.0059 132.399 57.0591C132.309 57.1298 132.192 57.1723 132.059 57.1723C131.926 57.1723 131.81 57.1299 131.721 57.0598C131.654 57.0072 131.482 56.8484 131.377 56.3981C128.627 44.6389 121.779 35.2669 113.05 31.6217C112.789 31.5124 112.479 31.2037 112.478 30.546C112.476 29.8909 112.779 29.5984 113.029 29.4946ZM259.21 51.1128C267.936 47.4792 274.802 38.1378 277.575 26.3821C277.64 26.1078 277.787 25.8826 277.938 25.7499C278.068 25.6356 278.165 25.6136 278.251 25.6136C278.399 25.6136 278.488 25.6534 278.577 25.7301C278.685 25.8241 278.842 26.0276 278.925 26.3803C281.694 38.1431 288.581 47.4963 297.291 51.1488C297.545 51.255 297.847 51.5512 297.844 52.2047C297.841 52.8605 297.533 53.1671 297.27 53.2757C288.53 56.8993 281.682 66.258 278.925 78.0143C278.82 78.4647 278.648 78.6242 278.581 78.6773C278.49 78.748 278.373 78.7906 278.24 78.7906C278.108 78.7906 277.991 78.7481 277.902 78.678C277.835 78.6255 277.664 78.4667 277.558 78.0163C274.808 66.2571 267.96 56.8854 259.232 53.24C258.971 53.1309 258.661 52.8224 258.659 52.1642C258.658 51.5087 258.961 51.2165 259.21 51.1128ZM4.55095 110.943C13.2764 107.31 20.1433 97.9685 22.9164 86.2127C22.9811 85.9384 23.1281 85.7132 23.2789 85.5806C23.4087 85.4664 23.5054 85.4443 23.5914 85.4443C23.7402 85.4443 23.8294 85.4842 23.9179 85.5609C24.0264 85.6549 24.1831 85.8584 24.2661 86.2109C27.035 97.9738 33.9219 107.327 42.6322 110.979C42.8858 111.086 43.1881 111.382 43.1853 112.035C43.1825 112.691 42.8737 112.998 42.6114 113.106C33.871 116.73 27.0225 126.089 24.2664 137.845C24.1608 138.295 23.9892 138.455 23.9214 138.508C23.8312 138.579 23.7143 138.621 23.5813 138.621C23.4484 138.621 23.3321 138.579 23.2427 138.509C23.1758 138.456 23.0045 138.297 22.8992 137.847C20.149 126.088 13.3007 116.716 4.57262 113.071C4.31118 112.961 4.00166 112.653 4.00001 111.995C3.99836 111.34 4.30168 111.047 4.55094 110.943L3.01324 107.251L4.55095 110.943ZM126.628 114.603C126.628 106.64 132.484 100.775 139.136 100.775H275.912C282.563 100.775 288.419 106.64 288.419 114.603C288.419 122.566 282.563 128.431 275.912 128.431H139.136C132.484 128.431 126.628 122.566 126.628 114.603ZM4.00102 229.21C4.00102 177.735 42.6818 136.421 89.6223 136.421C136.562 136.421 175.234 177.734 175.234 229.21C175.234 280.687 136.562 322 89.6223 322C42.6818 322 4.00102 280.686 4.00102 229.21ZM179.105 174.274C173.562 163.867 166.467 154.552 158.199 146.618H247.613C254.265 146.618 260.121 152.483 260.121 160.446C260.121 168.409 254.265 174.274 247.613 174.274H179.105ZM162.01 229.21C162.01 186.569 129.904 151.362 89.5947 151.362C49.2815 151.362 17.2249 186.572 17.2249 229.21C17.2249 271.852 49.3625 307.059 89.5947 307.059C129.823 307.059 162.01 271.855 162.01 229.21ZM34.6578 229.21C34.6578 195.904 59.5635 169.549 89.5947 169.549C119.63 169.549 144.578 195.908 144.578 229.21C144.578 262.512 119.618 288.871 89.5947 288.871C59.5751 288.871 34.6578 262.516 34.6578 229.21ZM285.352 220.117H192.322C191.591 210.506 189.71 201.236 186.833 192.461H285.352C292.004 192.461 297.859 198.326 297.859 206.289C297.859 214.252 292.004 220.117 285.352 220.117ZM285.352 265.96H186.833C189.71 257.184 191.591 247.915 192.322 238.304H285.352C292.004 238.304 297.859 244.169 297.859 252.132C297.859 260.095 292.004 265.96 285.352 265.96ZM285.351 311.799H158.211C166.477 303.866 173.57 294.552 179.112 284.147L285.352 284.144C292.003 284.144 297.859 290.009 297.859 297.972C297.859 305.934 292.003 311.799 285.351 311.799Z"
-                                                stroke="url(#paint0_linear_2588_15810)" stroke-width="8" />
-                                            <defs>
-                                                <linearGradient id="paint0_linear_2588_15810" x1="238.268" y1="287.999"
-                                                    x2="113.569" y2="2.19132" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#A4ABF3" />
-                                                    <stop offset="1" stop-color="#212EAE" />
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                    <div class="tab-pane" id="productTab4" role="tabpanel"
-                                        aria-labelledby="productTab4-tab">
-                                        <h4>Based on Proof-of-Stake Algorithm</h4>
-                                        <p>Centralized network easily access and profit your data. MassBit Route
-                                            decentralized network is run by community. That means no single entity can
-                                            profit off your data</p>
-                                        <svg width="332" height="359" viewBox="0 0 332 359" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g opacity="0.8">
-                                                <path
-                                                    d="M176.366 279.748C176.334 290.855 179.948 301.61 186.559 310.124H58.5261C43.7108 310.124 31.1343 296.756 31.1343 279.838V263.109H176.366L176.366 279.743C176.366 279.744 176.366 279.746 176.366 279.748Z"
-                                                    stroke="url(#paint0_linear_2588_15831)" stroke-width="8" />
-                                                <path
-                                                    d="M137.708 119.63L137.711 119.626C140.947 116.162 146.307 116.188 149.509 119.687C149.509 119.687 149.509 119.688 149.51 119.688C149.51 119.688 149.511 119.689 149.512 119.69L153.252 123.774L166.373 109.588C166.373 109.588 166.373 109.588 166.373 109.588C169.593 106.106 174.953 106.106 178.173 109.59L137.708 119.63ZM137.708 119.63C134.643 122.92 134.619 128.15 137.65 131.47L137.654 131.474L147.289 141.999C148.79 143.654 150.907 144.65 153.187 144.666L153.2 144.666H153.214H153.223H153.232M137.708 119.63L153.232 144.666M153.232 144.666L153.241 144.666M153.232 144.666L153.241 144.666M153.241 144.666C155.527 144.655 157.63 143.657 159.125 142.036C159.125 142.036 159.126 142.035 159.126 142.035L178.171 121.431M153.241 144.666L178.171 121.431M178.171 121.431C181.222 118.132 181.23 112.898 178.175 109.592L178.171 121.431ZM138.013 151.385L138.002 151.377C135.629 149.627 133.263 146.559 131.48 142.846C129.706 139.148 128.7 135.204 128.7 131.943V100.186L157.918 84.6002L187.141 100.229V131.943C187.141 135.201 186.13 139.144 184.349 142.842C182.561 146.555 180.187 149.626 177.812 151.378L177.808 151.381L157.869 166.126L138.013 151.385Z"
-                                                    stroke="url(#paint1_linear_2588_15831)" stroke-width="8" />
-                                                <path
-                                                    d="M300.868 69.2157L300.868 69.2242V69.2326V106.891H263.976V69.3135C263.976 57.8914 272.723 48.8726 282.525 48.8726H282.636C292.483 48.9871 300.916 57.781 300.868 69.2157Z"
-                                                    stroke="url(#paint2_linear_2588_15831)" stroke-width="8" />
-                                                <path
-                                                    d="M74.3471 67.4064L74.3472 67.3929V67.3794C74.3472 56.9444 82.2682 48.8726 91.4629 48.8726H253.487C249.844 54.7963 247.597 61.7326 247.597 69.3211V279.834V279.846L247.597 279.859C247.704 296.75 235.204 309.999 220.318 310.125H220.245C205.286 309.999 192.71 296.729 192.748 279.764V279.755V254.8C192.766 250.39 189.495 246.257 184.73 246.052L184.644 246.048H184.558H73.1375L74.3471 67.4064ZM116.659 87.3577L116.628 87.3742L116.597 87.3912C113.805 88.9386 112.251 91.9486 112.322 95.0113V131.942C112.322 138.142 114.062 144.722 116.879 150.55C119.69 156.367 123.717 161.727 128.561 165.3L153.218 183.529C153.223 183.533 153.229 183.537 153.235 183.541C154.597 184.562 156.246 185.122 157.957 185.122C159.68 185.122 161.331 184.553 162.689 183.543C162.689 183.543 162.69 183.542 162.69 183.542L187.291 165.301C187.293 165.3 187.295 165.298 187.297 165.297C192.142 161.724 196.165 156.366 198.973 150.55C201.787 144.721 203.522 138.142 203.522 131.942V95.0646C203.59 92.0015 202.037 88.9944 199.244 87.4468L199.214 87.4302L199.184 87.4141L161.603 67.4226C161.601 67.4218 161.6 67.421 161.598 67.4202C159.269 66.1756 156.506 66.1754 154.177 67.4197C154.175 67.4206 154.173 67.4216 154.171 67.4226L116.659 87.3577ZM102.555 233.336H217.479C222.292 233.336 225.669 229.217 225.669 224.806C225.669 220.394 222.292 216.275 217.479 216.275H102.555C97.7424 216.275 94.3651 220.394 94.3651 224.806C94.3651 229.217 97.7424 233.336 102.555 233.336ZM102.555 209.388H217.479C222.292 209.388 225.669 205.27 225.669 200.858C225.669 196.446 222.292 192.327 217.479 192.327H102.555C97.7424 192.327 94.3651 196.446 94.3651 200.858C94.3651 205.27 97.7424 209.388 102.555 209.388Z"
-                                                    stroke="url(#paint3_linear_2588_15831)" stroke-width="8" />
-                                            </g>
-                                            <defs>
-                                                <linearGradient id="paint0_linear_2588_15831" x1="160.275" y1="307.711"
-                                                    x2="152.839" y2="251.277" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#A4ABF3" />
-                                                    <stop offset="1" stop-color="#212EAE" />
-                                                </linearGradient>
-                                                <linearGradient id="paint1_linear_2588_15831" x1="177.144" y1="160.492"
-                                                    x2="136.887" y2="87.7687" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#A4ABF3" />
-                                                    <stop offset="1" stop-color="#212EAE" />
-                                                </linearGradient>
-                                                <linearGradient id="paint2_linear_2588_15831" x1="295.411" y1="103.195"
-                                                    x2="265.157" y2="52.2726" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#A4ABF3" />
-                                                    <stop offset="1" stop-color="#212EAE" />
-                                                </linearGradient>
-                                                <linearGradient id="paint3_linear_2588_15831" x1="220.982" y1="282.739"
-                                                    x2="100.6" y2="69.8049" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#A4ABF3" />
-                                                    <stop offset="1" stop-color="#212EAE" />
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                    </div>
+                                                d="M7.70221 27.8817C6.21487 27.8817 4.72563 27.8969 3.23829 27.8778C1.40963 27.8549 0.0309792 26.5866 0.0119108 24.942C-0.00715768 23.3146 1.39628 21.9756 3.20015 21.9623C6.20725 21.9413 9.21625 21.9355 12.2233 21.9642C14.0634 21.9814 15.3601 23.2516 15.3696 24.9592C15.3792 26.6153 14.0234 27.8607 12.1661 27.8778C10.6788 27.8912 9.18955 27.8798 7.70221 27.8798V27.8817Z"
+                                                fill="#254CFF" />
+                                            <path
+                                                d="M20.8144 16.3867L11.3164 6.87058C10.1247 5.67677 8.19303 5.67677 7.00126 6.87058C5.80948 8.06439 5.80948 9.99932 7.00126 11.1931L16.4992 20.7073C17.0846 21.2937 17.8493 21.5898 18.6158 21.6013C19.2928 21.6318 19.9583 21.4198 20.5132 20.969C20.618 20.8888 20.7191 20.8028 20.8144 20.7073C22.0062 19.5135 22.0062 17.5786 20.8144 16.3848V16.3867Z"
+                                                fill="#254CFF" />
+                                            <path
+                                                d="M52.9133 67.3061C52.9133 68.7979 52.9209 70.2878 52.9113 71.7796C52.8999 73.619 51.8149 74.9026 50.2284 74.9752C48.4284 75.0592 47.0878 73.9762 47.0287 72.0986C46.9296 68.9603 46.9315 65.8163 47.0287 62.678C47.0878 60.764 48.4131 59.6237 50.1483 59.6944C51.792 59.7632 52.8961 61.0487 52.9133 62.9263C52.919 63.5604 52.9152 64.1946 52.9152 64.8306C52.9152 65.6558 52.9152 66.481 52.9152 67.3061H52.9133Z"
+                                                fill="#254CFF" />
+                                            <path
+                                                d="M67.2358 47.1144C68.7232 47.1144 70.2124 47.0991 71.6998 47.1182C73.5284 47.1412 74.9071 48.4095 74.9261 50.0541C74.9452 51.6815 73.5418 53.0205 71.7379 53.0338C68.7308 53.0548 65.7218 53.0606 62.7147 53.0319C60.8746 53.0147 59.5779 51.7445 59.5684 50.0369C59.5589 48.3808 60.9146 47.1354 62.7719 47.1182C64.2592 47.1049 65.7485 47.1163 67.2358 47.1163V47.1144Z"
+                                                fill="#254CFF" />
+                                            <path
+                                                d="M54.1223 58.6113L63.6203 68.1255C64.8121 69.3193 66.7438 69.3193 67.9355 68.1255C69.1273 66.9317 69.1273 64.9968 67.9355 63.803L58.4375 54.2888C57.8521 53.7024 57.0875 53.4063 56.3209 53.3949C55.644 53.3643 54.9785 53.5763 54.4236 54.0271C54.3188 54.1073 54.2177 54.1933 54.1223 54.2888C52.9306 55.4826 52.9306 57.4175 54.1223 58.6113Z"
+                                                fill="#254CFF" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_3868_19234">
+                                                <rect width="75" height="75" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="title">
+                                    Decentralized APIs
+                                </div>
+                                <div class="disc">
+                                    MassBit Network is decentralized, managed and operated by its independent
+                                    communities and individuals.
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <svg width="118" height="115" viewBox="0 0 118 115" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_3868_19198)">
+                                            <path
+                                                d="M117.499 92.0085C115.093 89.549 112.663 87.1129 110.209 84.7018C109.479 83.9844 108.486 84.0702 107.784 84.7876C107.155 85.4301 107.153 86.5343 107.81 87.2268C108.486 87.9395 109.189 88.6242 109.879 89.3244C110.501 89.9561 111.121 90.5908 111.84 91.3238C111.455 91.3457 111.25 91.366 111.046 91.366C106.974 91.366 102.901 91.3519 98.8296 91.38C98.1136 91.3847 97.9253 91.1663 97.9284 90.4567C97.9549 82.955 97.944 75.4518 97.944 67.9502V67.0737C98.3393 67.0737 98.6226 67.0737 98.9043 67.0737C101.886 67.0737 104.87 67.0752 107.852 67.0737C109.205 67.0737 109.872 66.442 109.874 65.1023C109.882 57.3153 109.882 49.5266 109.874 41.7396C109.874 40.4451 109.146 39.748 107.837 39.7448C104.854 39.7402 101.871 39.7433 98.8887 39.7417C98.5899 39.7417 98.2911 39.7417 97.9424 39.7417C97.9424 39.2801 97.9424 38.9448 97.9424 38.611C97.9424 30.3826 97.9424 22.1526 97.9409 13.9242C97.9409 12.6609 97.2685 11.9622 95.9984 11.892C95.7136 11.8764 95.4272 11.8858 95.1424 11.8858C87.2062 11.8858 79.2685 11.8858 71.3323 11.8811C70.9805 11.8811 70.6303 11.8468 70.2226 11.8265C70.2226 11.4319 70.2226 11.1247 70.2226 10.8159C70.2226 8.03824 70.2226 5.2606 70.2226 2.48296C70.2226 0.616119 69.6218 0.00475666 67.765 0.00319707C60.2428 7.78735e-05 52.7222 -0.00148172 45.2 0.00319707C43.393 0.00319707 42.7891 0.619238 42.7875 2.4502C42.7829 5.33234 42.772 8.21292 42.7969 11.095C42.8 11.3695 42.7626 11.5614 42.6646 11.6893H34.8965C33.8179 11.3134 32.8965 10.5835 32.0405 9.54013C30.7829 8.00549 29.2607 6.68607 27.8303 5.29803C27.0568 4.54942 26.2599 4.50731 25.5268 5.08748C24.6615 5.77215 24.5416 6.93561 25.337 7.74192C26.6428 9.06757 28 10.3418 29.3354 11.6378C29.3261 11.6549 29.3183 11.6721 29.3089 11.6893H1.89572C0.848249 11.6893 0 12.5392 0 13.5888C0 13.6044 0.00155642 13.62 0.00311284 13.6372C0.00311284 13.6653 0 13.6933 0 13.723C0.00311284 14.5074 0.418677 15.0408 1.11128 15.3169C1.35097 15.4261 1.61556 15.4884 1.89572 15.4884H1.96732C2.06848 15.4947 2.16809 15.4978 2.2677 15.4978C6.21012 15.5072 10.1525 15.504 14.0934 15.504C14.3938 15.504 14.6957 15.504 15.063 15.504V16.6191C15.063 27.0809 15.0521 37.5427 15.0833 48.0029C15.0848 48.8077 14.8249 49.3473 14.2724 49.8853C12.344 51.7647 10.4498 53.6798 8.55408 55.5919C7.70428 56.4497 7.64669 57.5508 8.37977 58.2838C9.10817 59.0121 10.2288 58.9263 11.0724 58.0779C11.7665 57.3808 12.4591 56.6805 13.1595 55.9865C13.751 55.4001 14.3533 54.823 15.0646 54.1306V55.2675C15.0646 65.9367 15.0646 76.6059 15.0646 87.2751C15.0646 89.1965 15.0599 91.1164 15.0677 93.0378C15.0724 94.0781 15.5767 94.6894 16.5914 94.8688C16.9463 94.9312 17.3136 94.9312 17.6747 94.9312C23.4319 94.9343 29.1907 94.9265 34.9479 94.9499C35.3479 94.9515 35.8615 95.0747 36.1307 95.3382C38.8685 98.0192 41.5658 100.742 44.2739 103.451C47.8802 107.06 51.4786 110.677 55.1019 114.27C56.0981 115.259 56.9276 115.223 57.944 114.27C58.1136 114.111 58.277 113.943 58.442 113.777C64.523 107.692 70.607 101.609 76.6755 95.5114C77.0755 95.109 77.477 94.9515 78.0389 94.953C89.0101 94.9671 99.9813 94.9624 110.953 94.9608C111.222 94.9608 111.491 94.9608 111.76 94.9608C111.802 95.045 111.844 95.1308 111.886 95.215C110.535 96.5157 109.169 97.8008 107.841 99.1249C107.127 99.8377 107.146 100.961 107.807 101.62C108.526 102.339 109.502 102.367 110.286 101.595C112.686 99.231 115.068 96.8464 117.435 94.4493C118.153 93.7225 118.199 92.7212 117.499 92.0038V92.0085ZM47.3354 3.58715C53.4553 3.61522 59.5751 3.60275 65.6949 3.59651C66.2132 3.59651 66.6303 3.55908 66.6272 4.3342C66.5992 10.6147 66.6117 16.8952 66.6101 23.1772C66.6101 23.355 66.5821 23.5344 66.5588 23.8011H46.4529C46.4342 23.4829 46.4047 23.2069 46.4047 22.9324C46.4016 16.8079 46.414 10.6818 46.3875 4.55722C46.3844 3.81953 46.5774 3.58559 47.337 3.58871L47.3354 3.58715ZM35.5035 91.3036C30.0047 91.3207 24.5058 91.316 19.007 91.3114C18.9074 91.3114 18.8062 91.2771 18.6459 91.2474V54.1898C19.3121 54.8386 19.9097 55.411 20.4981 55.9912C21.2311 56.7148 21.9502 57.4541 22.6895 58.1715C23.477 58.9357 24.5665 58.9762 25.2623 58.2869C25.9767 57.5788 25.9735 56.5183 25.1938 55.7229C23.1517 53.6393 21.077 51.59 19.0459 49.4954C18.7922 49.2334 18.6023 48.7843 18.6008 48.4224C18.5774 37.7267 18.5868 27.031 18.5696 16.3353C18.5696 15.7068 18.7284 15.4806 19.3914 15.4884C22.4778 15.5196 25.5642 15.5009 28.6506 15.504C28.8467 15.504 29.0428 15.5259 29.3541 15.7161C28.0654 16.9701 26.7673 18.2131 25.4926 19.4794C24.5183 20.4464 24.5946 21.691 25.642 22.4052C26.3642 22.8981 27.2202 22.7452 28.0109 21.9623C29.2171 20.7646 30.4171 19.559 31.6171 18.355C32.3798 17.5892 33.1471 16.8266 33.8973 16.0468C34.2552 15.674 34.6381 15.4822 35.1844 15.49C37.4412 15.5212 39.6981 15.5227 41.9533 15.49C42.5883 15.4806 42.8078 15.66 42.8016 16.3166C42.7704 19.1972 42.786 22.0793 42.7891 24.9614C42.7922 26.7799 43.4599 27.449 45.2747 27.449C52.744 27.449 60.2148 27.449 67.684 27.4459C69.5611 27.4459 70.2226 26.7893 70.2226 24.9396C70.2226 22.1105 70.2226 19.2798 70.2226 16.4507C70.2226 16.1715 70.2226 15.8908 70.2226 15.5305H94.3798V39.7059C94.0965 39.7183 93.8195 39.7402 93.5424 39.7417C90.5603 39.7448 87.5767 39.7417 84.5946 39.7448C83.1969 39.7464 82.5121 40.4311 82.5089 41.8456C82.5012 44.8057 82.5058 47.7643 82.5058 50.7244C82.5058 51.0285 82.5058 51.3311 82.5058 51.7241C82.098 51.7241 81.7946 51.7241 81.4911 51.7241C73.3728 51.7241 65.2545 51.7241 57.1362 51.7241C55.2342 51.7241 54.6802 52.2856 54.6802 54.2319C54.6786 60.0477 54.6724 65.8619 54.6911 71.6776C54.6926 72.2968 54.5012 72.749 54.0654 73.1826C49.2825 77.9425 44.5152 82.718 39.7416 87.4888C38.5759 88.6538 37.4132 89.8235 36.2288 90.9698C36.0451 91.1476 35.7479 91.3067 35.5035 91.3083V91.3036ZM73.5549 93.6554C67.9782 99.2045 62.4249 104.775 56.8654 110.34C56.7751 110.43 56.6708 110.504 56.5619 110.594C50.73 104.761 44.9494 98.9799 39.1907 93.2203C44.9556 87.4623 50.7331 81.6902 56.6008 75.8292C57.3292 76.542 58.1401 77.3233 58.9354 78.1187C63.7619 82.9488 68.5837 87.7836 73.4117 92.6136C73.7354 92.938 74.0623 93.1517 73.5549 93.6554ZM93.5471 91.38C88.3346 91.355 83.1222 91.38 77.9113 91.3426C77.4801 91.3394 76.9416 91.1211 76.6366 90.817C70.6459 84.864 64.6802 78.8876 58.7284 72.8972C58.4856 72.6523 58.3082 72.2235 58.3066 71.8788C58.2802 66.559 58.2957 61.2377 58.277 55.9179C58.2755 55.3205 58.4965 55.1786 59.0537 55.1802C66.5992 55.1942 74.1463 55.1973 81.6918 55.1771C82.3455 55.1755 82.5276 55.3845 82.5214 56.0208C82.4934 58.9794 82.5058 61.9379 82.5105 64.8965C82.5136 66.4919 83.1097 67.0752 84.7175 67.0768C87.6482 67.0768 90.5774 67.0768 93.5082 67.0768C93.7883 67.0768 94.0685 67.0768 94.4482 67.0768C94.4482 67.4308 94.4482 67.6632 94.4482 67.894C94.4482 75.4206 94.4373 82.9472 94.4654 90.4739C94.4685 91.2115 94.2397 91.3831 93.5455 91.38H93.5471ZM86.9385 63.6067C86.2086 63.6098 85.9642 63.4367 85.9689 62.6662C86 56.4887 85.986 50.3111 85.986 44.132C85.986 43.8762 85.986 43.6204 85.986 43.268H106.369C106.383 43.5783 106.406 43.8559 106.406 44.1336C106.408 50.3111 106.395 56.4902 106.425 62.6678C106.428 63.4351 106.188 63.6114 105.455 63.6082C99.2825 63.5802 93.1097 63.5802 86.937 63.6067H86.9385Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_3868_19198">
+                                                <rect width="118" height="115" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="title">
+                                    MassBit Verification Protocol
+                                </div>
+                                <div class="disc">
+                                    MassBit Protocol is based on a proof-of-stake algorithm which incentivizes those
+                                    working within the system to verify each other’s work. This ensures the network’s
+                                    health.
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <svg width="107" height="107" viewBox="0 0 107 107" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_3868_19215)">
+                                            <path
+                                                d="M37.0213 89.6778C37.686 90.2934 38.2356 90.7737 38.7515 91.2879C39.9505 92.4836 39.9861 93.5407 38.7751 94.7669C35.993 97.5846 33.1754 100.365 30.373 103.162C29.4462 104.088 28.5313 105.023 27.5909 105.935C26.1331 107.347 25.1809 107.36 23.7653 105.953C17.8494 100.067 11.9452 94.1715 6.036 88.2791C4.33292 86.5793 2.61462 84.8931 0.926753 83.1798C-0.35352 81.8792 -0.290944 80.7612 0.996094 79.4843C4.62551 75.8852 8.24308 72.2726 11.8471 68.6482C13.3489 67.1378 14.1371 67.038 15.9535 68.32C16.1192 68.09 16.2985 67.8651 16.4541 67.6266C19.4932 62.9772 23.2901 59.0771 27.9715 56.0683C31.699 53.6717 35.7191 52.3221 40.2262 52.6146C43.2908 52.8125 46.1574 53.6294 48.8279 55.1059C50.7813 56.1867 52.7736 56.8564 55.0703 56.8209C61.0421 56.7279 67.0189 56.8784 72.989 56.7583C76.7233 56.6839 79.6491 57.8898 81.6313 61.2064C83.9669 60.0919 86.0978 58.7033 87.6335 56.6687C89.1472 54.6645 90.3987 52.4607 91.7331 50.3246C93.9571 46.7644 98.5251 45.4402 102.3 47.2888C106.121 49.161 107.976 53.5398 106.482 57.4501C104.896 61.6039 102.571 65.3434 99.7699 68.797C96.7595 72.5077 93.3296 75.7888 89.4922 78.6133C86.8741 80.5397 84.1715 82.3697 81.3827 84.0356C78.7426 85.6119 75.7491 86.1108 72.688 86.1125C63.5451 86.1193 54.4022 86.126 45.2594 86.1091C42.7918 86.104 40.5898 86.8651 38.5908 88.2537C38.0766 88.6105 37.6538 89.0976 37.0213 89.6795V89.6778ZM33.884 86.6284C37.3528 83.1849 41.2443 81.7084 45.809 81.7405C54.6762 81.8014 63.5451 81.7625 72.4123 81.7557C75.2959 81.754 78.0323 81.1739 80.5015 79.5993C87.0416 75.4336 93.0523 70.6642 97.7032 64.3726C99.5906 61.8187 101.204 59.0923 102.329 56.1139C103.232 53.7241 101.864 51.3225 99.4485 50.8946C97.551 50.558 95.9663 51.4003 95.0158 53.3402C92.5144 58.4412 88.9341 62.4986 83.7622 65.0136C82.9572 65.4042 82.5665 65.9235 82.3991 66.8351C81.6854 70.7082 78.2217 73.5462 74.2947 73.5597C70.6382 73.5715 66.9817 73.5631 63.3236 73.5631C59.9715 73.5631 56.6195 73.5698 53.2674 73.558C52.2696 73.5546 51.4645 72.9762 51.1838 72.0798C50.8997 71.1699 51.1229 70.3259 51.8755 69.7915C52.3322 69.4684 52.9917 69.2908 53.5617 69.2892C60.3571 69.2553 67.1525 69.2807 73.948 69.2604C76.9837 69.252 78.9523 66.5256 77.9613 63.7688C77.3457 62.0606 75.9115 61.1016 73.9074 61.0982C67.5381 61.0914 61.1689 61.0289 54.8014 61.127C52.0835 61.1692 49.6566 60.4995 47.3058 59.2073C41.6333 56.0886 36.0015 56.0345 30.466 59.6014C25.9284 62.5257 22.3954 66.419 19.5 70.9297C19.1719 71.4405 19.1601 71.821 19.6844 72.2439C20.2729 72.7174 20.7803 73.2958 21.3164 73.8337C24.0495 76.5668 26.7927 79.2898 29.5071 82.0415C30.9785 83.5333 32.4025 85.0724 33.8824 86.6267L33.884 86.6284ZM5.33076 81.1891C12.1888 88.0947 18.9115 94.8616 25.5783 101.576C28.4687 98.667 31.3303 95.7867 34.2561 92.8422C33.1568 91.7631 32 90.6435 30.8584 89.5053C27.5825 86.2343 24.315 82.9565 21.0407 79.6839C18.8861 77.5309 16.7264 75.3846 14.5734 73.2316C14.2487 72.9068 13.973 72.6379 13.5198 73.0878C10.8002 75.7922 8.06719 78.4847 5.32906 81.1891H5.33076Z"
+                                                fill="white" />
+                                            <path
+                                                d="M43.0173 23.0422C42.8651 10.5689 53.2121 0 66.0537 0C78.7195 0 88.9599 10.3321 89.0293 23.0287C89.0969 35.5054 78.8311 46.0896 65.9759 46.0693C53.2003 46.049 42.8701 35.5105 43.0173 23.0439V23.0422ZM66.1569 4.35509C55.9891 4.24347 47.4162 12.6171 47.3164 22.7598C47.2133 33.0683 55.4632 41.5704 65.6867 41.6888C76.1048 41.8106 84.6016 33.5689 84.7166 23.23C84.8316 12.9621 76.4803 4.46841 66.1586 4.35509H66.1569Z"
+                                                fill="white" />
+                                            <path
+                                                d="M21.6013 86.5505C21.9344 86.723 22.5128 86.8922 22.9154 87.2541C23.9487 88.1894 24.9347 89.1839 25.8835 90.2054C26.7646 91.1559 26.6733 92.4379 25.7465 93.2971C24.8755 94.1039 23.6358 94.0565 22.7259 93.1669C21.7704 92.235 20.8114 91.3048 19.8796 90.3492C19.1743 89.6253 19.0424 88.7543 19.4111 87.8274C19.7578 86.9547 20.5087 86.6807 21.6013 86.5488V86.5505Z"
+                                                fill="white" />
+                                            <path
+                                                d="M72.3258 26.6447C72.0874 24.0689 70.6701 22.2355 68.2313 21.307C67.5075 21.0313 66.699 20.9637 65.9211 20.8503C65.0602 20.7252 64.4598 20.3159 64.1317 19.4956C63.8155 18.7058 64.0725 18.0411 64.6087 17.4948C65.1803 16.913 65.9194 16.6678 66.694 17.0348C67.2876 17.3155 67.8339 17.7079 68.3768 18.0851C69.2731 18.7075 70.435 18.6804 71.1521 17.9887C72.0146 17.1565 72.1651 16.179 71.4751 15.2014C71.1504 14.7414 70.7225 14.261 70.2287 14.0327C69.219 13.5659 68.5324 12.9824 68.2279 12.1435V10.1901C68.2279 8.97912 67.247 7.99817 66.0361 7.99817C64.8251 7.99817 63.8442 8.97912 63.8442 10.1901V12.5478C63.7597 12.8319 63.5432 13.0078 63.1914 13.2023C60.7695 14.5384 59.5332 16.5917 59.677 19.406C59.792 21.6842 61.5035 23.9691 63.7698 24.7454C64.448 24.9788 65.1854 25.0465 65.8991 25.1699C66.8225 25.3289 67.5751 25.6891 67.9151 26.6498C68.2009 27.4549 67.8778 28.0857 67.3654 28.6438C66.672 29.3982 65.5169 29.4354 64.5376 28.7132C63.9778 28.2988 63.5127 27.7559 62.9563 27.3382C62.0109 26.6278 60.8152 26.8071 60.0034 27.7221C59.3404 28.4713 59.3269 29.6925 60.0744 30.4755C60.6985 31.1301 61.3361 31.881 62.1259 32.248C63.0984 32.6979 63.6379 33.2729 63.8425 34.0662V35.6712C63.8425 36.8822 64.8235 37.8631 66.0344 37.8631C67.2453 37.8631 68.2262 36.8822 68.2262 35.6712V33.9292C68.2262 33.7431 68.2009 33.5655 68.1569 33.393C68.1569 33.3423 68.1569 33.2915 68.1569 33.2408C68.4326 33.1038 68.6575 33.0074 68.8672 32.8856C71.2705 31.4988 72.5812 29.4506 72.3224 26.6481L72.3258 26.6447Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_3868_19215">
+                                                <rect width="107" height="107" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="title">
+                                    Cost-effective
+                                </div>
+                                <div class="disc">
+                                    MassBit Route reduces costs by 3.6 times using bare-metal servers
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <svg width="112" height="112" viewBox="0 0 112 112" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_3868_19227)">
+                                            <path
+                                                d="M55.9849 -2.53283e-05C86.8141 -0.0570896 111.959 25.1382 112.001 55.9101C112.041 86.7105 87.0124 112.338 55.3331 111.997C25.0088 111.669 0.144674 87.1085 0.000612492 56.2539C-0.143449 25.0212 25.1443 -0.0171446 55.9849 -2.53283e-05ZM57.1617 3.75908C27.8302 3.28688 4.39378 26.1654 3.77759 54.7788C3.14287 84.2054 26.1285 107.626 54.8966 108.224C84.1554 108.833 107.647 85.7119 108.205 57.0442C108.773 27.8174 85.7244 4.47666 57.1631 3.75908H57.1617Z"
+                                                fill="white" />
+                                            <path
+                                                d="M55.9594 97.537C48.8605 97.537 41.7629 97.537 34.664 97.537C32.8996 97.537 32.1764 96.4856 32.6257 94.7937C33.2419 92.4697 33.7454 90.1158 34.3088 87.7762C34.7838 85.8032 35.2802 83.8373 35.7566 81.8643C36.3314 79.4791 36.882 77.0866 37.4668 74.7028C38.0387 72.3703 38.6606 70.0492 39.2255 67.7138C39.7974 65.3528 40.1911 62.939 40.9271 60.6322C41.3664 59.2583 40.9471 58.7048 39.893 57.9344C35.9705 55.0684 33.0593 51.3692 31.1095 46.8854C29.3251 42.781 28.6234 38.5126 28.9158 34.0844C29.1055 31.2227 29.7958 28.4508 30.9041 25.793C32.8953 21.0196 35.9962 17.1178 40.184 14.0991C42.8869 12.1518 45.8608 10.7708 49.0987 9.91631C52.1154 9.12026 55.1664 8.81639 58.2516 9.11455C66.9095 9.95054 73.6861 14.0349 78.6142 21.1779C80.5911 24.044 81.8705 27.2396 82.5951 30.6321C83.2584 33.7406 83.3154 36.9034 82.8476 40.0405C82.113 44.9723 80.1646 49.3991 77.0081 53.278C75.3136 55.358 73.3452 57.1427 71.1387 58.6606C70.7521 58.9259 70.7065 59.1271 70.8291 59.5822C71.2157 61.0173 71.4938 62.4825 71.8433 63.9276C72.2983 65.805 72.7875 67.6725 73.2497 69.547C74.0413 72.7526 74.8358 75.9568 75.6074 79.1681C76.3135 82.104 76.9781 85.0514 77.6856 87.9859C78.2447 90.3013 78.8338 92.6095 79.4258 94.9164C79.838 96.5227 78.7825 97.5756 77.3946 97.5641C70.2486 97.5056 63.1026 97.537 55.9566 97.537H55.9594ZM75.2465 93.815C75.0255 92.9291 74.8243 92.1601 74.6418 91.3884C74.1768 89.4125 73.7318 87.4324 73.2554 85.4594C72.6748 83.0527 72.0644 80.6531 71.481 78.2465C71.0188 76.3434 70.5909 74.4317 70.1259 72.5301C69.5497 70.1704 68.9449 67.8194 68.363 65.4612C67.8538 63.3983 67.3232 61.3398 66.8653 59.2655C66.5044 57.632 66.5401 57.1084 68.1947 56.0428C69.5782 55.1526 70.9333 54.1654 72.12 53.0298C76.2864 49.0424 78.6427 44.1591 79.2646 38.3942C79.5598 35.6523 79.3188 32.976 78.6684 30.3553C77.8012 26.8601 76.1537 23.7116 73.7888 20.9639C70.2729 16.8796 65.8512 14.296 60.5979 13.2246C58.1403 12.7224 55.6413 12.5698 53.1024 12.9464C50.147 13.3844 47.3599 14.2247 44.7511 15.6641C41.2737 17.5829 38.4695 20.2292 36.3114 23.5575C34.4343 26.4507 33.2733 29.6334 32.8183 33.033C32.2834 37.0161 32.7584 40.9165 34.2418 44.6699C35.2374 47.1878 36.6167 49.4704 38.4096 51.5119C40.1084 53.4463 42.081 55.0327 44.269 56.3723C45.2532 56.9743 45.4971 57.6206 45.2404 58.6977C45.0935 59.3168 44.9109 59.9274 44.764 60.5466C44.1692 63.0474 43.5872 65.5525 42.9896 68.0534C42.6872 69.3159 42.3463 70.5685 42.0468 71.831C41.7201 73.2091 41.442 74.5986 41.1025 75.9739C40.5334 78.2864 39.9144 80.5875 39.3481 82.9015C38.7476 85.3524 38.1842 87.8119 37.6051 90.2685C37.3313 91.4283 37.0617 92.5896 36.7736 93.815H75.248H75.2465Z"
+                                                fill="white" />
+                                            <path
+                                                d="M56.3666 48.8127C52.3243 48.8684 48.9653 47.8041 45.7317 46.1778C43.18 44.8953 40.8608 43.2932 38.7469 41.3844C37.583 40.333 37.5459 39.2159 38.697 38.1817C42.0189 35.1958 45.7432 32.9075 50.0479 31.5907C52.4812 30.8475 54.9488 30.4823 57.4706 30.6962C60.2434 30.9316 62.8865 31.7106 65.4111 32.8961C68.2068 34.2071 70.7414 35.9048 73.0464 37.9491C74.4742 39.2145 74.5027 40.2374 73.1034 41.5071C69.9526 44.3631 66.3696 46.5187 62.3273 47.8398C60.282 48.5074 58.1681 48.9525 56.3652 48.8127H56.3666ZM55.943 43.3074C57.8358 43.3431 59.4818 41.7425 59.5189 39.8294C59.5559 37.8978 58.0126 36.2885 56.0728 36.2358C54.1814 36.1844 52.4955 37.7736 52.4442 39.6596C52.3928 41.5584 54.036 43.2704 55.943 43.3074ZM62.2446 35.6466C62.2047 35.6936 62.1647 35.7407 62.1248 35.7892C63.6852 38.4256 63.6966 41.0634 62.0891 43.7768C62.3544 43.7254 62.517 43.7183 62.6597 43.6612C64.9076 42.7668 66.9687 41.5356 68.9228 40.1204C69.2423 39.8879 69.2723 39.6453 68.8971 39.4043C67.7275 38.6539 66.5978 37.8393 65.394 37.1502C64.387 36.5739 63.2987 36.1416 62.246 35.6466H62.2446ZM49.794 35.7735C47.1781 36.668 44.8774 38.0276 42.6679 39.7552C44.8674 41.5014 47.1766 42.8338 49.7826 43.7297C48.292 41.0577 48.3149 38.4327 49.794 35.7735Z"
+                                                fill="white" />
+                                            <path
+                                                d="M44.6953 23.5333C45.3927 25.1297 46.076 26.649 46.7007 28.194C46.7663 28.3567 46.5395 28.7804 46.3456 28.8788C45.571 29.2697 44.7452 29.5536 43.9621 29.9288C43.5813 30.1114 43.4058 30.0244 43.2518 29.6677C42.647 28.2625 42.018 26.8687 41.4361 25.4535C41.3733 25.3023 41.5045 24.9257 41.6429 24.8601C42.5985 24.4078 43.5799 24.0084 44.6938 23.5333H44.6953Z"
+                                                fill="white" />
+                                            <path
+                                                d="M68.543 30.1086C67.4761 29.6349 66.4606 29.2055 65.4721 28.7219C65.3452 28.6591 65.2553 28.2668 65.3252 28.1013C65.8943 26.7332 66.5119 25.3837 67.101 24.0227C67.265 23.6432 67.4932 23.5376 67.8755 23.7117C68.6686 24.074 69.4602 24.4378 70.2661 24.7674C70.6255 24.9143 70.7682 25.1083 70.607 25.4707C69.9323 26.9943 69.2519 28.5179 68.543 30.11V30.1086Z"
+                                                fill="white" />
+                                            <path
+                                                d="M57.8051 21.6602C57.8265 21.9327 57.8521 22.1167 57.8536 22.3007C57.8564 23.8857 57.855 25.4706 57.855 27.1626C56.6854 27.1626 55.58 27.1783 54.476 27.1412C54.3504 27.1369 54.1322 26.8359 54.1294 26.669C54.1023 25.1739 54.0965 23.6788 54.1336 22.1837C54.1379 22.0054 54.426 21.6916 54.5943 21.683C55.6342 21.6359 56.6782 21.6602 57.8051 21.6602Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_3868_19227">
+                                                <rect width="112" height="112" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="title">
+                                    No Privacy Concerns
+                                </div>
+                                <div class="disc">
+                                    Centralized networks easily access and profit off of your data. MassBit Route’s
+                                    decentralized network is run by the community. That means no single entity can
+                                    profit off of your data.
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Advantages -->
-
-        <section class="mb-section mb-section-our-network mb-section-decentralized" id="DecentralizedWeb3Infrastructure">
-            <div class="container">
-                <div data-aos="fade-up" class="mb-section-title d-flex align-content-center justify-content-md-center">
-                    <span class="pt-2">Decentralized Web3 Infrastructure</span>
-                </div>
-                <div class="mb-section-body">
-                    <div data-aos="fade-up" class="row justify-content-center mb-30 mb-mb-10px">
-                        <div class="col-xl-8 text-md-center">
-                            MassBit Route is available all around the world. New communities are being established
-                            daily.
+                </section>
+                <!-- End Advantages -->
+                <section class="mb-section-realtime-data">
+                    <div class="container">
+                        <div class="mb-title-large text-center">
+                            Realtime Data
                         </div>
+                        <div class="disc text-center">
+                            MassBit Route is rapidly growing
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="title">TOTAL NUMBER OF DAPIS</div>
+                                    <dl>
+                                        <dt>
+                                            0
+                                        </dt>
+                                        <dd>
+                                            <div class="icon">
+                                                <svg width="21" height="13" viewBox="0 0 21 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11.3035 8.09151L16.8905 2.50252H16.6345C15.8845 2.50252 15.1345 2.51052 14.3845 2.50252C14.2234 2.50834 14.0633 2.47514 13.9178 2.40575C13.7723 2.33635 13.6458 2.23281 13.549 2.10396C13.4521 1.9751 13.3879 1.82474 13.3617 1.66569C13.3355 1.50665 13.3481 1.34361 13.3985 1.1905C13.4597 0.994769 13.5809 0.823221 13.7449 0.700118C13.9089 0.577014 14.1075 0.508579 14.3125 0.5045C15.9999 0.4985 17.6871 0.4985 19.3745 0.5045C19.6288 0.505281 19.8725 0.60631 20.0528 0.785658C20.2331 0.965007 20.3354 1.20822 20.3375 1.46251C20.3482 3.15784 20.3482 4.85351 20.3375 6.54951C20.3229 6.8025 20.212 7.04031 20.0276 7.21403C19.8431 7.38776 19.5991 7.48421 19.3457 7.48356C19.0923 7.48292 18.8487 7.38524 18.6651 7.21059C18.4815 7.03593 18.3718 6.79756 18.3585 6.54451C18.3445 5.76351 18.3585 4.98151 18.3525 4.20051V3.97752L18.2525 3.9055C18.2217 3.98552 18.1799 4.06089 18.1285 4.1295C16.1492 6.11683 14.1682 8.1025 12.1855 10.0865C12.0898 10.2204 11.9634 10.3294 11.8169 10.4043C11.6703 10.4792 11.508 10.5179 11.3434 10.5172C11.1788 10.5164 11.0169 10.4762 10.8711 10.3998C10.7253 10.3235 10.5999 10.2133 10.5055 10.0785C9.51818 9.08851 8.5315 8.09751 7.5455 7.10551C7.48766 7.03649 7.43549 6.96292 7.38949 6.88551C7.28149 6.98551 7.21951 7.04252 7.15951 7.10252C5.48151 8.78319 3.80419 10.4648 2.12753 12.1475C1.99825 12.301 1.82619 12.4125 1.63332 12.4679C1.44046 12.5233 1.23552 12.52 1.04452 12.4585C0.885548 12.4083 0.741667 12.3191 0.625939 12.1991C0.510212 12.0791 0.42628 11.9321 0.38186 11.7714C0.33744 11.6107 0.333886 11.4415 0.371545 11.2791C0.409204 11.1167 0.486891 10.9662 0.597497 10.8415C0.638497 10.7945 0.683502 10.7515 0.727502 10.7065L6.56051 4.87251C6.65502 4.75395 6.77505 4.65822 6.91164 4.59242C7.04824 4.52662 7.19789 4.49245 7.34951 4.49245C7.50113 4.49245 7.65078 4.52662 7.78738 4.59242C7.92397 4.65822 8.044 4.75395 8.13851 4.87251C9.14385 5.87851 10.1478 6.88551 11.1505 7.89351C11.206 7.95592 11.2571 8.02207 11.3035 8.09151Z"
+                                                        fill="#00B159" />
+                                                </svg>
+                                            </div>
+                                            0%
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card yellow">
+                                    <div class="title">TOTAL NUMBER OF GATEWAYS</div>
+                                    <dl>
+                                        <dt>
+                                            0
+                                        </dt>
+                                        <dd>
+                                            <div class="icon">
+                                                <svg width="21" height="13" viewBox="0 0 21 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11.3035 8.09151L16.8905 2.50252H16.6345C15.8845 2.50252 15.1345 2.51052 14.3845 2.50252C14.2234 2.50834 14.0633 2.47514 13.9178 2.40575C13.7723 2.33635 13.6458 2.23281 13.549 2.10396C13.4521 1.9751 13.3879 1.82474 13.3617 1.66569C13.3355 1.50665 13.3481 1.34361 13.3985 1.1905C13.4597 0.994769 13.5809 0.823221 13.7449 0.700118C13.9089 0.577014 14.1075 0.508579 14.3125 0.5045C15.9999 0.4985 17.6871 0.4985 19.3745 0.5045C19.6288 0.505281 19.8725 0.60631 20.0528 0.785658C20.2331 0.965007 20.3354 1.20822 20.3375 1.46251C20.3482 3.15784 20.3482 4.85351 20.3375 6.54951C20.3229 6.8025 20.212 7.04031 20.0276 7.21403C19.8431 7.38776 19.5991 7.48421 19.3457 7.48356C19.0923 7.48292 18.8487 7.38524 18.6651 7.21059C18.4815 7.03593 18.3718 6.79756 18.3585 6.54451C18.3445 5.76351 18.3585 4.98151 18.3525 4.20051V3.97752L18.2525 3.9055C18.2217 3.98552 18.1799 4.06089 18.1285 4.1295C16.1492 6.11683 14.1682 8.1025 12.1855 10.0865C12.0898 10.2204 11.9634 10.3294 11.8169 10.4043C11.6703 10.4792 11.508 10.5179 11.3434 10.5172C11.1788 10.5164 11.0169 10.4762 10.8711 10.3998C10.7253 10.3235 10.5999 10.2133 10.5055 10.0785C9.51818 9.08851 8.5315 8.09751 7.5455 7.10551C7.48766 7.03649 7.43549 6.96292 7.38949 6.88551C7.28149 6.98551 7.21951 7.04252 7.15951 7.10252C5.48151 8.78319 3.80419 10.4648 2.12753 12.1475C1.99825 12.301 1.82619 12.4125 1.63332 12.4679C1.44046 12.5233 1.23552 12.52 1.04452 12.4585C0.885548 12.4083 0.741667 12.3191 0.625939 12.1991C0.510212 12.0791 0.42628 11.9321 0.38186 11.7714C0.33744 11.6107 0.333886 11.4415 0.371545 11.2791C0.409204 11.1167 0.486891 10.9662 0.597497 10.8415C0.638497 10.7945 0.683502 10.7515 0.727502 10.7065L6.56051 4.87251C6.65502 4.75395 6.77505 4.65822 6.91164 4.59242C7.04824 4.52662 7.19789 4.49245 7.34951 4.49245C7.50113 4.49245 7.65078 4.52662 7.78738 4.59242C7.92397 4.65822 8.044 4.75395 8.13851 4.87251C9.14385 5.87851 10.1478 6.88551 11.1505 7.89351C11.206 7.95592 11.2571 8.02207 11.3035 8.09151Z"
+                                                        fill="#00B159" />
+                                                </svg>
+                                            </div>
+                                            0%
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card aqua">
+                                    <div class="title">TOTAL NUMBER OF NODES</div>
+                                    <dl>
+                                        <dt>
+                                            0
+                                        </dt>
+                                        <dd>
+                                            <div class="icon">
+                                                <svg width="21" height="13" viewBox="0 0 21 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11.3035 8.09151L16.8905 2.50252H16.6345C15.8845 2.50252 15.1345 2.51052 14.3845 2.50252C14.2234 2.50834 14.0633 2.47514 13.9178 2.40575C13.7723 2.33635 13.6458 2.23281 13.549 2.10396C13.4521 1.9751 13.3879 1.82474 13.3617 1.66569C13.3355 1.50665 13.3481 1.34361 13.3985 1.1905C13.4597 0.994769 13.5809 0.823221 13.7449 0.700118C13.9089 0.577014 14.1075 0.508579 14.3125 0.5045C15.9999 0.4985 17.6871 0.4985 19.3745 0.5045C19.6288 0.505281 19.8725 0.60631 20.0528 0.785658C20.2331 0.965007 20.3354 1.20822 20.3375 1.46251C20.3482 3.15784 20.3482 4.85351 20.3375 6.54951C20.3229 6.8025 20.212 7.04031 20.0276 7.21403C19.8431 7.38776 19.5991 7.48421 19.3457 7.48356C19.0923 7.48292 18.8487 7.38524 18.6651 7.21059C18.4815 7.03593 18.3718 6.79756 18.3585 6.54451C18.3445 5.76351 18.3585 4.98151 18.3525 4.20051V3.97752L18.2525 3.9055C18.2217 3.98552 18.1799 4.06089 18.1285 4.1295C16.1492 6.11683 14.1682 8.1025 12.1855 10.0865C12.0898 10.2204 11.9634 10.3294 11.8169 10.4043C11.6703 10.4792 11.508 10.5179 11.3434 10.5172C11.1788 10.5164 11.0169 10.4762 10.8711 10.3998C10.7253 10.3235 10.5999 10.2133 10.5055 10.0785C9.51818 9.08851 8.5315 8.09751 7.5455 7.10551C7.48766 7.03649 7.43549 6.96292 7.38949 6.88551C7.28149 6.98551 7.21951 7.04252 7.15951 7.10252C5.48151 8.78319 3.80419 10.4648 2.12753 12.1475C1.99825 12.301 1.82619 12.4125 1.63332 12.4679C1.44046 12.5233 1.23552 12.52 1.04452 12.4585C0.885548 12.4083 0.741667 12.3191 0.625939 12.1991C0.510212 12.0791 0.42628 11.9321 0.38186 11.7714C0.33744 11.6107 0.333886 11.4415 0.371545 11.2791C0.409204 11.1167 0.486891 10.9662 0.597497 10.8415C0.638497 10.7945 0.683502 10.7515 0.727502 10.7065L6.56051 4.87251C6.65502 4.75395 6.77505 4.65822 6.91164 4.59242C7.04824 4.52662 7.19789 4.49245 7.34951 4.49245C7.50113 4.49245 7.65078 4.52662 7.78738 4.59242C7.92397 4.65822 8.044 4.75395 8.13851 4.87251C9.14385 5.87851 10.1478 6.88551 11.1505 7.89351C11.206 7.95592 11.2571 8.02207 11.3035 8.09151Z"
+                                                        fill="#00B159" />
+                                                </svg>
+                                            </div>
+                                            0%
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="mb-section-our-network mb-section-decentralized" id="DecentralizedWeb3Infrastructure">
+                <div class="container">
+                    <div data-aos="fade-up" class="mb-title-large text-center">
+                        Decentralized Web3 Infrastructure
+                    </div>
+                    <div class="disc text-center">
+                        MassBit Route is available all around the world. New communities <br class="d-none d-md-block">are being established daily.
                     </div>
                     <div class="mb-realtime-card-lg">
                         <div class="mb-realtime-card-lg-legend">
@@ -337,11 +404,10 @@
                         <div class="w-100" id="worldChart" style="height:calc(100vh - 180px);"></div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- End DecentralizedWeb3Infrastructure -->
+            </section>
+            <!-- End DecentralizedWeb3Infrastructure -->
 
-        <section class="mb-section mb-section-api-product" id="ProductDevelopment">
+            <!-- <section class="mb-section mb-section-api-product" id="ProductDevelopment">
             <div class="container">
                 <div data-aos="fade-up" class="mb-section-title d-flex align-content-center justify-content-md-center">
                     <span class="pt-2">Product Development</span>
@@ -447,252 +513,178 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- End ProductDevelopment -->
+        </section> -->
+            <!-- End ProductDevelopment -->
 
-        <section class="mb-section mb-section-api-glowing" id="GlowingTestimonialsMakingUsProud">
-            <div class="container">
-                <div class="mb-section-title text-center" data-aos="fade-up" data-aos-duration="500">
-                    <span>Glowing Testimonials Making Us Proud!</span>
-                </div>
-            </div>
-            <div class="mb-section-api-glowing-inner">
+            <section class="mb-section-api-glowing" id="GlowingTestimonialsMakingUsProud">
                 <div class="container">
-                    <div class="owl-carousel" id="slideGlowing">
-                        <div>
-                            <div class="row justify-content-center">
-                                <div class="col-xl-10">
-                                    <div class="row gx-lg-5">
-                                        <div class="col-xl-3 col-lg-4 text-lg-center mb-lg-0 mb-4">
-                                            <img src="images/partners/supra.svg" alt="" class="img-fluid" />
-                                        </div>
-                                        <div class="col-xl-9 col-lg-8">
-                                            <div class="mb-api-testimonial">
-                                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M7.38188 12.584C10.1879 9.542 14.4339 8 19.9999 8H21.9999V13.638L20.3919 13.96C17.6519 14.508 15.7459 15.586 14.7259 17.168C14.1937 18.0203 13.8918 18.9961 13.8499 20H19.9999C20.5303 20 21.039 20.2107 21.4141 20.5858C21.7892 20.9609 21.9999 21.4696 21.9999 22V36C21.9999 38.206 20.2059 40 17.9999 40H5.99988C5.46945 40 4.96074 39.7893 4.58567 39.4142C4.21059 39.0391 3.99988 38.5304 3.99988 38V28L4.00588 22.162C3.98788 21.94 3.60788 16.68 7.38188 12.584ZM39.9999 40H27.9999C27.4694 40 26.9607 39.7893 26.5857 39.4142C26.2106 39.0391 25.9999 38.5304 25.9999 38V28L26.0059 22.162C25.9879 21.94 25.6079 16.68 29.3819 12.584C32.1879 9.542 36.4339 8 41.9999 8H43.9999V13.638L42.3919 13.96C39.6519 14.508 37.7459 15.586 36.7259 17.168C36.1937 18.0203 35.8918 18.9961 35.8499 20H41.9999C42.5303 20 43.039 20.2107 43.4141 20.5858C43.7892 20.9609 43.9999 21.4696 43.9999 22V36C43.9999 38.206 42.2059 40 39.9999 40Z"
-                                                        fill="#DD1438" fill-opacity="0.8" />
-                                                </svg>
-                                                <div class="mb-api-testimonial-detail">
-                                                    <div class="mb-api-testimonial-content">
-                                                        MassBit’s objective is to provide an innovative infrastructure
-                                                        that
-                                                        makes DeFi and Web3 app creation faster, simpler, more
-                                                        dependable,
-                                                        and less expensive. SupraOracles is thrilled to be a part of the
-                                                        upcoming DeFi and Web3 age. We are certain that MassBit will be
-                                                        able
-                                                        to meet their aim of offering new infrastructure as DeFi and
-                                                        Web3
-                                                        continue to gain traction.
-                                                    </div>
-                                                    <div class="mb-api-testimonial-author">
-                                                        <span>Joshua D. Tobkin, CEO and Co-founder of
-                                                            SupraOracles</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="mb-title-large text-center" data-aos="fade-up" data-aos-duration="500">
+                        <span>Glowing Testimonials Making Us Proud!</span>
+                    </div>
+                    <div class="slide-glowing">
+                        <div class="slide">
+                            <div class="mb-slide-glowing-logo">
+                                <img src="images/partners/supra.svg" alt="" class="img-fluid" />
+                            </div>
+                            <div class="mb-api-testimonial-content">
+                                MassBit’s objective is to provide an innovative
+                                infrastructure that makes DeFi and Web3 app creation faster,
+                                simpler, more dependable, and less expensive. SupraOracles
+                                is thrilled to be a part of the upcoming DeFi and Web3
+                                revolution. We are certain that MassBit will be able to meet
+                                their aim of offering new infrastructure as DeFi and Web3
+                                continue to gain traction.
+                            </div>
+                            <div class="mb-api-testimonial-author">
+                                Joshua D. Tobkin, CEO and Co-founder of SupraOracles
                             </div>
                         </div>
-
-
-                        <div>
-                            <div class="row justify-content-center">
-                                <div class="col-xl-10">
-                                    <div class="row gx-lg-5">
-                                        <div class="col-xl-3 col-lg-4 text-lg-center mb-lg-0 mb-4">
-                                            <img src="images/partners/emporia.svg" alt="" class="img-fluid" />
-                                        </div>
-                                        <div class="col-xl-9 col-lg-8">
-                                            <div class="mb-api-testimonial">
-                                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M7.38188 12.584C10.1879 9.542 14.4339 8 19.9999 8H21.9999V13.638L20.3919 13.96C17.6519 14.508 15.7459 15.586 14.7259 17.168C14.1937 18.0203 13.8918 18.9961 13.8499 20H19.9999C20.5303 20 21.039 20.2107 21.4141 20.5858C21.7892 20.9609 21.9999 21.4696 21.9999 22V36C21.9999 38.206 20.2059 40 17.9999 40H5.99988C5.46945 40 4.96074 39.7893 4.58567 39.4142C4.21059 39.0391 3.99988 38.5304 3.99988 38V28L4.00588 22.162C3.98788 21.94 3.60788 16.68 7.38188 12.584ZM39.9999 40H27.9999C27.4694 40 26.9607 39.7893 26.5857 39.4142C26.2106 39.0391 25.9999 38.5304 25.9999 38V28L26.0059 22.162C25.9879 21.94 25.6079 16.68 29.3819 12.584C32.1879 9.542 36.4339 8 41.9999 8H43.9999V13.638L42.3919 13.96C39.6519 14.508 37.7459 15.586 36.7259 17.168C36.1937 18.0203 35.8918 18.9961 35.8499 20H41.9999C42.5303 20 43.039 20.2107 43.4141 20.5858C43.7892 20.9609 43.9999 21.4696 43.9999 22V36C43.9999 38.206 42.2059 40 39.9999 40Z"
-                                                        fill="#FFD33F" />
-                                                </svg>
-                                                <div class="mb-api-testimonial-detail">
-                                                    <div class="mb-api-testimonial-content">
-                                                        Emporia is excited to announce we will begin migrating some of
-                                                        our project's infrastructure using MassBit’s global dAPI
-                                                        services. MassBit Route is a truly decentralized global dAPI
-                                                        service that reliably protects against network failures, while
-                                                        being faster and more efficient. We are dedicated to providing
-                                                        the best and most reliable service to our players, and MassBit
-                                                        Route helps us achieve this goal.
-                                                    </div>
-                                                    <div class="mb-api-testimonial-author">
-                                                        <span>-Vu, Product Tech Lead of Emporia</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="slide">
+                            <div class="mb-slide-glowing-logo">
+                                <img src="images/partners/emporia.svg" alt="" class="img-fluid" />
+                            </div>
+                            <div class="mb-api-testimonial-content">
+                                Emporia is excited to announce we will begin migrating some
+                                of our project's infrastructure using MassBit’s global dAPI
+                                services. MassBit Route is a truly decentralized global dAPI
+                                service that reliably protects against network failures,
+                                while being faster and more cost effective compared to other
+                                API providers. We are dedicated to providing the best and
+                                most reliable service to our players, and MassBitRoute helps
+                                us achieve this goal.
+                            </div>
+                            <div class="mb-api-testimonial-author">
+                                Vu, Product Tech Lead of Emporia
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- End GlowingTestimonialsMakingUsProud -->
+            </section>
+            <!-- End GlowingTestimonialsMakingUsProud -->
 
-        <section class="mb-section mb-section-api-our-partners" id="OurPartners">
-            <div class="container">
-                <div class="mb-section-title text-center" data-aos="fade-up" data-aos-duration="500">
-                    <span>Our Partners</span>
+            <section class="mb-banner-sub">
+                <div class="text-center mb-font-medium mb-title-mini">
+                    Our trusted partners
                 </div>
-                <div class="mb-section-body">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-8 col-lg-10">
-                            <div class="row">
-                                <div class="col-lg-4 col-6">
-                                    <div class="mb-section-api-our-partner">
-                                        <img src="images/partners/polygon.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-6">
-                                    <div class="mb-section-api-our-partner">
-                                        <img src="images/partners/harmony.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-6">
-                                    <div class="mb-section-api-our-partner">
-                                        <img src="images/partners/solana.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-6">
-                                    <div class="mb-section-api-our-partner">
-                                        <img src="images/partners/math.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-6">
-                                    <div class="mb-section-api-our-partner">
-                                        <img src="images/partners/emporia.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-6">
-                                    <div class="mb-section-api-our-partner">
-                                        <img src="images/partners/supra.svg" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <ul>
+                    <li><img src="images/bnr1.svg" alt="Polygon"></li>
+                    <li><img src="images/bnr2.svg" alt="Math"></li>
+                    <li><img src="images/bnr3.svg" alt="Supra oracles"></li>
+                    <li><img src="images/bnr4.svg" alt="Harmony"></li>
+                    <li><img src="images/bnr5.svg" alt="Solana"></li>
+                    <li><img src="images/bnr6.svg" alt="Warena"></li>
+                </ul>
+            </section>
+
+            <!-- End OurPartners -->
+
+            <section class="mb-section mb-section-api-start text-center" id="GlowingTestimonialsMakingUsProud">
+                <div class="container">
+                    <div class="mb-title-large">
+                        <span>Get started with MassBit Route</span>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- End OurPartners -->
-
-        <section class="mb-section mb-section-api-start" id="GlowingTestimonialsMakingUsProud">
-            <div class="container">
-                <div class="mb-section-title text-center" data-aos="fade-up" data-aos-duration="500">
-                    <span>Get started with MassBit Route</span>
-                </div>
-                <div class="mb-section-body">
-                    <div class="mb-section-api-start-body">Start building the future of blockchain with us!</div>
-                    <div class="mb-section-api-start-link">
-                        <a href="https://dapi.massbitroute.net/login" class="btn btn-outline-primary btn-fw">
+                    <div class="disc">Start building the future of blockchain with us!</div>
+                    <div class="text-center">
+                        <a href="https://dapi.massbitroute.net/login" class="btn btn-outline-primary btn-bg-white">
                             GET FREE DAPI NOW
                         </a>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- End GetStartedWithMassBitRoute -->
-    </main>
-    <!-- End Main -->
+            </section>
+            <!-- End GetStartedWithMassBitRoute -->
+        </main>
+        <!-- End Main -->
 
-    <footer>
+        <footer>
 
-        <div class="container">
-            <div class="row mb-5 justify-content-between">
-                <div class="col-lg-9 mb-lg-0 mb-md-4">
-                    <div class="row">
-                        <div class="col-md-4 d-md-block d-flex justify-content-between mb-group-logo" data-aos="fade-right" data-aos-duration="500">
-                            <div class="mb-20 mt-1 mb-logo">
-                                <img src="images/logo-white.svg" alt="MassBit">
+            <div class="container">
+                <div class="row mb-5 justify-content-between">
+                    <div class="col-lg-9 mb-lg-0 mb-md-4">
+                        <div class="row">
+                            <div class="col-md-4 d-md-block d-flex justify-content-between mb-group-logo"
+                                data-aos="fade-right" data-aos-duration="500">
+                                <div class="mb-20 mt-1 mb-logo">
+                                    <img src="images/logo-white.svg" alt="MassBit">
+                                </div>
+                                <div>
+                                    <img src="images/logo-badge.svg" alt="Web3">
+                                </div>
                             </div>
-                            <div>
-                                <img src="images/logo-badge.svg" alt="Web3">
+                            <div class="col-md-5" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
+                                <h3>PRODUCTS</h3>
+                                <ul class="mb-font-medium">
+                                    <li>
+                                        <a href="api-service.html">MassBit Route</a>
+                                    </li>
+                                    <li>
+                                        <span>MassBit Prime <small style="color:rgba(233, 235, 250, 0.8)">(Coming
+                                                Soon)</small></span>
+                                    </li>
+                                    <li>
+                                        <a href="multi-chain-indexing.html">Multi-chain Indexing <small
+                                                style="color:rgba(233, 235, 250, 0.8)">(Coming Soon)</small></a>
+                                    </li>
+                                    <li>
+                                        <span>MassBit Insights <small style="color:rgba(233, 235, 250, 0.8)">(Coming
+                                                Soon)</small></span>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="col-md-5" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
-                            <h3>PRODUCTS</h3>
-                            <ul class="mb-font-medium">
-                                <li>
-                                    <a href="api-service.html">MassBit Route</a>
-                                </li>
-                                <li>
-                                    <span>MassBit Prime <small style="color:rgba(233, 235, 250, 0.8)">(Coming Soon)</small></span>
-                                </li>
-                                <li>
-                                    <a href="multi-chain-indexing.html">Multi-chain Indexing <small style="color:rgba(233, 235, 250, 0.8)">(Coming Soon)</small></a>
-                                </li>
-                                <li>
-                                    <span>MassBit Insights <small style="color:rgba(233, 235, 250, 0.8)">(Coming Soon)</small></span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3" data-aos="fade-right" data-aos-duration="500" data-aos-delay="400">
-                            <h3>ABOUT</h3>
-                            <ul class="mb-font-medium">
-                                <li>
-                                    <a href="branding.html">Branding</a>
-                                </li>
-                                <li>
-                                    <a href="">MBR Testnet 🔥</a>
-                                </li>
-                                <li>
-                                    <a href="https://docs.massbit.io/about/contact-us">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="">Roadmap</a>
-                                </li>
-                                <li>
-                                    <a href="https://massbit.io/partnership.html" target="_blank">Partnership</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-6">
-                            <h3>CONNECT WITH US</h3>
-                            
-                        </div>
-                        <div class="col-lg-12 col-md-6 justify-content-between">
-                            <div class="mb-socials justify-content-between">
-                                <a href="https://twitter.com/massbitprotocol" target="_blank">
-                                    <img src="images/socials/twitter.svg" alt="Twitter">
-                                </a>
-                                <a href="https://github.com/massbitprotocol/" target="_blank">
-                                    <img src="images/socials/github.svg" alt="Github">
-                                </a>
-                                <a href="https://discord.gg/5ePzAEFNHZ" target="_blank">
-                                    <img src="images/socials/discord.svg" alt="Discord">
-                                </a>
-                                <a href="https://massbit.medium.com/" target="_blank">
-                                    <img src="images/socials/medium.svg" alt="Medium">
-                                </a>
-                                <a href="https://t.me/massbit" target="_blank">
-                                    <img src="images/socials/telegram.svg" alt="Telegram">
-                                </a>
+                            <div class="col-md-3" data-aos="fade-right" data-aos-duration="500" data-aos-delay="400">
+                                <h3>ABOUT US</h3>
+                                <ul class="mb-font-medium">
+                                    <li>
+                                        <a href="https://docs.massbit.io/about/introduction">Docs</a>
+                                    </li>
+                                    <li>
+                                        <a href="branding.html">Branding</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">MBR Testnet 🔥</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Roadmap</a>
+                                    </li>
+                                    <li>
+                                        <a href="partnership.html" target="_blank">Partnership</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-3" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-6">
+                                <h3>CONNECT WITH US</h3>
 
+                            </div>
+                            <div class="col-lg-12 col-md-6 justify-content-between">
+                                <div class="mb-socials justify-content-between">
+                                    <a href="https://twitter.com/massbitprotocol" target="_blank">
+                                        <img src="images/socials/twitter.svg" alt="Twitter">
+                                    </a>
+                                    <a href="https://github.com/massbitprotocol/" target="_blank">
+                                        <img src="images/socials/github.svg" alt="Github">
+                                    </a>
+                                    <a href="https://discord.gg/5ePzAEFNHZ" target="_blank">
+                                        <img src="images/socials/discord.svg" alt="Discord">
+                                    </a>
+                                    <a href="https://massbit.medium.com/" target="_blank">
+                                        <img src="images/socials/medium.svg" alt="Medium">
+                                    </a>
+                                    <a href="https://t.me/massbit" target="_blank">
+                                        <img src="images/socials/telegram.svg" alt="Telegram">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-            <div class="mb-copyright text-center">
-                © Copyright 2021 MassBit. All rights reserved.
-            </div>
-            <!-- <div class="d-block d-md-none mt-4 pt-3" style="border-top: 1px rgba(255,255,255,.4) solid;">
+                <div class="mb-copyright text-center">
+                    © Copyright 2021 MassBit. All rights reserved.
+                </div>
+                <!-- <div class="d-block d-md-none mt-4 pt-3" style="border-top: 1px rgba(255,255,255,.4) solid;">
                 <div class="mb-20">
                     <img src="images/logo-white.svg" height="40" alt="MassBit">
                 </div>
@@ -700,21 +692,22 @@
                     © Copyright 2021 MassBit. All rights reserved.
                 </div>
             </div> -->
-        </div>
-    </footer>
+            </div>
+        </footer>
 
-    <a href="#" id="to_top">
-        <span>
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="0.5" y="0.5" width="47" height="47" fill="white"/>
-                <path d="M14.5 20.5C18.7958 15.8137 24 10 24 10M24 10C24 10 29.2042 15.8137 33.5 20.5M24 10V38" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <rect x="0.5" y="0.5" width="47" height="47" stroke="black"/>
-            </svg>
-                
-        </span>
-    </a>
+        <a href="#" id="to_top">
+            <span>
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="47" height="47" fill="white" />
+                    <path d="M14.5 20.5C18.7958 15.8137 24 10 24 10M24 10C24 10 29.2042 15.8137 33.5 20.5M24 10V38"
+                        stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <rect x="0.5" y="0.5" width="47" height="47" stroke="black" />
+                </svg>
 
-    <!-- <div class="mb-right-box-wrap">
+            </span>
+        </a>
+
+        <!-- <div class="mb-right-box-wrap">
         <div class="mb-right-box">
             <div class="mb-right-box-logo">
                 <img src="images/decor.svg" height="24" width="22" alt="MassBit logo">
@@ -730,25 +723,126 @@
         </div>
     </div> -->
 
-    <!-- End Footer -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="plugins/OwlCarousel2/owl.carousel.min.js"></script>
-    <!-- <script src="plugins/AOS/aos.js"></script> -->
+        <!-- End Footer -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="plugins/OwlCarousel2/owl.carousel.min.js"></script>
+        <!-- <script src="plugins/AOS/aos.js"></script> -->
 
-    <script src="plugins/amcharts_5_0_15/amcharts5/index.js"></script>
-    <script src="plugins/amcharts_5_0_15/amcharts5/xy.js"></script>
-    <script src="plugins/amcharts_5_0_15/amcharts5/percent.js"></script>
-    <script src="plugins/amcharts_5_0_15/amcharts5/map.js"></script>
-    <script src="plugins/amcharts_5_0_15/amcharts5/themes/Animated.js"></script>
+        <script src="plugins/amcharts_5_0_15/amcharts5/index.js"></script>
+        <script src="plugins/amcharts_5_0_15/amcharts5/xy.js"></script>
+        <script src="plugins/amcharts_5_0_15/amcharts5/percent.js"></script>
+        <script src="plugins/amcharts_5_0_15/amcharts5/map.js"></script>
+        <script src="plugins/amcharts_5_0_15/amcharts5/themes/Animated.js"></script>
 
-    <script src="plugins/amcharts_5_0_15/amcharts5/geodata/continentsLow.js"></script>
-    <script src="plugins/amcharts_5_0_15/amcharts5/geodata/usaLow.js"></script>
+        <script src="plugins/amcharts_5_0_15/amcharts5/geodata/continentsLow.js"></script>
+        <script src="plugins/amcharts_5_0_15/amcharts5/geodata/usaLow.js"></script>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-
-    <script src="js/script.js?v=17"></script>
-    <script src="js/world-chart.js"></script>
-</body>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/script.js?v=17"></script>
+        <script src="js/world-chart.js"></script>
+        <script>
+            $('.mb-section-api-advantages .group').slick({
+				autoplay: true,
+				autoplaySpeed: 3000,
+				speed: 1000,
+				slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+				arrows: false, 
+				pauseOnFocus: false,
+				pauseOnHover: false,
+                dots: true,
+				responsive: [
+					{
+						breakpoint: 9999,
+						settings: "unslick"
+					}, {
+						breakpoint: 767,
+						settings: "getslick"
+					}
+				]
+			});
+            $('.mb-section-api-advantages .group').on('touchstart', function() {
+                $('.mb-section-api-advantages .group').slick('slickPlay');
+            });
+            $('.mb-banner-sub ul').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                speed: 1000,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                centerMode: true,
+                arrows: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                infinite: true,
+                responsive: [
+                    /* {
+                        breakpoint: 9999,
+                        settings: "unslick"
+                    }, {
+                        breakpoint: 767,
+                        settings: "getslick"
+                    } */
+                    {
+                        breakpoint: 1300,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+            $('.mb-banner-sub ul').on('touchstart', function () {
+                $('.mb-banner-sub ul').slick('slickPlay');
+            });
+            $('.slide-glowing').slick({
+				autoplay: true,
+				autoplaySpeed: 3000,
+				speed: 1000,
+				slidesToShow: 1,
+                slidesToScroll: 1,
+				arrows: false, 
+				pauseOnFocus: false,
+				pauseOnHover: false,
+                dots: true,
+				responsive: [
+					{
+						breakpoint: 9999,
+						settings: "unslick"
+					}, {
+						breakpoint: 767,
+						settings: "getslick"
+					}
+				]
+			});
+            $('.slide-glowing').on('touchstart', function() {
+                $('.slide-glowing').slick('slickPlay');
+            });
+        </script>
+    </body>
 
 </html>

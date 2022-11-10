@@ -177,11 +177,6 @@ $("#slideCommunity").owlCarousel({
         }
     }
 });
-$("#slideGlowing").owlCarousel({
-    dots: false,
-    items: 1,
-    nav: true
-});
 $(".navbar-toggler").click(function() {
     if($(".mb-navbar").hasClass("open"))
     {
@@ -191,3 +186,29 @@ $(".navbar-toggler").click(function() {
         $(".mb-navbar").addClass("open");
     }
 });
+
+document.getElementById("mc-embedded-subscribe").addEventListener("click", function () {
+    var email = document.getElementById("mce-EMAIL").value;
+    if (validateEmail(email)) {
+        $.ajax({
+            type: 'post',
+            url: 'https://subscribe.metabase.build',
+            data: JSON.stringify({
+                email: email,
+                project: 'Massbit'
+            }),
+            contentType: "application/json; charset=utf-8",
+            success: function (res) {
+                document.getElementById("message").innerHTML = "Your subscription has been successful.";
+                bootstrap.Modal.getOrCreateInstance(document.getElementById('SubscribeModal')).show();
+            },
+            error: function (err) {
+                document.getElementById("message").innerHTML = "Your subscription could not be saved. Please try again.";
+                bootstrap.Modal.getOrCreateInstance(document.getElementById('SubscribeModal')).show();
+            }
+        });
+    }
+});
+function validateEmail(email) {
+    return /^\w+([+\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+}
