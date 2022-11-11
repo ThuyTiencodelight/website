@@ -1,0 +1,415 @@
+.mb-api-roadmap {
+  display: flex;
+  position: relative;
+}
+.mb-api-roadmap::before {
+  width: calc(100% + 120px);
+  left: -60px;
+  top: 105px;
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: #0D3EF4;
+}
+.mb-api-roadmap::after {
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  content: "";
+  right: -60px;
+  top: 70px;
+  background-image: url(../images/end.svg);
+  background-size: cover;
+}
+.mb-api-roadmap .mb-api-roadmap-item {
+  position: relative;
+  width: 30%;
+}
+.mb-api-roadmap .mb-api-roadmap-item:nth-child(2) {
+  width: 40%;
+}
+.mb-api-roadmap .mb-api-roadmap-item::before {
+  content: "";
+  position: absolute;
+  top: calc(80px + 12.5px);
+  left: -12.5px;
+  background: #2C3ACF;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-subtitle {
+  font-family: "Airbnb Cereal App Medium";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #0D3EF4;
+  margin-bottom: 4px;
+}
+.mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1F1F23;
+  margin-bottom: 56px;
+}
+.mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-content {
+  position: relative;
+  padding-right: 40px;
+  padding-top: 80px;
+}
+.mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-content::before {
+  width: 1px;
+  height: 162px;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #0D3EF4;
+}
+.mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-content ul {
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 45px;
+}
+.mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-content ul li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 236px;
+}
+.mb-api-roadmap
+  .mb-api-roadmap-item
+  .mb-api-roadmap-content
+  ul
+  li:not(:last-child) {
+  margin-bottom: 45px;
+}
+.mb-api-roadmap
+  .mb-api-roadmap-item
+  .mb-api-roadmap-content
+  ul
+  li:not(:last-child)::before {
+  position: absolute;
+  content: "";
+  top: 80px;
+  left: -45px;
+  width: 1px;
+  height: calc(100% + 46px);
+  background: #0D3EF4;
+}
+.mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-content ul li::after {
+  position: absolute;
+  content: "";
+  top: 80px;
+  left: -45px;
+  width: 45px;
+  height: 1px;
+  background: #0D3EF4;
+}
+.mb-api-roadmap
+  .mb-api-roadmap-item
+  .mb-api-roadmap-content
+  ul
+  li
+  .mb-api-roadmap-image {
+  padding: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #2c3acf;
+  border-radius: 16px;
+}
+.mb-api-roadmap
+  .mb-api-roadmap-item
+  .mb-api-roadmap-content
+  ul
+  li
+  .mb-api-roadmap-image
+  span {
+  font-family: "Airbnb Cereal App Medium";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 48px;
+  color: #1d1d1d;
+  display: inline-flex;
+  align-items: flex-end;
+  margin-left: 10px;
+}
+.mb-api-roadmap
+  .mb-api-roadmap-item
+  .mb-api-roadmap-content
+  ul
+  li
+  .mb-api-roadmap-image
+  small {
+  font-size: 30px;
+  line-height: 40px;
+  margin-left: 10px;
+  margin-bottom: -5px;
+}
+.mb-api-roadmap
+  .mb-api-roadmap-item
+  .mb-api-roadmap-content
+  ul
+  li
+  .mb-api-roadmap-image
+  a {
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+  color: #1d1d1d;
+  display: flex;
+  align-items: center;
+}
+.mb-api-roadmap
+  .mb-api-roadmap-item
+  .mb-api-roadmap-content
+  ul
+  li
+  .mb-api-roadmap-image
+  a:hover,
+.mb-api-roadmap
+  .mb-api-roadmap-item
+  .mb-api-roadmap-content
+  ul
+  li
+  .mb-api-roadmap-image
+  a:hover
+  span {
+  color: #2c3acf;
+}
+.mb-api-roadmap
+  .mb-api-roadmap-item
+  .mb-api-roadmap-content
+  ul
+  li
+  .mb-api-roadmap-image
+  a
+  span {
+  font-family: "Airbnb Cereal App Medium";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+  margin-left: 0;
+}
+.mb-api-roadmap
+  .mb-api-roadmap-item
+  .mb-api-roadmap-content
+  ul
+  li
+  .mb-api-roadmap-image
+  a
+  svg {
+  margin-left: 10px;
+}
+.mb-api-roadmap
+  .mb-api-roadmap-item
+  .mb-api-roadmap-content
+  ul
+  li
+  .mb-api-roadmap-text {
+  font-family: "Airbnb Cereal App Book";
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #3A3E42;
+}
+@media (max-width: 1399px) {
+  .mb-api-roadmap::after {
+    width: 40px;
+    height: 40px;
+    top: 82px;
+  }
+  .mb-api-roadmap .mb-api-roadmap-item::before {
+    top: calc(80px + 16px);
+    left: -8px;
+    background: #2C3ACF;
+    width: 16px;
+    height: 16px;
+  }
+  .mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-content {
+    padding-right: 40px;
+    padding-top: 42px;
+  }
+  .mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-content ul {
+    padding-left: 30px;
+  }
+  .mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-content ul li {
+    height: 170px;
+  }
+  .mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-content ul li::after {
+    left: -30px;
+    width: 30px;
+    top: 55px;
+  }
+  .mb-api-roadmap
+    .mb-api-roadmap-item
+    .mb-api-roadmap-content
+    ul
+    li:not(:last-child)::before {
+    left: -30px;
+    top: 55px;
+  }
+  .mb-api-roadmap
+    .mb-api-roadmap-item
+    .mb-api-roadmap-content
+    ul
+    li
+    .mb-api-roadmap-image {
+    padding: 16px;
+    height: 110px;
+  }
+  .mb-api-roadmap
+    .mb-api-roadmap-item
+    .mb-api-roadmap-content
+    ul
+    li
+    .mb-api-roadmap-image
+    img,
+  .mb-api-roadmap
+    .mb-api-roadmap-item
+    .mb-api-roadmap-content
+    ul
+    li
+    .mb-api-roadmap-image
+    svg {
+    height: 60px;
+  }
+  .mb-api-roadmap
+    .mb-api-roadmap-item
+    .mb-api-roadmap-content
+    ul
+    li
+    .mb-api-roadmap-text {
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .mb-api-roadmap
+    .mb-api-roadmap-item
+    .mb-api-roadmap-content
+    ul
+    li
+    .mb-api-roadmap-image
+    span {
+    font-size: 40px;
+  }
+  .mb-api-roadmap
+    .mb-api-roadmap-item
+    .mb-api-roadmap-content
+    ul
+    li
+    .mb-api-roadmap-image
+    span
+    small {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+  .mb-api-roadmap
+    .mb-api-roadmap-item
+    .mb-api-roadmap-content
+    ul
+    li
+    .mb-api-roadmap-image
+    a
+    span {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-left: 0;
+  }
+  .mb-api-roadmap
+    .mb-api-roadmap-item
+    .mb-api-roadmap-content
+    ul
+    li
+    .mb-api-roadmap-image
+    a
+    svg {
+    height: 40px;
+    width: auto;
+  }
+}
+@media (max-width: 1199px) {
+  .mb-api-roadmap::before {
+    width: calc(100% + 40px);
+    left: -20px;
+  }
+  .mb-api-roadmap::after {
+    right: -20px;
+  }
+}
+@media (max-width: 991px) {
+  .mb-api-roadmap {
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .mb-api-roadmap::before {
+    width: 1px;
+    left: 0;
+    height: calc(100% + 80px);
+    top: -40px;
+  }
+  .mb-api-roadmap::after {
+    right: auto;
+    left: -20px;
+    top: auto;
+    bottom: -40px;
+  }
+  .mb-api-roadmap .mb-api-roadmap-item {
+    margin-bottom: 50px;
+    width: auto;
+  }
+  .mb-api-roadmap .mb-api-roadmap-item:nth-child(2) {
+    width: auto;
+  }
+  .mb-api-roadmap
+    .mb-api-roadmap-item
+    .mb-api-roadmap-content
+    ul
+    li
+    .mb-api-roadmap-image {
+    justify-content: flex-start;
+  }
+  .mb-api-roadmap
+    .mb-api-roadmap-item
+    .mb-api-roadmap-content
+    ul
+    li
+    .mb-api-roadmap-image
+    svg {
+    width: auto;
+  }
+  .mb-api-roadmap .mb-api-roadmap-item::before {
+    top: 0;
+  }
+  .mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-title {
+    margin-bottom: 0;
+    padding-left: 30px;
+  }
+  .mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-subtitle {
+    margin-left: 30px;
+  }
+  .mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-content {
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 768px){
+  .mb-api-roadmap .mb-api-roadmap-item .mb-api-roadmap-content ul li .mb-api-roadmap-text {
+      font-size: 14px;
+  }
+}

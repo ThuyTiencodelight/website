@@ -2243,11 +2243,47 @@ header::before {
   letter-spacing: 0;
 }
 
-.mb-contact .sib-form .input {
+.mb-contact .sib-form input {
   font-size: 16px;
-  font-family: Roboto, sans-serif;
 }
+.mb-contact input{
+  padding-left: 1.5rem;
+  width: 310px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-right: 1.5em;
+  height: calc(4rem - 2px);
+  box-shadow: none;
+  min-width: 1px;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  color: inherit;
+  outline: 0;
+  border: 0;
+  font: inherit;
+  margin: 0;
+}
+.btn-subscribe{
+  font-size: 16px;
+  text-align: left;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #0D3EF4;
+  border-radius: 0;
+  border-width: 0px;
 
+  display: inline-block;
+  padding: 8px 18px;
+  border: none;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  cursor: pointer;
+  line-height: 23px;
+  min-height: 4rem;
+}
+#mc_embed_signup div.mce_inline_error{
+  position:absolute;
+}
 @media (max-width: 1400px) {
   .mb-contact .mb-title-large {
     font-size: 30px;
@@ -4601,14 +4637,21 @@ body.testnet .mb-right-box-socials a:not(:last-child) {
   color: #1F1F23;
   margin-bottom: 8px;
 }
+.mc-field-group{
+  margin-bottom: 30px;
+}
 .form-control{
   border: 1px solid #E9EBFA;
   border-radius: 8px;
   padding: 18px 23px;
   color: #1F1F23;
-  margin-bottom: 30px;
   font-size: 14px;
   line-height: 18px;
+}
+.form-control:focus {
+  border-color: #E9EBFA;
+  outline: 0;
+  box-shadow:none;
 }
 .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #7C7D89;
@@ -4818,10 +4861,12 @@ body.testnet .mb-right-box-socials a:not(:last-child) {
   .mb-partnership-contact .btn{
     padding: 14px 46px;
   }
+  .mc-field-group{
+    margin-bottom: 20px;
+  }
   .form-control {
     border-radius: 4px;
     padding: 12px 14px;
-    margin-bottom: 20px;
   }
 }
 
@@ -4905,4 +4950,11 @@ body.testnet .mb-right-box-socials a:not(:last-child) {
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
   }
+}
+.modal-body{
+  padding: 60px 0;
+}
+.modal-body .mb-title{
+  font-size: 20px;
+  font-weight: bold;
 }
