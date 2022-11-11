@@ -2284,7 +2284,7 @@ header::before {
 #mc_embed_signup div.mce_inline_error{
   position:absolute;
 }
-#mc_embed_signup .mc-field-group{
+.mb-contact .mc-field-group{
   margin-bottom: 0;
 }
 @media (max-width: 1400px) {
