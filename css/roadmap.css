@@ -360,8 +360,8 @@
   .mb-api-roadmap::before {
     width: 1px;
     left: 0;
-    height: calc(100% + 80px);
-    top: -40px;
+    height: calc(100% + 40px);
+    top: 0;
   }
   .mb-api-roadmap::after {
     right: auto;
