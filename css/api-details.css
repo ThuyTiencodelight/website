@@ -427,7 +427,7 @@
     display: block;
     gap: 0;
   }
-  .slick-track{
+  .api-service .slick-track{
     display: flex;
   }
   .api-service .mb-section-api-advantages .group .item{
