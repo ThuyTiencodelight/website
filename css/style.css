@@ -2284,6 +2284,9 @@ header::before {
 #mc_embed_signup div.mce_inline_error{
   position:absolute;
 }
+#mc_embed_signup .mc-field-group{
+  margin-bottom: 0;
+}
 @media (max-width: 1400px) {
   .mb-contact .mb-title-large {
     font-size: 30px;
@@ -4639,6 +4642,7 @@ body.testnet .mb-right-box-socials a:not(:last-child) {
 }
 .mc-field-group{
   margin-bottom: 30px;
+  position: relative;
 }
 .form-control{
   border: 1px solid #E9EBFA;
