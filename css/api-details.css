@@ -40,7 +40,6 @@
 .api-service .mb-section-api-advantages .container{
   padding-top: 100px;
   padding-bottom: 100px;
-  border-bottom: 1px solid #CDDCFF;
 }
 .api-service .mb-section-api-advantages .mb-title-large{
   font-size: 60px;
@@ -136,19 +135,19 @@
   line-height: 18px;
   margin-bottom: 60px;
 }
-.mb-section-realtime-data .card{
+.realtime-data .card{
   background: #839EFF;
-  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+  border: none;
   padding: 25px 30px;
   border-radius: 10px;
 }
-.mb-section-realtime-data .card.yellow{
+.realtime-data .card.yellow{
   background: #FFC02D;
 }
-.mb-section-realtime-data .card.aqua{
+.realtime-data .card.aqua{
   background: #3FE7F3;
 }
-.mb-section-realtime-data .card .title{
+.realtime-data .card .title{
   font-family: "Airbnb Cereal App Medium";
   font-weight: 500;
   font-size: 16px;
@@ -156,18 +155,18 @@
   color: #3D3D48;
   margin-bottom: 16px;
 }
-.mb-section-realtime-data .card dl{
+.realtime-data .card dl{
   display: flex;
   margin-bottom: 0;
 }
-.mb-section-realtime-data .card dl dt{
+.realtime-data .card dl dt{
   font-family: "Airbnb Cereal App Medium";
   font-weight: 500;
   font-size: 48px;
   line-height: 62px;
   color: #3D3D48;
 }
-.mb-section-realtime-data .card dl dd{
+.realtime-data .card dl dd{
   height: 28px;
   border-radius: 28px;
   font-family: "Airbnb Cereal App Medium";
@@ -180,7 +179,7 @@
   margin: auto 0 auto 16px;
   padding: 4px 20px 4px 14px;
 }
-.mb-section-realtime-data .card dl dd .icon{
+.realtime-data .card dl dd .icon{
   display: inline-block;
   margin-right: 6px;
 }
@@ -212,6 +211,10 @@
 }
 .mb-section-api-glowing .slide-glowing .slide .mb-slide-glowing-logo{
   margin-bottom: 30px;
+}
+.mb-section-api-glowing .slide-glowing .slide .mb-slide-glowing-logo img{
+  width: auto;
+  height: 56px;
 }
 .mb-section-api-glowing .slide-glowing .slide .mb-api-testimonial-content{
   margin-bottom: 64px;
@@ -451,7 +454,7 @@
   .mb-section-realtime-data .disc{
     margin-bottom: 40px;
   }
-  .mb-section-realtime-data .col-md-4 + .col-md-4{
+  .realtime-data .col-md-4 + .col-md-4{
     margin-top: 20px;
   }
   .mb-section-our-network {
