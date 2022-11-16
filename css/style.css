@@ -4027,26 +4027,22 @@ body.testnet.nav-new {
   font-family: "Airbnb Cereal App Book";
 }
 .mb-section-blog .slick-next, .mb-section-blog .slick-prev{
-  background: #0D3EF4;
   border-radius: 50%;
-  padding: 10px;
   width: 40px;
   height: 40px;
 }
 .mb-section-blog .slick-next:before, .mb-section-blog .slick-prev:before{
   
 }
-.mb-section-blog .slick-next:before{
-  content: "→";
-}
-.mb-section-blog .slick-prev:before{
-  content: "←";
-}
 .mb-section-blog .slick-next{
   right: -40px;
+  background: url("../images/partners/partnership-next.svg")no-repeat center center;
+  background-size: cover;
 }
 .mb-section-blog .slick-prev{
   left: -40px;
+  background: url("../images/partners/partnership-prev.svg")no-repeat center center;
+  background-size: cover;
 }
 @media (max-width: 767px) {
   .mb-banner-sub {
