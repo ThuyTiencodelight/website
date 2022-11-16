@@ -1453,9 +1453,6 @@ header::before {
 .mb-realtime-nodes::before {
   background: #FFC02D;
 }
-.mb-realtime-card-lg canvas{
-  position: relative!important;
-}
 .mb-iafe-accordion .accordion-item {
   background-color: transparent;
   box-shadow: none;
@@ -1666,7 +1663,11 @@ header::before {
 
 @media (max-width: 1200px) {
   .mb-title-large {
-    font-size: 36px;
+    font-size: 40px;
+  }
+  .mb-partnership-contact .photo img{
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -3916,7 +3917,10 @@ body.testnet.nav-new {
   background-color: #F9F9F9;
   padding: 65px 0 115px 0;
 }
-
+.mb-section-our-team-experience .slide-scroll{
+  padding-left: 0;
+  list-style: none;
+}
 .mb-section-blog {
   padding: 130px 0;
 }
@@ -4632,11 +4636,7 @@ body.testnet .mb-right-box-socials a:not(:last-child) {
   padding: 80px 0;
 }
 .mb-partnership-contact .photo{
-  margin-top: 64px;
-}
-.mb-partnership-contact .photo img{
-  width: 100%;
-  height: auto;
+  margin-top: 97px;
 }
 .form-label{
   font-weight: 700;
@@ -4826,6 +4826,21 @@ body.testnet .mb-right-box-socials a:not(:last-child) {
   .mb-blog-item-image img {
     width: 100%;
   }
+  .form-control {
+    padding: 12px 23px;
+  }
+  .mb-partnership-contact .btn {
+    padding: 18px 86px;
+  }
+  .mc-field-group {
+    margin-bottom: 20px;
+  }
+  .mb-partnership-contact .mb-title-large {
+    font-size: 35px;
+  }
+  .mb-partnership-contact .photo {
+    margin-top: 60px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -4851,6 +4866,9 @@ body.testnet .mb-right-box-socials a:not(:last-child) {
     font-size: 20px;
     line-height: 160%;
     margin-bottom: 10px;
+  }
+  .mb-partnership-contact .mb-title-large {
+    font-size: 24px;
   }
   .mb-partnership-contact .photo{
     margin-top: 40px;
