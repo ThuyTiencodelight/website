@@ -127,8 +127,8 @@
                             <div class="card">
                                 <div class="title">TOTAL NUMBER OF DAPIS</div>
                                 <dl>
-                                    <dt>
-                                        0
+                                    <dt id="count-dapi">
+                                        613,121
                                     </dt>
                                     <dd>
                                         <div class="icon">
@@ -139,7 +139,7 @@
                                                     fill="#00B159" />
                                             </svg>
                                         </div>
-                                        0%
+                                        <span class="num count" id="percent-dapi">15</span>%
                                     </dd>
                                 </dl>
                             </div>
@@ -148,8 +148,8 @@
                             <div class="card yellow">
                                 <div class="title">TOTAL NUMBER OF GATEWAYS</div>
                                 <dl>
-                                    <dt>
-                                        0
+                                    <dt id="count-gateway">
+                                        1,945
                                     </dt>
                                     <dd>
                                         <div class="icon">
@@ -160,7 +160,7 @@
                                                     fill="#00B159" />
                                             </svg>
                                         </div>
-                                        0%
+                                        <span class="num count" id="percent-gateway">98</span>%
                                     </dd>
                                 </dl>
                             </div>
@@ -169,8 +169,8 @@
                             <div class="card aqua">
                                 <div class="title">TOTAL NUMBER OF NODES</div>
                                 <dl>
-                                    <dt>
-                                        0
+                                    <dt id="count-node">
+                                        2,188
                                     </dt>
                                     <dd>
                                         <div class="icon">
@@ -181,7 +181,7 @@
                                                     fill="#00B159" />
                                             </svg>
                                         </div>
-                                        0%
+                                        <span class="num count" id="percent-node">31</span>%
                                     </dd>
                                 </dl>
                             </div>
@@ -336,125 +336,67 @@
                     <div class="disc text-center">
                         MassBit Route is available all around the world. New communities <br class="d-none d-md-block">are being established daily.
                     </div>
-                    <div class="mb-realtime-card-lg">
+                    <!-- <div class="mb-realtime-card-lg">
                         <div class="mb-realtime-card-lg-legend">
                             <div class="mb-realtime-gateway">Gateway</div>
                             <div class="mb-realtime-nodes">Node</div>
                         </div>
                         <div class="w-100" id="worldChart" style="height:calc(100vh - 180px);"></div>
+                    </div> -->
+                    
+                </div>
+                <div class="map-api">
+                    <div class="mb-realtime-card-lg-legend">
+                        <div class="mb-realtime-gateway">Gateway</div>
+                        <div class="mb-realtime-nodes">Node</div>
                     </div>
-                </div>
-            </section>
-            <!-- End DecentralizedWeb3Infrastructure -->
-
-            <!-- <section class="mb-section mb-section-api-product" id="ProductDevelopment">
-            <div class="container">
-                <div data-aos="fade-up" class="mb-section-title d-flex align-content-center justify-content-md-center">
-                    <span class="pt-2">Product Development</span>
-                </div>
-                <div class="mb-section-body">
-                    <div class="mb-api-roadmap">
-                        <div class="mb-api-roadmap-item">
-                            <div class="mb-api-roadmap-subtitle">PHASE I</div>
-                            <div class="mb-api-roadmap-title">Foundation</div>
-                            <div class="mb-api-roadmap-content">
-                                <ul>
-                                    <li>
-                                        <div class="mb-api-roadmap-image">
-                                            <img src="images/binance-coin-bnb-logo-CD94CC6D31-seeklogo 1.png" alt="" />
-                                            <img style="margin-left: 30px;" src="images/Vector.png" alt="" />
-                                        </div>
-                                        <div class="mb-api-roadmap-text">Won BSC, Solana Hackathon. MassBit Route in
-                                            Devnet</div>
-                                    </li>
-                                    <li>
-                                        <div class="mb-api-roadmap-image">
-                                            <img src="images/chain.png" alt="" />
-                                        </div>
-                                        <div class="mb-api-roadmap-text">Apply Polygon Grant</div>
-                                    </li>
-                                </ul>
+                    <div class="group-map">
+                        <div class="map">
+                            <div class="photo">
+                                <img src="./images/api-service/map.png" alt="map" width="1318" height="759">
                             </div>
-                        </div>
-                        <div class="mb-api-roadmap-item">
-                            <div class="mb-api-roadmap-subtitle">PHASE II</div>
-                            <div class="mb-api-roadmap-title">Development</div>
-                            <div class="mb-api-roadmap-content">
-                                <ul>
-                                    <li>
-                                        <div class="mb-api-roadmap-image">
-                                            <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M2.875 23C2.875 28.3375 4.99531 33.4564 8.76948 37.2305C12.5436 41.0047 17.6625 43.125 23 43.125C28.3375 43.125 33.4564 41.0047 37.2305 37.2305C41.0047 33.4564 43.125 28.3375 43.125 23C43.125 17.6625 41.0047 12.5436 37.2305 8.76948C33.4564 4.99531 28.3375 2.875 23 2.875C17.6625 2.875 12.5436 4.99531 8.76948 8.76948C4.99531 12.5436 2.875 17.6625 2.875 23ZM46 23C46 29.1 43.5768 34.9501 39.2635 39.2635C34.9501 43.5768 29.1 46 23 46C16.9 46 11.0499 43.5768 6.73654 39.2635C2.42321 34.9501 0 29.1 0 23C0 16.9 2.42321 11.0499 6.73654 6.73654C11.0499 2.42321 16.9 0 23 0C29.1 0 34.9501 2.42321 39.2635 6.73654C43.5768 11.0499 46 16.9 46 23ZM24.4375 33.0625C24.4375 33.4437 24.2861 33.8094 24.0165 34.079C23.7469 34.3485 23.3812 34.5 23 34.5C22.6188 34.5 22.2531 34.3485 21.9835 34.079C21.714 33.8094 21.5625 33.4437 21.5625 33.0625V16.4076L15.3927 22.5802C15.1228 22.8502 14.7567 23.0018 14.375 23.0018C13.9933 23.0018 13.6272 22.8502 13.3573 22.5802C13.0873 22.3103 12.9357 21.9442 12.9357 21.5625C12.9357 21.1808 13.0873 20.8147 13.3573 20.5448L21.9823 11.9198C22.1158 11.7859 22.2744 11.6797 22.4491 11.6072C22.6237 11.5347 22.8109 11.4974 23 11.4974C23.1891 11.4974 23.3763 11.5347 23.5509 11.6072C23.7256 11.6797 23.8842 11.7859 24.0177 11.9198L32.6427 20.5448C32.9127 20.8147 33.0643 21.1808 33.0643 21.5625C33.0643 21.9442 32.9127 22.3103 32.6427 22.5802C32.3728 22.8502 32.0067 23.0018 31.625 23.0018C31.2433 23.0018 30.8772 22.8502 30.6073 22.5802L24.4375 16.4076V33.0625Z"
-                                                    fill="black" />
-                                            </svg>
-                                            <span>2,000 <small>Users</small></span>
-                                        </div>
-                                        <div class="mb-api-roadmap-text">Launch MassBit Route Testnet</div>
-                                    </li>
-                                    <li>
-                                        <div class="mb-api-roadmap-image">
-                                            <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M2.875 23C2.875 28.3375 4.99531 33.4564 8.76948 37.2305C12.5436 41.0047 17.6625 43.125 23 43.125C28.3375 43.125 33.4564 41.0047 37.2305 37.2305C41.0047 33.4564 43.125 28.3375 43.125 23C43.125 17.6625 41.0047 12.5436 37.2305 8.76948C33.4564 4.99531 28.3375 2.875 23 2.875C17.6625 2.875 12.5436 4.99531 8.76948 8.76948C4.99531 12.5436 2.875 17.6625 2.875 23ZM46 23C46 29.1 43.5768 34.9501 39.2635 39.2635C34.9501 43.5768 29.1 46 23 46C16.9 46 11.0499 43.5768 6.73654 39.2635C2.42321 34.9501 0 29.1 0 23C0 16.9 2.42321 11.0499 6.73654 6.73654C11.0499 2.42321 16.9 0 23 0C29.1 0 34.9501 2.42321 39.2635 6.73654C43.5768 11.0499 46 16.9 46 23ZM24.4375 33.0625C24.4375 33.4437 24.2861 33.8094 24.0165 34.079C23.7469 34.3486 23.3812 34.5 23 34.5C22.6188 34.5 22.2531 34.3486 21.9835 34.079C21.714 33.8094 21.5625 33.4437 21.5625 33.0625V16.4076L15.3927 22.5802C15.1228 22.8502 14.7567 23.0018 14.375 23.0018C13.9933 23.0018 13.6272 22.8502 13.3573 22.5802C13.0873 22.3103 12.9357 21.9442 12.9357 21.5625C12.9357 21.1808 13.0873 20.8147 13.3573 20.5448L21.9823 11.9198C22.1158 11.7859 22.2744 11.6797 22.4491 11.6072C22.6237 11.5347 22.8109 11.4974 23 11.4974C23.1891 11.4974 23.3763 11.5347 23.5509 11.6072C23.7256 11.6797 23.8842 11.7859 24.0177 11.9198L32.6427 20.5448C32.9127 20.8147 33.0643 21.1808 33.0643 21.5625C33.0643 21.9442 32.9127 22.3103 32.6427 22.5802C32.3728 22.8502 32.0067 23.0018 31.625 23.0018C31.2433 23.0018 30.8772 22.8502 30.6073 22.5802L24.4375 16.4076V33.0625Z"
-                                                    fill="black" />
-                                            </svg>
-                                            <span>10,000</span>
-                                        </div>
-                                        <div class="mb-api-roadmap-text">Community members</div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="mb-api-roadmap-item">
-                            <div class="mb-api-roadmap-subtitle">PHASE III</div>
-                            <div class="mb-api-roadmap-title">Moving Onward</div>
-                            <div class="mb-api-roadmap-content">
-                                <ul>
-                                    <li>
-                                        <div class="mb-api-roadmap-image">
-                                            <svg width="228" height="100" viewBox="0 0 228 100" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <rect width="228" height="100" fill="url(#pattern0)" />
-                                                <defs>
-                                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox"
-                                                        width="1" height="1">
-                                                        <use xlink:href="#image0_2588_15677"
-                                                            transform="translate(0 -0.0092) scale(0.00333333 0.0076)" />
-                                                    </pattern>
-                                                    <image id="image0_2588_15677" width="300" height="134"
-                                                        xlink:href="data:image/png;base64,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" />
-                                                </defs>
-                                            </svg>
-                                        </div>
-                                        <div class="mb-api-roadmap-text">Completing Milestone I Of Web3 Foundation Grant
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="mb-api-roadmap-image">
-                                            <a href="https://crystalline-garlic-70c.notion.site/62d9ec729ad4459abf783bf47ae63dd7?v=0c65f88c5c2640a9a5bd9d9f50c092db"
-                                                target="_blank">
-                                                <span>More to come</span>
-                                                <svg width="42" height="48" viewBox="0 0 42 48" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M24 6C24 4.34344 25.3406 3 27 3H38.9156C39.4031 3 39.7969 3.08063 40.1438 3.22781C40.4156 3.37313 40.8281 3.58781 41.1188 3.87187C41.1188 3.87656 41.1188 3.88125 41.1281 3.885C41.7094 4.46812 41.9156 5.22938 42 5.99063V18C42 19.6594 40.6594 21 39 21C37.3406 21 36 19.6594 36 18V13.2469L20.1188 29.1188C18.9469 30.2906 17.0531 30.2906 15.8812 29.1188C14.7094 27.9469 14.7094 26.0531 15.8812 24.8812L31.7531 9H27C25.3406 9 24 7.65656 24 6ZM0 12C0 8.68594 2.68594 6 6 6H15C16.6594 6 18 7.34344 18 9C18 10.6594 16.6594 12 15 12H6V39H33V30C33 28.3406 34.3406 27 36 27C37.6594 27 39 28.3406 39 30V39C39 42.3094 36.3094 45 33 45H6C2.68594 45 0 42.3094 0 39V12Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
+                            <div class="dot">
+                                <span class="orange">222</span>
+                                <span class="green size-medium">67</span>
+                                <span class="green">222</span>
+                                <span class="orange size-medium"></span>
+                                <span class="orange">157</span>
+                                <span class="green size-small"></span>
+                                <span class="green">503</span>
+                                <span class="orange">222</span>
+                                <span class="green size-small">1</span>
+                                <span class="green size-small">1</span>
+                                <span class="orange size-medium">34</span>
+                                <span class="green">222</span>
+                                <span class="green size-small">1</span>
+                                <span class="green">503</span>
+                                <span class="orange size-medium">56</span>
+                                <span class="orange">157</span>
+                                <span class="orange size-medium">34</span>
+                                <span class="green size-small">1</span>
+                                <span class="orange size-medium">109</span>
+                                <span class="green size-medium">67</span>
+                                <span class="orange size-small">3</span>
+                                <span class="green">222</span>
+                                <span class="green size-small">1</span>
+                                <span class="orange size-medium">76</span>
+                                <span class="orange size-medium">119</span>
+                                <span class="green size-small">1</span>
+                                <span class="orange">503</span>
+                                <span class="green size-small">1</span>
+                                <span class="orange size-small">3</span>
+                                <span class="green">503</span>
+                                <span class="orange size-medium">56</span>
+                                <span class="green size-medium">67</span>
+                                <span class="green size-small">1</span>
+                                <span class="orange">157</span>
+                                <span class="orange size-small">1</span>
+                                <span class="orange">157</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section> -->
-            <!-- End ProductDevelopment -->
+            </section>
 
             <section class="mb-section-api-glowing" id="GlowingTestimonialsMakingUsProud">
                 <div class="container">

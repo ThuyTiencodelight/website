@@ -1423,17 +1423,20 @@ header::before {
 
 .mb-realtime-card-lg-legend {
   position: absolute;
-  top: 33px;
+  top: 20px;
   left: 0;
+  right: 0;
+  margin-left: calc(50% - 681px);
 }
 
 .mb-realtime-card-lg-legend div {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   position: relative;
-  font-size: 16px;
-  line-height: 22px;
-  color: #434c88;
-  padding-left: 32px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1F1F23;
+  padding-left: 40px;
+  margin-left: -20px;
 }
 
 .mb-realtime-card-lg-legend div::before {
@@ -1441,17 +1444,17 @@ header::before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
 }
 
 .mb-realtime-gateway::before {
-  background: #3FE7F3;
+  background: #00B159;
 }
 
 .mb-realtime-nodes::before {
-  background: #FFC02D;
+  background: #FBAF1D;
 }
 .mb-iafe-accordion .accordion-item {
   background-color: transparent;
@@ -1660,7 +1663,11 @@ header::before {
   position: relative;
   z-index: 1;
 }
-
+@media (max-width: 1400px){
+  .mb-realtime-card-lg-legend{
+    margin-left: 30px;
+  }
+}
 @media (max-width: 1200px) {
   .mb-title-large {
     font-size: 40px;
@@ -4997,7 +5004,7 @@ body.testnet .mb-right-box-socials a:not(:last-child) {
   }
 }
 .modal-body{
-  padding: 60px 0;
+  padding: 60px 50px;
 }
 .modal-body .mb-title{
   font-size: 20px;

@@ -186,16 +186,97 @@ $(".navbar-toggler").click(function() {
         $(".mb-navbar").addClass("open");
     }
 });
-
+$(document).ready(function () {
+    /* if($(document).find(".realtime-data")){
+        $.ajax({
+            url: "https://portal.massbitroute.net/mbr/community/count-node",
+            type: 'GET',
+            success: function(res) {
+                document.getElementById("count-node").innerHTML=res;
+                document.getElementById("percent-node").innerHTML=res;
+            },
+            error: function (err) {
+                document.getElementById("count-node").innerHTML=0;
+                document.getElementById("percent-node").innerHTML=0;
+            }
+        });
+        
+        $.ajax({
+            url: "https://portal.massbitroute.net/mbr/community/count-gateway",
+            type: 'GET',
+            success: function(res) {
+                document.getElementById("count-gateway").innerHTML=res;
+                document.getElementById("percent-gateway").innerHTML=res;
+            },
+            error: function (err) {
+                document.getElementById("count-gateway").innerHTML=0;
+                document.getElementById("percent-gateway").innerHTML=0;
+            }
+        });
+        $.ajax({
+            url: "https://portal.massbitroute.net/mbr/community/count-dapi",
+            type: 'GET',
+            success: function(res) {
+                document.getElementById("count-dapi").innerHTML=res;
+                document.getElementById("percent-dapi").innerHTML=res;
+            },
+            error: function (err) {
+                document.getElementById("count-dapi").innerHTML=0;
+                document.getElementById("percent-dapi").innerHTML=0;
+            }
+        });
+    } */
+    (function($) {
+        $.fn.animateNumbers = function(stop, commas, duration, ease) {
+            return this.each(function() {
+                var $this = $(this);
+                var start = parseInt($this.text());
+                commas = (commas === undefined) ? true : commas;
+                $({value: start}).animate({value: stop}, {
+                    duration: duration == undefined ? 10000 : duration,
+                    easing: ease == undefined ? "swing" : ease,
+                    step: function() {
+                        $this.text(Math.floor(this.value));
+                        if (commas) { $this.text($this.text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")); }
+                    },
+                    complete: function() {
+                       if (parseInt($this.text()) !== stop) {
+                           $this.text(stop);
+                           if (commas) { $this.text($this.text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")); }
+                       }
+                    }
+                });
+            });
+        };
+    })(jQuery);
+    $('.count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 4000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+    
+    $('#count-dapi').animateNumbers(613121);
+    //$('#percent-dapi').animatePercents(15);
+    $('#count-gateway').animateNumbers(1945);
+    //$('#percent-gateway').animatePercents(98);
+    $('#count-node').animateNumbers(2188);
+    //$('#percent-node').animatePercents(31);
+});
 document.getElementById("mc-embedded-subscribe").addEventListener("click", function () {
     var email = document.getElementById("mce-EMAIL").value;
     if (validateEmail(email)) {
         $.ajax({
             type: 'post',
-            url: 'https://subscribe.metabase.build',
+            url: 'https://mail-srv.pikasso.xyz/waiting_list',
             data: JSON.stringify({
                 email: email,
-                project: 'Massbit'
+                projectId: '2dc1cda5-44ce-498e-99a5-011a18c6c77c'
             }),
             contentType: "application/json; charset=utf-8",
             success: function (res) {
