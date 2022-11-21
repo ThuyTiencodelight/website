@@ -190,7 +190,7 @@
   margin-bottom: 20px;
 }
 .mb-section-our-network .disc{
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 /* Glowing Testimonials Making Us Proud! */
 .mb-section-api-glowing {
@@ -290,33 +290,30 @@
   overflow-x: scroll;
   width: 100%;
 }
-/* width */
+
 .mb-section-our-network .group-map::-webkit-scrollbar {
   width: 0;
 }
 
-/* Track */
 .mb-section-our-network .group-map::-webkit-scrollbar-track {
   box-shadow:none; 
   border-radius: 0;
   border: none;
 }
  
-/* Handle */
 .mb-section-our-network .group-map::-webkit-scrollbar-thumb {
   background: none; 
   border-radius: 0;
   border: none;
 }
 
-/* Handle on hover */
 .mb-section-our-network .group-map::-webkit-scrollbar-thumb:hover {
   background: none; 
 }
 
 .mb-section-our-network .group-map::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+  width: 1px;
+  height: 2px;
 }
 
 .mb-section-our-network .group-map .map{
@@ -325,6 +322,7 @@
   margin-left: calc(50% - 659px);
   margin-right: calc(50% - 659px);
   position:relative;
+  padding-top: 30px;
 }
 .mb-section-our-network .group-map .dot span{
   background: #FBAF1D;
@@ -377,217 +375,217 @@
   line-height: 20px;
 }
 .mb-section-our-network .group-map .dot span:nth-child(1){
-  top: 0;
+  top: 30px;
   left: calc(50% - 149px);
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(2){
-  top: 113px;
+  top: 143px;
   left: calc(50% - 469px);
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(3){
-  top:307px;
+  top:337px;
   left: calc(50% - 428px);
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(4){
-  top:352px;
+  top:382px;
   left: calc(50% - 404px);
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(5){
-  top:363px;
+  top:393px;
   left: calc(50% - 430px);
   -webkit-animation-delay: 4s;
   animation-delay: 4s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(6){
-  top:381px;
+  top:411px;
   left: calc(50% - 402px);
   -webkit-animation-delay: 5s;
   animation-delay: 5s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(7){
-  top:438px;
+  top:468px;
   left: calc(50% - 321px);
   -webkit-animation-delay: 6s;
   animation-delay: 6s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(8){
-  top:506px;
+  top:536px;
   left: calc(50% - 179px);
   -webkit-animation-delay: 7s;
   animation-delay: 7s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(9){
-  top:591px;
+  top:621px;
   left: calc(50% - 285px);
   -webkit-animation-delay: 8s;
   animation-delay: 8s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(10){
-  top:675px;
+  top:705px;
   left: calc(50% - 273px);
   -webkit-animation-delay: 9s;
   animation-delay: 9s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(11){
-  top:119px;
+  top:149px;
   left: calc(50% - 100px);
   -webkit-animation-delay: 10s;
   animation-delay: 10s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(12){
-  top:198px;
+  top:228px;
   left: calc(50% - 73px);
   -webkit-animation-delay: 11s;
   animation-delay: 11s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(13){
-  top:173px;
+  top:203px;
   left: calc(50% + 91px);
   -webkit-animation-delay: 12s;
   animation-delay: 12s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(14){
-  top:213px;
+  top:243px;
   left: calc(50% - 11px);
   -webkit-animation-delay: 13s;
   animation-delay: 13s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(15){
-  top:207px;
+  top:237px;
   left: calc(50% + 59px);
   -webkit-animation-delay: 14s;
   animation-delay: 14s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(16){
-  top:256px;
+  top:286px;
   left: calc(50% - 75px);
   -webkit-animation-delay: 15s;
   animation-delay: 15s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(17){
-  top:243px;
+  top:273px;
   left: calc(50% - 45px);
   -webkit-animation-delay: 16s;
   animation-delay: 16s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(18){
-  top:271px;
+  top:301px;
   left: calc(50% - 45px);
   -webkit-animation-delay: 17s;
   animation-delay: 17s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(19){
-  top:256px;
+  top:286px;
   left: 50%;
   -webkit-animation-delay: 18s;
   animation-delay: 18s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(20){
-  top:246px;
+  top:276px;
   left: calc(50% + 30px);
   -webkit-animation-delay: 19s;
   animation-delay: 19s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(21){
-  top:263px;
+  top:293px;
   left: calc(50% + 55px);
   -webkit-animation-delay: 20s;
   animation-delay: 20s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(22){
-  top:280px;
+  top:310px;
   left: calc(50% + 115px);
   -webkit-animation-delay: 21s;
   animation-delay: 21s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(23){
-  top:292px;
+  top:322px;
   left: calc(50% + 172px);
   -webkit-animation-delay: 22s;
   animation-delay: 22s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(24){
-  top:312px;
+  top:342px;
   left: calc(50% + 137px);
   -webkit-animation-delay: 23s;
   animation-delay: 23s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(25){
-  top:338px;
+  top:368px;
   left: calc(50% + 35px);
   -webkit-animation-delay: 24s;
   animation-delay: 24s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(26){
-  top:350px;
+  top:380px;
   left: calc(50% + 53px);
   -webkit-animation-delay: 25s;
   animation-delay: 25s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(27){
-  top:383px;
+  top:413px;
   left: calc(50% - 105px);
   -webkit-animation-delay: 26s;
   animation-delay: 26s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(28){
-  top:443px;
+  top:473px;
   left: calc(50% + 122px);
   -webkit-animation-delay: 27s;
   animation-delay: 27s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(29){
-  top:87px;
+  top:117px;
   left: calc(50% + 544px);
   -webkit-animation-delay: 28s;
   animation-delay: 28s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(30){
-  top:218px;
+  top:248px;
   left: calc(50% + 453px);
   -webkit-animation-delay: 29s;
   animation-delay: 29s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(31){
-  top:248px;
+  top:278px;
   left: calc(50% + 498px);
   -webkit-animation-delay: 30s;
   animation-delay: 30s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(32){
-  top:288px;
+  top:318px;
   left: calc(50% + 383px);
   -webkit-animation-delay: 31s;
   animation-delay: 31s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(33){
-  top:306px;
+  top:336px;
   left: calc(50% + 401px);
   -webkit-animation-delay: 32s;
   animation-delay: 32s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(34){
-  top:339px;
+  top:369px;
   left: calc(50% + 375px);
   -webkit-animation-delay: 33s;
   animation-delay: 33s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(35){
-  top:380px;
+  top:410px;
   left: calc(50% + 253px);
   -webkit-animation-delay: 34;
   animation-delay: 34s;
 }
 .mb-section-our-network .group-map .dot span:nth-child(36){
-  top:595px;
+  top:625px;
   left: calc(50% + 503px);
   -webkit-animation-delay: 35s;
   animation-delay: 35s;

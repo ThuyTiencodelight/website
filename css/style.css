@@ -1423,10 +1423,10 @@ header::before {
 
 .mb-realtime-card-lg-legend {
   position: absolute;
-  top: 20px;
+  top: 50px;
   left: 0;
   right: 0;
-  margin-left: calc(50% - 681px);
+  margin-left: calc(50% - 660px);
 }
 
 .mb-realtime-card-lg-legend div {
@@ -3536,7 +3536,7 @@ body.testnet.nav-new {
 }
 
 .home-page .mb-product {
-  padding: 85px 0 0 0;
+  padding: 85px 0 140px 0;
 }
 
 .home-page .slides .slick-prev,
@@ -3604,7 +3604,7 @@ body.testnet.nav-new {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 0 220px 0;
+  padding: 60px 0 80px 0;
 }
 
 /* .home-page .slides .slick-dots {
@@ -3618,31 +3618,32 @@ body.testnet.nav-new {
 } */
 /* slick dots custom */
 .home-page .slides .slick-dots {
-  /*  display: -webkit-flex;
+  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: center; */
+  justify-content: center;
   position: absolute;
-  top: 0px;
-  right: 65px;
+  left: 0;
+  right: 0;
   list-style: none;
   width: 12px;
   line-height: 0;
+  margin: 0 auto;
 }
 
 .home-page .slides .slick-dots li:after {
   position: absolute;
   content: "";
   background: #717591;
-  width: 1px;
+  height: 1px;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   display: flex;
-  margin: 0 auto;
+  margin: auto 0;
 }
 
 .home-page .slides .slick-dots li {
@@ -3651,7 +3652,7 @@ body.testnet.nav-new {
   line-height: 0;
   margin: 0 auto;
   position: relative;
-  padding: 0 0 150px 0;
+  padding: 0 45px 0 0;
 }
 
 .home-page .slides .slick-dots li:last-child {
